@@ -164,7 +164,7 @@
                                     </div>
                                 </div>
                                  <div class="form-bottom">
-                                  <form action="login_submit.php" method="post"> 
+                                  <form action="<?php echo base_url();?>index.php/Welcome/login_submit>" method="post"> 
                                   <!--  <form role="form" action="logincom.php" method="post" class="login-form" >-->
                                         <div class="input-group form-group">
                                             <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>

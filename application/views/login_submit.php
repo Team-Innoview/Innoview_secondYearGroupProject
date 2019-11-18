@@ -29,7 +29,7 @@ if(isset($_POST['submit'])){
             //echo $usertype;
 
             if($user_type == '1' ){
-                header( "Location:admin.php" );
+                header( "Location:<?php echo base_url();?>index.php/Welcome/admin" );
             }
             elseif ($user_type == 'c'){
                 header( "Location:customer-dashboard.php" );
