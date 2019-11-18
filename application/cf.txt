@@ -1,0 +1,8 @@
+ git remote -v
+open source ekata contribute karana hati
+git remot add upstream syscolab
+git remote -v
+git rebase upstream/master
+
+
+
