@@ -1,2 +1,0 @@
-# Innoview_secondYearGroupProject
-Student Management System
