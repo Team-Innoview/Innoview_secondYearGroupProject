@@ -34,9 +34,9 @@ class Home extends CI_Controller {
 	{
 		$this->load->view('login_submit');
 	}
-	public function login_submit()
+	public function admin()
 	{
-		$this->load->view('login_submit');
+		$this->load->view('admin');
 	}
 
 	

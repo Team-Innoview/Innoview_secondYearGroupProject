@@ -27,9 +27,13 @@ class Class_schedule extends CI_Controller {
 	{
 		$this->load->view('welcome');
 	}
-	public function logincom()
+	public function login_submit()
 	{
-		$this->load->view('logincom');
+		$this->load->view('login_submit');
+	}
+	public function admin()
+	{
+		$this->load->view('admin');
 	}
 	
 }

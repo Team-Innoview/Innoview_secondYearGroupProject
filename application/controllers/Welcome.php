@@ -23,14 +23,13 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('login');
 	}
-	
 	public function home()
 	{
 		$this->load->view('welcome');
 	}
-	public function logincom()
+	public function admin()
 	{
-		$this->load->view('logincom');
+		$this->load->view('admin');
 	}
 	public function login_submit()
 	{
