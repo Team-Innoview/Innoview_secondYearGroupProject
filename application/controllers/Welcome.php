@@ -34,6 +34,7 @@ class Welcome extends CI_Controller {
 	public function login_submit()
 	{
 		$this->load->view('login_submit');
+		
 	}
 
 }

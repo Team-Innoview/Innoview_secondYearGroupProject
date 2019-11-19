@@ -19,7 +19,7 @@ class Login extends CI_Controller {
 	{
 		$this->load->view('contact');
 	}
-	public function login()
+	public function login() //test
 	{
 		$this->load->view('login');
 	}
@@ -36,7 +36,7 @@ class Login extends CI_Controller {
 	{
 		$this->load->view('welcome');
 	}
-	public function login_submit()
+	public function loginform()
 	{
 		$this->load->view('login_submit');
 	}
