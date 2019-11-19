@@ -1,9 +1,9 @@
 <?php include('includes/connection.php') ?>
-<?php include('includes/session.php') ?>
+<?php  //include('includes/session.php') ?>
 
 <?php
 	//Unauthorized Access Check
-    checkSession();
+    // checkSession();
     if(!isset($_SESSION['user_type']) || $_SESSION['user_type'] != '1'){
        $message = base64_encode(urlencode("Please Login"));
        header('Location:login.php?msg=' . $message);
@@ -86,7 +86,7 @@
               </button>
               <a class="navbar-brand " href="#" al>
                 <!-- <div class="col-xs-2 icon"><img src="..\..\..\assets1\img\logo.jpeg"></src></i></div> -->
-                <img height="120px" width="120px" src="assets1\img\logo.jpeg" class="attachment-full img-responsive" alt="">
+                <img height="120px" width="120px" src="<?php echo base_url();?>assets1/img/logo.jpeg" class="attachment-full img-responsive" alt="">
            
                 <!-- <h1>Southern Educational Institute</h1><span>Galle</span></a>  -->
             <!-- < src="..\..\..\assets1\img\logo.jpeg">        -->

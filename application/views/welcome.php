@@ -123,7 +123,7 @@
                
                 </div> -->
                 <div class="carousel-caption slide-up">
-                    <h1 class="banner_heading">BECOME KNOWLEDGABLE FUTURE LEADERS MOLDED BY SOUTHERN. <span></span></h1> 
+                    <h1 class="banner_heading">BECOME KNOWLEDGABLE FUTURE LEADERS MOULDED BY SOUTHERN. <span></span></h1> 
                          <!-- <p class="banner_txt">We provide a well equipped institute with state of all facilities, starting from classrooms to make the studying experience of our students an easy and a well facilitated one.Parents are assured of the safety of their children at our institute and discipline of utmost important to us.</br>We are diverse, welcoming, accepting and passionate about being best we can be.
                       </br>  Join us to make your higher education experience unforgettable.
                     </p>  -->

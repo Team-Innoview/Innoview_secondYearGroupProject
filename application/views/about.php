@@ -131,36 +131,52 @@
 
     <section id="about-page-section-3">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-align">
-                    <div class="section-heading">
+            <!-- <div class="row"> -->
+                <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-align"> -->
+                    <!-- <div class="section-heading"> -->
                         <!-- <h2>Our <span>Story.</span></h2> -->
-                        <p> <span>VISION</span></p>
-                        <p>
-                        <b>"To be the foremost educatioal institute in Sri Lanka To produce high calibre students."</b>
-                        <br/><br/>  <span>OUR MISSION</span><br/>
+                     <div class="section-heading text-center text-align">
+                            <h2>VISION<span></span></h2>
+                            <!-- <p> <span>VISION</span></p> -->
+                            <p>
+                        
+                        <b>"To be the foremost educatioal institute in Sri Lanka to produce high calibre students."</b>
+                        <br/><br/> <h2>MISSION<span></span></h2><br/>
                         <b>“To guide our students towards the fortunes of knowledge.
                         To produce winners amongst winners as well as disciplined all-round individuals with respectable social values.”</b>
-                        <br/><br/> <span>WHO WE ARE</span><br/>
+                        <!-- <div class="row"> 
+                           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">  -->
+                                <img height="1000" width="1000" src="<?php echo base_url();?>assets1/img/awards.jpg" class="attachment-full img-responsive" alt="">
+                            <!-- </div> -->
+                            <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <br/>
+                                <img height="" width="auto" src="<?php echo base_url();?>assets1/img/southrn.jpg" class="attachment-full img-responsive" alt="">
+                            </div> -->
+                        </div>
+                        <br/><br/> <h2>WHO WE ARE<span></span></h2><br/>
                         <b>Established as a secondary educational institute catering to the young individuals waiting to contribute to the growth of the country, “Southern” is perhaps the most common name that comes to the minds of both parents and students in search of assistance in studies.
                          Over the years our institute has produced some of the top scoring students in the Island in the Science, Mathematics, Commerce and Art streams who not only have the subject knowledge but also are talented in applying it in real life situations.
                          By being true to our mission statement “To guide our students towards the fortunes of knowledge producing winners amongst winners as well as disciplined all-round individuals with respectable social values”. 
                          Southern Education Institute is the only organization to recognize and celebrate the achievements of their best performers.</b>
                         </p>
+                        
                     </div>
+
+                   
                     
                     <!-- <button type="button" class="btn btn-primary slide">Learn More <i class="fa fa-caret-right"></i></button>
                  -->
                     
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <img height="" width="auto" src="<?php echo base_url();?>assets1/img/awards.jpg" class="attachment-full img-responsive" alt="">
+                <!-- </div> -->
+                <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+                    <!-- <img height="" width="auto" src="<?php echo base_url();?>assets1/img/awards.jpg" class="attachment-full img-responsive" alt="">
                     <img height="" width="auto" src="<?php echo base_url();?>assets1/img/southrn.jpg" class="attachment-full img-responsive" alt="">
+                    -->
                     <!-- <img height="" width="auto" src="../../../assets1/img/stu.jpg" class="attachment-full img-responsive" alt="">
                 -->
-                </div>
+                <!-- </div> -->
             </div>
-        </div>
+        <!-- </div> -->
     </section>
 
 

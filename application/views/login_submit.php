@@ -7,10 +7,11 @@ if(isset($_POST['submit'])){
 	
     //Assign data from login form to variables
 	$user_name = $_POST['user_name'];
-	$password = sha1($_POST['password']);
+	$password = $_POST['password'];
+    // print_r('hello');
     
     //Select User from database
-    $userQuery = "SELECT * FROM users WHERE user_name ='$user_name' and password='$password'";
+    $userQuery = "SELECT * FROM users WHERE user_name ='$user_name' and password ='$password'";
     $userResult= mysqli_query($connection, $userQuery);
     //print_r($userResult);
     
@@ -28,20 +29,33 @@ if(isset($_POST['submit'])){
             $user_type= $userRow['user_type'];
             //echo $usertype;
 
+            
             if($user_type == '1' ){
-                header( "Location:<?php echo base_url();?>index.php/Welcome/admin" );
+                // header( "Location:admin.php" );
+                // redirect(base_url('application\views\admin.php'));
+                $this->load->view('admin');
             }
-            elseif ($user_type == 'c'){
-                header( "Location:customer-dashboard.php" );
-            }
-            elseif ($user_type='v'){
-                header( "Location:vendor-dashboard.php" );
-            }
+            // elseif ($user_type == 'c'){
+            //     header( "Location:customer-dashboard.php" );
+            // }
+            // elseif ($user_type='v'){
+            //     header( "Location:vendor-dashboard.php" );
+            // }
+            
+                // $message = base64_encode(urlencode("Invalid Email or Password"));
+                // header('Location:login.php?msg=' . $message);
+                // exit();
+           
     }
-    else{        
-        $message = base64_encode(urlencode("Invalid Email or Password"));
-        header('Location:login.php?msg=' . $message);
-        exit();
+    else{  
+        // print_r("Wrong");
+        // if(empty($user_name)) {array_push($errors, "User Name is Required")};
+        // if(empty($password)) {array_push($errors, "Password is Required")};            
+            
+        // $this->load->view('login');      
+        // $message = base64_encode(urlencode("Invalid Email or Password"));
+        // header('Location:login.php?msg=' . $message);
+        // exit();
     }
     
 }

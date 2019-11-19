@@ -19,6 +19,7 @@
 
     <script type="text/javascript" src="..\..\assets1\script\index.js"></script>
     <script type="text/javascript" src="..\..\assets1\script\login.js"></script>
+    
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     -->
@@ -164,7 +165,7 @@
                                     </div>
                                 </div>
                                  <div class="form-bottom">
-                                  <form action="<?php echo base_url();?>index.php/Welcome/login_submit>" method="post"> 
+                                  <form action="<?php echo base_url();?>index.php/Welcome/login_submit" method="post"> 
                                   <!--  <form role="form" action="logincom.php" method="post" class="login-form" >-->
                                         <div class="input-group form-group">
                                             <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
@@ -195,7 +196,7 @@
                                                 <!-- <input type="text" class="form-control" placeholder="Type" aria-describedby="basic-addon1">
                                             -->
                                             <!-- </div> -->
-                                         <!-- <td><input type="submit" value="LOGIN" onclick="loginform();"></td>    
+                                         <!-- <td><inpu t type="submit" value="LOGIN" onclick="loginform();"></td>    
                                          --> 
                                          <div class="text-center" >
                                          <!-- <button type="submit" name="submit" class="btn btn- submit-button" onclick="loginform();">LOGIN<i class="fa fa-caret-right"></i></button>
@@ -203,7 +204,7 @@
                                             <!-- <input name="submit" type="submit" value="LOGIN"  onclick="loginform();"></input><br/>
                                              -->
                                              <!-- <input type="submit" name="submit" value="Login">  -->
-                                             <input type="submit" name="submit" value="LOGIN" onclick="loginform();"></input>
+                                             <input type="submit" name="submit" value="LOGIN" onclick='loginform()'></input>
                                             <br/><td>or</td><br/>
                                                 <td><a href="#">Forgot password</a></td>
                                             </div>
