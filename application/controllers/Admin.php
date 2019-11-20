@@ -37,4 +37,8 @@ class Admin extends CI_Controller {
 	{
 		$this->load->view('login_submit');
 	}
+	public function sturegistrations()
+	{
+		$this->load->view('sturegistrations');
+	}
 }
