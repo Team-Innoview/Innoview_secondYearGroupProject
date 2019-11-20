@@ -1,460 +1,496 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Class Schedule</title>
+    <title>Home</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-    
-    <link rel="stylesheet" href="<?php echo base_url();?>assets1/scss/main.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets1/scss/main.css">    
     <link rel="stylesheet" href="<?php echo base_url();?>assets1/scss/skin.css">
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="..\..\assets1\script\index.js"></script> 
+    <!-- <script src="C:\wamp64\www\project\assets1\script\index.js"></script> -->
+
+    <script type="text/javascript" src="..\..\assets1\script\index.js"></script>
+
+    
+    
+    
+
+
+    <!-- <link rel="stylesheet" type="text/css" href="../css/main.css">    
+    <link rel="stylesheet" type="text/css" href="../css/skin.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="assets/script/index.js"></script>      -->
 </head>
 
 <body id="wrapper">
 
-        <section id="top-header">
-                <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6 col-xs-12 top-header-links">
-                                <!-- <ul class="contact_links">
-                                    <li><i class="fa fa-phone"></i><a href="#">+0912 242 189</a></li> -->
-                                    <!-- <li><i class="fa fa-envelope"></i><a href="#">sales@aspiresoftware.in</a></li> -->
-                            
-                            </div> 
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <ul class="social_links">
-                                    <li><i class="fa fa-phone"></i><a href="#">Call Us +0912 242 189</a></li>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <!-- <li><a href="#"><i class="fa fa-pinterest"></i></a></li> -->
-                                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                    <!-- <li><a href="#"><i class="fa fa-facebook">facebook</i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter">Twitter</i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i>Linkedin</a></li>
-                                    <li><a href="#"><i class="fa fa-skype">Skype</i></a></li> --> 
-                            
-                                </ul>
-                            </div>
+    <section id="top-header">
+            <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12 top-header-links">
+                            <!-- <ul class="contact_links">
+                                <li><i class="fa fa-phone"></i><a href="#">+0912 242 189</a></li> -->
+                                <!-- <li><i class="fa fa-envelope"></i><a href="#">sales@aspiresoftware.in</a></li> -->
+                        
+                        </div> 
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <ul class="social_links">
+                                <li><i class="fa fa-phone"></i><a href="#">Call Us +0912 242 189</a></li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <!-- <li><a href="#"><i class="fa fa-pinterest"></i></a></li> -->
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                <!-- <li><a href="#"><i class="fa fa-facebook">facebook</i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter">Twitter</i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i>Linkedin</a></li>
+                                <li><a href="#"><i class="fa fa-skype">Skype</i></a></li> --> 
+                        
+                            </ul>
                         </div>
                     </div>
-                    </div>
-        </section>
-        <header>
-                <nav class="navbar navbar-expand-lg navbar-light text-white bg-dark ">
-                    <div class="container">
-                        <div class="row">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <!-- <span class="icon-bar"></span> -->
-                        <span class="icon-bar"></span>
-                      </button>
-                                <a class="navbar-brand " href="#" al>
-                                        <!-- <div class="col-xs-2 icon"><img src="..\..\..\assets1\img\logo.jpeg"></src></i></div> -->
-                                        <img height="120px" width="120px" src="<?php echo base_url();?>assets1\img\logo.jpeg" class="attachment-full img-responsive" alt="">
-                                   
-                                        <!-- <h1>Southern Educational Institute</h1><span>Galle</span></a>  -->
-                                    <!-- < src="..\..\..\assets1\img\logo.jpeg">        -->
-                            </div>
-                            <div id="navbar" class="collapse navbar-collapse navbar-right">
-                                <ul class="nav navbar-nav">
-    <!-- <header>
-        <nav class="navbar navbar-inverse">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </button>
-                    <a class="navbar-brand" href="#">
-                        <h1>Southern Educational Institute</h1><span>Galle</span></a>
-                </div> -->
-                <!-- <div id="navbar" class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav"> -->
-                        <!-- <li><a href="index.html">Home</a></li>
-                        <li><a href="features.html">Features</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li class="active"><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="login.html">Sign In</a></li>
-                        <li><a href="registration.html">Sign Up</a></li> -->
-                        <li ><a href="<?php echo base_url();?>index.php/Welcome/home">Home</a></li>
-                        <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
-                        <li class="active"><a href="class_schedule.php">Class Schedule</a></li>
-                        <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
-                        <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
-                    
-                        <!-- <li><a href="registration.html">Sign Up</a></li> -->
-                    </ul>
                 </div>
-                <!--/.nav-collapse -->
-            </div>
-        </nav>
-        <!--/.nav-ends -->
-    </header>
+                </div>
+    </section>
 
-
-
-    <section id="top_banner">
-        <!-- <div class="banner"> -->
-            <!-- <div class="inner text-center">
-                <h2>Lorem ipsum dolor sit amet</h2>
-            </div> -->
-        <!-- </div> -->
-        <div class="page_info">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light text-white bg-dark ">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-sm-8 col-xs-6">
-                        <h4>Class Schedule</h4>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<!-- <span class="icon-bar"></span> -->
+				<span class="icon-bar"></span>
+			  </button>
+                        <a class="navbar-brand " href="#" al>
+                                <!-- <div class="col-xs-2 icon"><img src="..\..\..\assets1\img\logo.jpeg"></src></i></div> -->
+                                <img height="120px" width="120px" src="<?php echo base_url();?>assets1\img\logo.jpeg" class="attachment-full img-responsive" alt="">
+                           
+                                <!-- <h1>Southern Educational Institute</h1><span>Galle</span></a>  -->
+                            <!-- < src="..\..\..\assets1\img\logo.jpeg">        -->
                     </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6" style="text-align:right;">Home<span class="sep"> / </span><span class="current">Class Schedule</span></div>
+                    <div id="navbar" class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav">
+                        
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
+                            <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
+                            <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
+                            <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
+                            <!-- <li><a href="registration.html">Sign Up</a></li> -->
+                        
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--/.nav-ends -->
+    
+    <!--<section id="schedule">-->
+        <!--<div class="container-fluid no-padding">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="myimage"><img  src="<?php echo base_url();?>assets1\img\ddd.jpg" alt="" class="attachment-full img-responsive" style="opacity: 1.0; filter: alpha(opacity=100);" id="myimage"/></div>
+                </div>
+            </div>
+        </div>-->
+         
+        <!--</div>-->
+
+    <section id="imagehead">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="hovereffect">
+                        <img class="attachment-full img-responsive" src="<?php echo base_url();?>assets1\img\ddd.jpeg" alt="" >
+                            <div class="overlay">
+                                <h2>Class Schedule</h2>
+
+                                    <!-- Default dropright button -->
+                                     <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-md-6">
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" id="button1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Ordinery Level</span></button>
+
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" id="button2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Advanced Level</span></button>
+                                                        <div class="dropdown-menu">
+                                                        <!-- Dropdown menu links -->
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+
+                                <!--    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-md-6">
+                                                <div class="btn-group dropright">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" id="button2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Advanced Level</span></button>
+                                                        <div class="dropdown-menu">-->
+                                                        <!-- Dropdown menu links -->
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>      
+
+                            </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        </div>
     </section>
-
-
-
-    <section id="portfolio">
+     
+   <section id="features">
         <div class="container">
             <div class="row">
-                <div class="section-heading text-center">
-                    <div class="col-md-12 col-xs-12">
-                        <h1><span>Our Time Table</span></h1>
-                        <p class="subheading"></p>
+                <div class="col-md-4 col-xs-12 block">
+                    <div class="col-md-2 col-xs-2"><i class="fa fa-laptop feature_icon"></i></div>
+                    <div class="col-md-10 col-xs-10">
+                        <h4>Providing the Best Education</h4>
+                        <p>We provide a well equipped institute with state of all facilities, starting from classrooms to make the studying experience of our students an easy and a well facilitated one.Parents are assured of the safety of their children at our institute and discipline of utmost important to us.</br>We are diverse, welcoming, accepting and passionate about being best we can be.
+                        </br>  Join us to make your higher education experience unforgettable.
+                      </p> 
+                        <a href="#" class="readmore">Read More <i class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 block">
+                    <div class="col-md-2 col-xs-2"><i class="fa fa-bullhorn feature_icon"></i></div>
+                    <div class="col-md-10 col-xs-10">
+                        <h4>BEST PERFORMANCE</h4>
+                        <p>Top performers in Ordinary Level Examination.<p>
+                        <p>Top performers in Advanced Level Examination. </p>
+                        <a href="#" class="readmore">Read More <i class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 block">
+                    <div class="col-md-2 col-xs-2"><i class="fa fa-user feature_icon"></i></div>
+                    <div class="col-md-10 col-xs-10">
+                        <h4>OUR LECTURERS</h4>
+                        <p>Our lecturers are qualifed, well experienced and recognized in their respective fields.</p>
+                        <a href="#" class="readmore">Read More <i class="fa fa-caret-right"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 portfolio-item">
-                    <div class="portfolio-one">
-                        <div class="portfolio-head">
-                            <div class="portfolio-img"><img alt="" src="<?php echo base_url();?>assets1/img/portfolio-1.jpg"></div>
-                            <div class="portfolio-hover">
-                                <a class="portfolio-link" href="#"><i class="fa fa-link"></i></a>
-                                <a class="portfolio-zoom" href="#"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                        <!-- End portfolio-head -->
-                        <div class="portfolio-content">
-                            <h5 class="title">Lorem Ipsum</h5>
-                            <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.</p>
-                        </div>
-                        <!-- End portfolio-content -->
-                    </div>
-                    <!-- End portfolio-item -->
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 portfolio-item">
-                    <div class="portfolio-one">
-                        <div class="portfolio-head">
-                            <div class="portfolio-img"><img alt="" src="<?php echo base_url();?>assets1/img/portfolio-1.jpg"></div>
-                            <div class="portfolio-hover">
-                                <a class="portfolio-link" href="#"><i class="fa fa-link"></i></a>
-                                <a class="portfolio-zoom prettyPhoto" href="#"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                        <!-- End portfolio-head -->
-                        <div class="portfolio-content">
-                            <h5 class="title">Lorem Ipsum</h5>
-                            <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.</p>
-                        </div>
-                        <!-- End portfolio-content -->
-                    </div>
-                    <!-- End portfolio-item -->
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 portfolio-item">
-                    <div class="portfolio-one">
-                        <div class="portfolio-head">
-                            <div class="portfolio-img"><img alt="" src="<?php echo base_url();?>assets1/img/portfolio-1.jpg"></div>
-                            <div class="portfolio-hover">
-                                <a class="portfolio-link" href="#"><i class="fa fa-link"></i></a>
-                                <a class="portfolio-zoom prettyPhoto" href="#"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                        <!-- End portfolio-head -->
-                        <div class="portfolio-content">
-                            <h5 class="title">Lorem Ipsum</h5>
-                            <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.</p>
-                        </div>
-                        <!-- End portfolio-content -->
-                    </div>
-                    <!-- End portfolio-item -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 portfolio-item">
-                    <div class="portfolio-one">
-                        <div class="portfolio-head">
-                            <div class="portfolio-img"><img alt="" src="<?php echo base_url();?>assets1/img/portfolio-1.jpg"></div>
-                            <div class="portfolio-hover">
-                                <a class="portfolio-link" href="#"><i class="fa fa-link"></i></a>
-                                <a class="portfolio-zoom" href="#"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                        <!-- End portfolio-head -->
-                        <div class="portfolio-content">
-                            <h5 class="title">Lorem Ipsum</h5>
-                            <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.</p>
-                        </div>
-                        <!-- End portfolio-content -->
-                    </div>
-                    <!-- End portfolio-item -->
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 portfolio-item">
-                    <div class="portfolio-one">
-                        <div class="portfolio-head">
-                            <div class="portfolio-img"><img alt="" src="<?php echo base_url();?>assets1/img/portfolio-1.jpg"></div>
-                            <div class="portfolio-hover">
-                                <a class="portfolio-link" href="#"><i class="fa fa-link"></i></a>
-                                <a class="portfolio-zoom prettyPhoto" href="#"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                        <!-- End portfolio-head -->
-                        <div class="portfolio-content">
-                            <h5 class="title">Lorem Ipsum</h5>
-                            <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.</p>
-                        </div>
-                        <!-- End portfolio-content -->
-                    </div>
-                    <!-- End portfolio-item -->
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 portfolio-item">
-                    <div class="portfolio-one">
-                        <div class="portfolio-head">
-                            <div class="portfolio-img"><img alt="" src="<?php echo base_url();?>assets1/img/portfolio-1.jpg"></div>
-                            <div class="portfolio-hover">
-                                <a class="portfolio-link" href="#"><i class="fa fa-link"></i></a>
-                                <a class="portfolio-zoom prettyPhoto" href="#"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                        <!-- End portfolio-head -->
-                        <div class="portfolio-content">
-                            <h5 class="title">Lorem Ipsum</h5>
-                            <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.</p>
-                        </div>
-                        <!-- End portfolio-content -->
-                    </div>
-                    <!-- End portfolio-item -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 portfolio-item">
-                    <div class="portfolio-one">
-                        <div class="portfolio-head">
-                            <div class="portfolio-img"><img alt="" src="<?php echo base_url();?>assets1/img/portfolio-1.jpg"></div>
-                            <div class="portfolio-hover">
-                                <a class="portfolio-link" href="#"><i class="fa fa-link"></i></a>
-                                <a class="portfolio-zoom" href="#"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                        <!-- End portfolio-head -->
-                        <div class="portfolio-content">
-                            <h5 class="title">Lorem Ipsum</h5>
-                            <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.</p>
-                        </div>
-                        <!-- End portfolio-content -->
-                    </div>
-                    <!-- End portfolio-item -->
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 portfolio-item">
-                    <div class="portfolio-one">
-                        <div class="portfolio-head">
-                            <div class="portfolio-img"><img alt="" src="<?php echo base_url();?>assets1/img/portfolio-1.jpg"></div>
-                            <div class="portfolio-hover">
-                                <a class="portfolio-link" href="#"><i class="fa fa-link"></i></a>
-                                <a class="portfolio-zoom prettyPhoto" href="#"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                        <!-- End portfolio-head -->
-                        <div class="portfolio-content">
-                            <h5 class="title">Lorem Ipsum</h5>
-                            <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.</p>
-                        </div>
-                        <!-- End portfolio-content -->
-                    </div>
-                    <!-- End portfolio-item -->
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 portfolio-item">
-                    <div class="portfolio-one">
-                        <div class="portfolio-head">
-                            <div class="portfolio-img"><img alt="" src="<?php echo base_url();?>assets1/img/portfolio-1.jpg"></div>
-                            <div class="portfolio-hover">
-                                <a class="portfolio-link" href="#"><i class="fa fa-link"></i></a>
-                                <a class="portfolio-zoom prettyPhoto" href="#"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                        <!-- End portfolio-head -->
-                        <div class="portfolio-content">
-                            <h5 class="title">Lorem Ipsum</h5>
-                            <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.</p>
-                        </div>
-                        <!-- End portfolio-content -->
-                    </div>
-                    <!-- End portfolio-item -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination pagination-lg justify-content-end">
-                            <li class="page-item">
-                                <a class="page-link" href="#" tabindex="-1">Previous</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
-                            </li>
-                        </ul>
-                    </nav>
+        </div>
+    </section>
 
+
+    <!-- <section id="about">
+        <div class="image-holder col-lg-6 col-md-6 col-sm-6 col-xs-12 pull-left">
+            <div class="background-imgholder">
+                <img src="<?php echo base_url();?>assets1/img/1.jpg" alt="about" class="img-responsive" style="display:none;" />
+            </div>
+        </div>
+
+        <div class="container-fluid">
+
+            <div class="col-md-7 col-md-offset-5 col-sm-8 col-sm-offset-2 col-xs-12 text-inner ">
+                <div class="text-block">
+                    <div class="section-heading">
+                        <h1>ABOUT <span>US</span></h1>
+                        <p class="subheading">Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut.</p>
+                    </div>
+
+                    <ul class="aboutul">
+                        <li> <i class="fa fa-check"></i>Vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.</li>
+                        <li> <i class="fa fa-check"></i>legimus copiosae instructior ei ut vix denique fierentis atqui mucius consequat ad pro.</li>
+                        <li> <i class="fa fa-check"></i>Ea saperet inimicu ut qui dolor oratio maiestatis ubique mnesarchum.</li>
+                        <li> <i class="fa fa-check"></i>Sanctus voluptatibus et per illum noluisse facilisis quo atqui mucius ad pro.</li>
+                        <li> <i class="fa fa-check"></i>At illum noluisse facilisis quo te dictas epicurei suavitate qui his ad.</li>
+                        <li> <i class="fa fa-check"></i>Tantas propriae mediocritatem id vix qui everti efficiantur an ocurreret consetetur.</li>
+                    </ul>
+
+                    <button type="button" class="btn btn-primary slide">Learn More  <i class="fa fa-caret-right"></i> </button>
+
+
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- <section id="process">
+        <div class="container">
+            <div class="section-heading text-center">
+                <div class="col-md-12 col-xs-12">
+                    <h1>What <span>We Do</span></h1>
+                    <p class="subheading">Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset nam nostrud euismod volumus ne mei.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6 block process-block">
+                    <div class="process-icon-holder">
+                        <div class="process-border">
+                            <span class="process-icon"><a href="#"><i class="fa fa-lightbulb-o feature_icon"></i></a></span></div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="process-text-block">
+                        <h4><a href="#">Idea</a></h4>
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 block process-block">
+                    <div class="process-icon-holder">
+                        <div class="process-border">
+                            <span class="process-icon"><a href="#"><i class="fa fa-cloud-download feature_icon"></i></a></span></div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="process-text-block">
+                        <h4><a href="#">Concept</a></h4>
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 block process-block">
+                    <div class="process-icon-holder">
+                        <div class="process-border">
+                            <span class="process-icon"><a href="#"><i class="fa fa-magic feature_icon"></i></a></span></div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="process-text-block">
+                        <h4><a href="#">Design</a></h4>
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 block process-block lastchild">
+                    <div class="process-icon-holder">
+                        <div class="process-border">
+                            <span class="process-icon"><a href="#"><i class="fa fa-cog feature_icon"></i></a></span></div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="process-text-block">
+                        <h4><a href="#">Develop</a></h4>
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum</p>
+                    </div>
                 </div>
             </div>
 
         </div>
+    </section> -->
 
 
+    <!-- <section id="testimonial">
+        <div class="container">
+            <div class="section-heading text-center">
+                <div class="col-md-12 col-xs-12">
+                    <h1>What Our <span>Client Says</span></h1>
+                    <p class="subheading">Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset nam nostrud euismod volumus ne mei.</p>
+                </div>
+            </div>
 
-    </section>
+            <div class="row">
+                <div class="col-md-4 col-sm-12 block ">
+                    <div class="testimonial_box">
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset. </p>
+                    </div>
+                    <div class="arrow-down"></div>
+                    <div class="testimonial_user">
+                        <div class="user-image"><img src="<?php echo base_url();?>assets1/img/user1.png" alt="user" class="img-responsive" /></div>
+                        <div class="user-info">
+                            <h5>Lorem Ipsum</h5>
+                            <p>Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-12 block">
+                    <div class="testimonial_box">
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset. </p>
+                    </div>
+                    <div class="arrow-down"></div>
+                    <div class="testimonial_user">
+                        <div class="user-image"><img src="<?php echo base_url();?>assets1/img/user1.png" alt="user" class="img-responsive" /></div>
+                        <div class="user-info">
+                            <h5>Lorem Ipsum</h5>
+                            <p>Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 block">
+                    <div class="testimonial_box">
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset. </p>
+                    </div>
+                    <div class="arrow-down"></div>
+                    <div class="testimonial_user">
+                        <div class="user-image"><img src="<?php echo base_url();?>assets1/img/user1.png" alt="user" class="img-responsive" /></div>
+                        <div class="user-info">
+                            <h5>Lorem Ipsum</h5>
+                            <p>Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section> -->
 
 
 
 
 
     <section id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 col-xs-12 block">
-                        <div class="footer-block">
-                            <h4>Southern Institute Galle</h4>
-                                <div class="user-image"><img src="<?php echo base_url();?>assets1\img\logo.jpeg" alt="user" class="img-responsive" /></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <!-- <h4>Southern Institute Galle</h4> -->
+                        <div class="user-image"><img src="<?php echo base_url();?>assets1\img\logo.jpeg" alt="user" class="img-responsive" /></div>
                        
-                            <!-- <h5>Wimalasurendra Mawatha, Galle 80000, </br>  Sri Lanka</h5>
-                            <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
-                                <img src="..\..\..\assets1\img\map.png">
-                            </a>
-                             <hr/> -->
-                            <!-- <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.
-                            </p> -->
-                            <!-- <a href="#" class="learnmore">Learn More <i class="fa fa-caret-right"></i></a> -->
-                        </div>
+                        <!-- <img src="..\..\..\assets1\img\logo.jpeg"> -->
+                        <!-- <h5>Wimalasurendra Mawatha, Galle 80000, </br>  Sri Lanka</h5>
+                        <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
+                            <img src="..\..\..\assets1\img\map.png">
+                        </a>
+                         <hr/> -->
+                        <!-- <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.
+                        </p> -->
+                        <!-- <a href="#" class="learnmore">Learn More <i class="fa fa-caret-right"></i></a> -->
                     </div>
-    
-                    <div class="col-md-3 col-sm-3 col-xs-12 block">
-                        <div class="footer-block">
-                            <h4>Useful Links</h4>
-                            <!-- <hr/> -->
-                            <ul class="footer-links">
-                            <li ><a href="<?php echo base_url();?>index.php/Welcome/home">Home</a></li>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Useful Links</h4>
+                        <!-- <hr/> -->
+                        <ul class="footer-links">
                             <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
-                            <!-- <li class="active"><a href="class_schedule.php">Class Schedule</a></li> -->
+                            <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
                             <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
                             <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
-                    
-                                <!-- <li><a href="home.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li> -->
-                                <!-- <li><a href="class_schedule.html">Class Schedule</a></li> -->
-                                <!-- <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="login.html">Sign In</a></li> -->
-                                <!-- <li><a href="registration.html">Sign Up</a></li> -->
-                            </ul>
-                        </div>
+                            <!-- <li><a href="registration.html">Sign Up</a></li> -->
+                        </ul>
                     </div>
-    
-                    
-                </ul>
-                    <div class="col-md-3 col-sm-3 col-xs-12 block">
-                        <div class="footer-block">
-                                <h4>Visit Us</h4>
-                                <h5>Southern Institute Galle</h5>
-                                <h5>Wimalasurendra Mawatha, <br/>Galle 80000, </br>  Sri Lanka</h5>
-                                <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
-                                    <img src="<?php echo base_url();?>assets1\img\map.png">
-                                </a>
-                                 <!-- <hr/> -->
-                            <!-- <ul class="footer-links">
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Forum</a></li>
-                                <li><a href="#">Free Goods</a></li>
-                            </ul> -->
-                        </div>
+                </div>
+
+                
+            </ul>
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Visit Us</h4>
+                        <h5>Southern Institute Galle</h5>
+                        <h5>Wimalasurendra Mawatha, <br/>Galle 80000, </br>  Sri Lanka</h5>
+                        <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
+                            <img src="<?php echo base_url();?>assets1\img\map.png">
+                        </a>
+                         <!-- <hr/> -->
+                         <!-- <h4>Connect Us</h4> -->
+                               
+                                <!-- <ul class="social-links">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                        <a href="#"><i class="fa fa-skype"></i></a> -->
+                                         <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li>Facebook
+                                         <li><a href="#"><i class="fa fa-twitter">Twitter</i></a></li>
+                                         <li><a href="#"><i class="fa fa-linkedin"></i>Linkedin</a></li>
+                                         <li><a href="#"><i class="fa fa-skype">Skype</i></a></li>  -->
+                                 
+                                <!-- </ul> -->
+                                
+
+                                <!-- <a href="#" class="fa fa-facebook"></a>
+                                <a href="#" class="fa fa-twitter"></a>
+                                <li><a href="#"><i class="fa fa-facebook">facebook</i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter">Twitter</i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i>Linkedin</a></li>
+                                <li><a href="#"><i class="fa fa-skype">Skype</i></a></li> -->
+                        
+                                    <!-- <div id="cse” style="width:100%;>Loading</div>
+                                    <script src=”http://www.google.com/jsapi” type=”text/javascript”></script>
+                                    <script type=”text/javascript”>google.load(‘search’, ‘1’);
+                                     google.setOnLoadCallback(function(){var cse = new google.search.
+                                    CustomSearchControl();cse.draw(‘cse’);}, true);</script> -->
+                                    <!-- <input type="text" placeholder="Search.." name="search">
+                                    <button type="submit"><i class="fa fa-search"></i></button> -->
+                                    <!-- <input type="text" placeholder="Search.."> -->
+                             
+                        <!-- <ul class="footer-links">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Free Goods</a></li>
+                        </ul> -->
                     </div>
-    
-                    <div class="col-md-3 col-sm-3 col-xs-12 <block></block>">
-                        <div class="footer-block">
-                            <h4>Recent Posts</h4>
-                            <!-- <hr/> -->
-                            <ul class="footer-links">
-                                <li>
-                                     <div class="user-image"><img src="<?php echo base_url();?>assets1\img\post.jpeg" alt="user" class="img-responsive" /></div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 <block></block>">
+                    <div class="footer-block">
+                        <h4>Recent Posts</h4>
+                        <!-- <hr/> -->
+                        <ul class="footer-links">
+                            <li>
+                                 <div class="user-image"><img src="<?php echo base_url();?>assets1\img\post.jpeg" alt="user" class="img-responsive" /></div>
                        
-                                    <!-- <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                    <p class="post-date">May 25, 2017</p> -->
-                                </li>
-                                <!-- <li>
-                                    <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                    <p class="post-date">May 25, 2017</p>
-                                </li>
-                                <li>
-                                    <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                    <p class="post-date">May 25, 2017</p>
-                                </li> -->
-    
-                            </ul>
-                        </div>
+                                <!-- <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p> -->
+                            </li>
+                            <!-- <li>
+                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p>
+                            </li>
+                            <li>
+                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p>
+                            </li> -->
+
+                        </ul>
                     </div>
                 </div>
             </div>
-    
-    
-        </section>
-    
-        <section id="bottom-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Use</a>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12 copyright">
-                        Developed by <a href="#">Team Innoview</a> designed by <a href="#">UCSC</a>
-                    </div>
+        </div>
+
+
+    </section>
+
+    <section id="bottom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 copyright">
+                    Developed by <a href="#">Team Innoview</a> designed by <a href="#">UCSC</a>
                 </div>
             </div>
-        </section>
-    
-        <!-- <div id="panel">
-            <div id="panel-admin">
-                <div class="panel-admin-box">
-                    <div id="tootlbar_colors">
-                        <button class="color" style="background-color:#1abac8;" onclick="mytheme(0)"></button>
-                        <button class="color" style="background-color:#ff8a00;" onclick="mytheme(1)"> </button>
-                        <button class="color" style="background-color:#b4de50;" onclick="mytheme(2)"> </button>
-                        <button class="color" style="background-color:#e54e53;" onclick="mytheme(3)"> </button>
-                        <button class="color" style="background-color:#1abc9c;" onclick="mytheme(4)"> </button>
-                        <button class="color" style="background-color:#159eee;" onclick="mytheme(5)"> </button>
-                    </div>
+        </div>
+    </section>
+
+    <!-- <div id="panel">
+        <div id="panel-admin">
+            <div class="panel-admin-box">
+                <div id="tootlbar_colors">
+                    <button class="color" style="background-color:#1abac8;" onclick="mytheme(0)"></button>
+                    <button class="color" style="background-color:#ff8a00;" onclick="mytheme(1)"> </button>
+                    <button class="color" style="background-color:#b4de50;" onclick="mytheme(2)"> </button>
+                    <button class="color" style="background-color:#e54e53;" onclick="mytheme(3)"> </button>
+                    <button class="color" style="background-color:#1abc9c;" onclick="mytheme(4)"> </button>
+                    <button class="color" style="background-color:#159eee;" onclick="mytheme(5)"> </button>
                 </div>
-    
             </div>
-            <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
-        </div> -->
-    </body>
-    </html>
-    
-    
+
+        </div>
+        <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
+    </div> -->
+</body>
+</html>

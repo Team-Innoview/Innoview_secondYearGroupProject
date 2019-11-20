@@ -11,7 +11,7 @@ if (!$connection) {
 	echo "No Connection";
 }
 else{
-   echo "Connected"; 
+//    echo "Connected"; 
 }
 /*
 if ($connection->connect_error) {

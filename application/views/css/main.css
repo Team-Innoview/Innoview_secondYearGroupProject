@@ -7304,7 +7304,7 @@ body #features-page {
 /* subsection1 ends /--------------------------------------------------------- */ }
 body #features-page .subsection1 {
 	background-color: #fff;
-	background-image: url(../img/feature_banner1.jpg);
+	background-image: url();
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }

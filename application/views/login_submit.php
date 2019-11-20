@@ -21,7 +21,11 @@ if(isset($_POST['submit'])){
             //print_r($userRow);
             
             //Creating Session
-            checkSession();  
+            //  checkSession();   
+            //     if(!empty($_SESSION['user_id'])){
+            //              session_start();
+            //          }
+            //         );   
             $_SESSION["user_name"] = $userRow['user_name'];
             $_SESSION["user_id"] = $userRow['user_id'];
             $_SESSION["user_type"] = $userRow['user_type'];
@@ -34,7 +38,16 @@ if(isset($_POST['submit'])){
                 // header( "Location:admin.php" );
                 // redirect(base_url('application\views\admin.php'));
                 $this->load->view('admin');
+                // $message = "Username and/or Password incorrect.\\nTry again.";
+                // echo "<script type='text/javascript'>alert('$message');</script>";
             }
+            // }else{
+            //     $message = "Username and/or Password incorrect.\\nTry again.";
+            //     echo "<script type='text/javascript'>alert('$message');</script>";
+            // }
+            // else{
+            //     $this->load->view('login');
+            // }
             // elseif ($user_type == 'c'){
             //     header( "Location:customer-dashboard.php" );
             // }
@@ -47,7 +60,15 @@ if(isset($_POST['submit'])){
                 // exit();
            
     }
-    else{  
+    else{ 
+        // $this->load->view('login');
+        // System.out.println("alert('Login fail.')");
+        // $this->load->view('admin');
+        // $this->load->view('login');
+        $message = "Username and/or Password incorrect.\\nTry again.";
+        echo "<script type='text/javascript'>alert('$message');</script>";
+        // exit($this->load->view('login'));
+        redirect(base_url().'index.php/Welcome/login','refresh');
         // print_r("Wrong");
         // if(empty($user_name)) {array_push($errors, "User Name is Required")};
         // if(empty($password)) {array_push($errors, "Password is Required")};            

@@ -2,6 +2,7 @@
 
 include ('application\views\includes\connection.php');
 include ('application\views\includes\session.php');
+include ('application\views\includes\messege.php');
 
 if(isset($_POST['submit'])){
     
@@ -35,7 +36,8 @@ if(isset($_POST['submit'])){
             }
             
     }
-    else{        
+    else{
+        // System.out.println("<script>alert('Login fail.')</script>");        
         $message = base64_encode(urlencode("Invalid Email or Password"));
         header('Location:application\views\login.php?msg=' . $message);
         

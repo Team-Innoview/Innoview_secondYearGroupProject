@@ -1,5 +1,6 @@
 <?php include('includes/connection.php') ?>
 <?php  //include('includes/session.php') ?>
+<?php include('includes/messege.php') ?>
 
 <?php
 	//Unauthorized Access Check
@@ -38,7 +39,7 @@
     <!-- <script src="C:\wamp64\www\project\assets1\script\index.js"></script> -->
 
     <!-- <script type="text/javascript" src="assets1\script\index.js"></script> -->
-    <script type="text/javascript" src="assets1\script\index.js"></script>
+    <script type="text/javascript" src="assets1\script\index.js"></script> 
 </head>
 
 <body id="wrapper">
@@ -126,7 +127,115 @@
 
 
 
-    <section id="features-page">
+    <!-- <section id="features-page">
+        <div class="subsection1">
+            <div class="container">
+                <div class="section-heading text-center"> -->
+                    <!-- <h1>Our <span>Features</span></h1>
+                    <p class="subheading">Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut.</p> -->
+                <!-- </div>
+                <div class="col sm_12">
+                    <div class="col-sm-4 wpb_column block">
+                        <div class="wpb_wrapper">
+                            <div class="flip">
+                                <div class="iconbox iconbox-style icon-color card clearfix">
+                                    <div class="face front">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <i class="fa fa-bullhorn boxicon"></i>
+                                                        <h3>Notifications</h3>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="iconbox-box2 face back">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <h3><a href="Notifications.html">Notifications</a></h3>
+                                                        <p>Don't miss important information and activity.</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 wpb_column block">
+                        <div class="wpb_wrapper">
+                            <div class="flip">
+                                <div class="iconbox  iconbox-style icon-color card clearfix">
+                                    <div class="iconbox-box1 face front">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <i class="fa fa-laptop boxicon"></i>
+                                                        <h3>Registrations</h3>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="iconbox-box2 face back">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <h3><a href="registrations.html">Registrations</a></h3>
+                                                        <p>Register users into the system.</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table> -->
+                                        <!-- </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 wpb_colum block">
+                            <div class="wpb_wrapper">
+                                <div class="flip">
+                                    <div class="iconbox  iconbox-style icon-color card clearfix">
+                                        <div class="iconbox-box1 face front">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="fa fa-support boxicon"></i>
+                                                            <h3>Courses</h3>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="iconbox-box2 face back">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <h3><a href="course.html">Courses</a></h3>
+                                                            <p>Change the settings in the course field.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section id="features-page">
         <div class="subsection1">
             <div class="container">
                 <div class="section-heading text-center">
@@ -187,8 +296,12 @@
                                             <tbody>
                                                 <tr>
                                                     <td>
-                                                        <h3><a href="registrations.html">Registrations</a></h3>
-                                                        <p>Register users into the system.</p>
+                                                        <h3><a href="<?php echo base_url();?>index.php/Welcome/sturegistrations">Student Registrations</a></h3>
+                                                        <p>Register Student users into the system.</p>
+                                                        <h3><a href="tearegistrations.html"> Teacher Registrations</a></h3>
+                                                        <p>Register Teacher users into the system.</p>
+                                                        <h3><a href="recepregistrations.html">Receptionist Registrations</a></h3>
+                                                        <p>Register Receptionist users into the system.</p>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -199,7 +312,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4 wpb_colum block">
-                        <div class="wpb_wrapper">
+                    <div class="wpb_wrapper">
                             <div class="flip">
                                 <div class="iconbox  iconbox-style icon-color card clearfix">
                                     <div class="iconbox-box1 face front">
@@ -235,8 +348,8 @@
         </div>
     </section>
 
-        <!-- <div class="subsection2">
-            <div class="container">
+      
+         <!--   <div class="container">
                 <div class="col-xs-12 col-sm_12 col-md-12 col-lg-12 left">
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wpb_column">
                         <div class="wpb_wrapper">
@@ -439,7 +552,7 @@
                     <div class="col-md-3 col-sm-3 col-xs-12 block">
                         <div class="footer-block">
                             <h4>Southern Institute Galle</h4>
-                            <div class="user-image"><img src="assets1\img\logo.jpeg" alt="user" class="img-responsive" /></div>
+                            <div class="user-image"><img src="<?php echo base_url();?>assets1\img\logo.jpeg" alt="user" class="img-responsive" /></div>
                            
                             <!-- <img src="..\..\..\assets1\img\logo.jpeg"> -->
                             <!-- <h5>Wimalasurendra Mawatha, Galle 80000, </br>  Sri Lanka</h5>
@@ -480,7 +593,7 @@
                             <h4>Southern Institute Galle</h4>
                             <h5>Wimalasurendra Mawatha, Galle 80000, </br>  Sri Lanka</h5>
                             <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
-                                <img src="assets1\img\map.png">
+                                <img src="<?php echo base_url();?>assets1\img\map.png">
                             </a>
                              <!-- <hr/> -->
                             <!-- <ul class="footer-links">
@@ -497,7 +610,7 @@
                             <!-- <hr/> -->
                             <ul class="footer-links">
                                 <li>
-                                     <div class="user-image"><img src="assets1\img\post.jpeg" alt="user" class="img-responsive" /></div>
+                                     <div class="user-image"><img src="<?php echo base_url();?>assets1\img\post.jpeg" alt="user" class="img-responsive" /></div>
                            
                                     <!-- <a href="#" class="post">Lorem ipsum dolor sit amet</a>
                                     <p class="post-date">May 25, 2017</p> -->

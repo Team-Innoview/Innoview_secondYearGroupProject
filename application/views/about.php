@@ -152,7 +152,7 @@
                                 <br/>
                                 <img height="" width="auto" src="<?php echo base_url();?>assets1/img/southrn.jpg" class="attachment-full img-responsive" alt="">
                             </div> -->
-                        </div>
+                        <!-- </div> -->
                         <br/><br/> <h2>WHO WE ARE<span></span></h2><br/>
                         <b>Established as a secondary educational institute catering to the young individuals waiting to contribute to the growth of the country, “Southern” is perhaps the most common name that comes to the minds of both parents and students in search of assistance in studies.
                          Over the years our institute has produced some of the top scoring students in the Island in the Science, Mathematics, Commerce and Art streams who not only have the subject knowledge but also are talented in applying it in real life situations.

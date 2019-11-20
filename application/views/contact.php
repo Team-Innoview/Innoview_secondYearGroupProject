@@ -112,20 +112,22 @@
                     <div class="col-sm-5 col-sm-offset-1">
                         <div class="form-group">
                             <label>Name *</label>
-                            <input type="text" name="name" class="form-control" required="required">
+                            <input type="text" name="name" class="form-control" required pattern ="[A-Za-z]{1,32}" placeholder="Kamal">
                         </div>
                         <div class="form-group">
                             <label>Email *</label>
-                            <input type="email" name="email" class="form-control" required="required">
+                            <input type="email" name="email" class="form-control" required pattern="[^]+@[^]+[.][a-z]{2,63}$" autocomplete="email" placeholder="admin@gmail.com">
                         </div>
                         <div class="form-group">
                             <label>Phone</label>
-                            <input type="number" name="phone" class="form-control" required="required">
-                        </div>
-                        <div class="form-group">
+                            <input type="tel" class="form-control" pattern="^\d{10}$" required placeholder="xxxxxxxxxx" >
+                            <!-- <input type="number" name="phone" class="form-control"  required pattern="^\d{10}$"  placeholder="xxx xxx xxxx" >
+                        </div> -->
+                       </div>
+                        <!-- <div class="form-group">
                             <label>Southern Institute ID</label>
                             <input type="text" name="ID" class="form-control" required="required" >
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-sm-5">
                         <div class="form-group">
