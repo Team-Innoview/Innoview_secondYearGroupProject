@@ -185,7 +185,7 @@
                 <!--forms-right-icons-->
                 <div class="col-md-6 col-sm-15">
                 <div class="section-heading">
-                        <h2><span>Sign Up Students  With Us</span></h2>
+                        <h2><span>Sign Up Receptionist  With Us</span></h2>
                         <!-- <br/>
                         <p class="subheading">Register all the students to our system.
                         </p> -->
@@ -205,11 +205,11 @@
                                 
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                    <input type="text" class="form-control" id="user_type" name="user_type" placeholder="Student" value="Student" aria-describedby="basic-addon1" required="required">
+                                    <input type="text" class="form-control" id="user_type" name="user_type" placeholder="Receptionist" value="Receptionist" aria-describedby="basic-addon1" required="required">
                                 </div>
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                        <input type="text" class="form-control" id="student_Id" name="student_id" placeholder=" Enter Student ID Number" aria-describedby="basic-addon1" required="required">
+                                        <input type="text" class="form-control" id="receptionist_Id" name="receptionist_id" placeholder=" Enter Receptionist ID Number" aria-describedby="basic-addon1" required="required">
                                 </div>
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
@@ -245,7 +245,7 @@
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
                                         <input type="tel" class="form-control" name="contact_number" placeholder="Contact Number" maxlength="10" minlength="10" aria-describedby="basic-addon1" required="required">
                                 </div>
-                                <div class="input-group form-group">
+                                <!-- <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
                                         <input type="text" class="form-control" name="pname" placeholder="Parent/Guardian Name" aria-describedby="basic-addon1" required="required">
                                 </div>
@@ -256,7 +256,7 @@
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
                                         <input type="tel" class="form-control" name="pnum" placeholder="Parent's Contact Number" maxlength="10" minlength="10" aria-describedby="basic-addon1" required="required">
-                                </div>
+                                </div> -->
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope"></i></span>
                                         <input type="text" class="form-control" name="address" placeholder="Home Address" aria-describedby="basic-addon1" required="required">

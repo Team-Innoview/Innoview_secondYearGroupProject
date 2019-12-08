@@ -380,8 +380,8 @@
             <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-12 block">
                     <div class="footer-block">
-                        <!-- <h4>Southern Institute Galle</h4> -->
-                        <div class="user-image"><img src="<?php echo base_url();?>assets1\img\logo.jpeg" alt="user" class="img-responsive" /></div>
+                        <h4>Gallery</h4> 
+                        <div class="user-image"><img src="<?php echo base_url();?>assets1\img\pic.jpg" alt="user" class="img-responsive" /></div>
                        
                         <!-- <img src="..\..\..\assets1\img\logo.jpeg"> -->
                         <!-- <h5>Wimalasurendra Mawatha, Galle 80000, </br>  Sri Lanka</h5>

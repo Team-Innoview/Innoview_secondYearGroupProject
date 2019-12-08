@@ -12,12 +12,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <!-- <script src="C:\wamp64\www\project\assets1\script\index.js"></script> -->
-
     <script type="text/javascript" src="..\..\assets1\script\index.js"></script>
-
-    
-    
     
 
 
@@ -80,13 +75,13 @@
                     </div>
                     <div id="navbar" class="collapse navbar-collapse navbar-right">
                         <ul class="nav navbar-nav">
-                        
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
-                            <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
-                            <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
-                            <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
-                            <!-- <li><a href="registration.html">Sign Up</a></li> -->
+                                    <li><a href="<?php echo base_url();?>index.php/Welcome/home">Home</a></li>
+                                     <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
+                                    <li class="active"><a href="#class_Schedule">Class Schedule</a></li>
+                                    <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
+                       
+                                    <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
+					
                         
                         </ul>
                     </div>
@@ -114,8 +109,14 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="hovereffect">
                         <img class="attachment-full img-responsive" src="<?php echo base_url();?>assets1\img\ddd.jpeg" alt="" >
-                            <div class="overlay">
-                                <h2>Class Schedule</h2>
+                        <div class="col-md-8 col-sm-8 col-xs-6">
+                           <h4>Class Schedule</h4>
+                          
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6" style="text-align:right;">Home<span class="sep"> / </span><span class="current">Class Schedule</span></div>
+                    </div>
+                 </div>
+                
 
                                     <!-- Default dropright button -->
                                      <div class="container">
@@ -132,6 +133,7 @@
                                             </div>
                                         </div>
                                     </div>  
+                                    
 
                                 <!--    <div class="container">
                                         <div class="row">
@@ -354,8 +356,8 @@
             <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-12 block">
                     <div class="footer-block">
-                        <!-- <h4>Southern Institute Galle</h4> -->
-                        <div class="user-image"><img src="<?php echo base_url();?>assets1\img\logo.jpeg" alt="user" class="img-responsive" /></div>
+                         <h4>Gallery</h4> 
+                        <div class="user-image"><img src="<?php echo base_url();?>assets1\img\pic.jpg" alt="user" class="img-responsive" /></div>
                        
                         <!-- <img src="..\..\..\assets1\img\logo.jpeg"> -->
                         <!-- <h5>Wimalasurendra Mawatha, Galle 80000, </br>  Sri Lanka</h5>
@@ -374,8 +376,8 @@
                         <h4>Useful Links</h4>
                         <!-- <hr/> -->
                         <ul class="footer-links">
-                            <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
-                            <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
+                            <li><a href="<?php echo base_url();?>index.php/Welcome">Home</a></li>
+                            <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">About Us</a></li>
                             <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
                             <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
                             <!-- <li><a href="registration.html">Sign Up</a></li> -->

@@ -6248,7 +6248,7 @@ body #myCarousel .item:before {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: url(../img/banner-pattern.png) repeat;
+	background: url() repeat;
 	background-color: rgba(25, 25, 25, 0.8);
 	z-index: 2;
 }
@@ -6400,7 +6400,7 @@ body #about .section-block, body #about #features, body #about #process, body #a
 	display: inline-block;
 }
 body #about .background-imgholder {
-	background: url(assets1\img\pic.jpg);
+	background: url();
 	
 	position: absolute;
 	width: 100%;
@@ -6553,7 +6553,7 @@ body #process .process-border {
 }
 }
 body #testimonial {
-	background: url(../img/bg2.jpg);
+	background: url();
 	width: 100%;
 	height: 100%;
 	background-size: cover !important;
@@ -7106,7 +7106,7 @@ body #top_banner .inner h2 {
 	margin-bottom: 0px;
 }
 body #top_banner .banner {
-	background-image: url("../img/bg.jpg");
+	background-image: url();
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 70px 0px;
@@ -7251,7 +7251,7 @@ body #faq .panel-default > .panel-heading + .panel-collapse > .panel-body {
 	border-top: 0px;
 }
 body #contact {
-	background-image: url(../img/map1.png);
+	background-image: url();
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -7603,7 +7603,7 @@ body #features-page .subsection4 .ribbon {
 	z-index: 10;
 }
 body #features-page .subsection4 .recommended {
-	background: url(../img/recommended.png) 0 0 no-repeat;
+	background: url() 0 0 no-repeat;
 }
 body #features-page .subsection4 .featured-ribbon {
 	width: 220px;

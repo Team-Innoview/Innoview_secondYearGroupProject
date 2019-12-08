@@ -24,6 +24,22 @@
 
     <script type="text/javascript" src="..\..\assets1\script\index.js"></script>
     <script type="text/javascript" src="..\..\assets1\script\login.js"></script>
+
+    <!-- <style>
+        body {
+            position: relative;
+        }
+
+        #form-relative {
+            width: 300px;
+            height: 200px; 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -100px; 
+            margin-left: -150px; 
+        }
+    </style> -->
     
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -126,9 +142,9 @@
     <section id="login-reg">
         <div class="container">
             <!-- Top content -->
-            <div class="row">
-                <div class="col-md-6 col-sm-12 forms-right-icons">
-                    <div class="section-heading">
+             <div class="row">
+                <div class="col-md-3 col-sm-10 forms-right-icons"> 
+                    <!-- <div class="section-heading">
                         <h2><span>Sign In With Us</span></h2>
                         <p class="subheading">Hi, there. You can log in to your account here.
                             </p>
@@ -136,7 +152,7 @@
                     <div class="row">
                             <div class="fill"><img alt="" src="<?php echo base_url();?>assets1/img/pic2.jpg"  alt="Galle fort"></div>        
             
-                    </div>
+                    </div> --> 
 					<!--<div class="row">
                             <div class="fill"><img alt="" src="../../../assets1/img/banner-slide-1.jpg"  alt="Galle fort"></div>        
             
@@ -158,7 +174,8 @@
                     </div> -->
 
                 </div>
-                <div class="col-md-6 col-sm-12">
+               
+                 <div class="col-md-6 col-sm-10"> 
                         <div class="form-box">
                                 <div class="form-top">
                                     <div class="form-top-left">
@@ -217,6 +234,7 @@
                     
                                     </form>
                                 </div>
+                            
         
                     <!-- <div class="form-box">
                         <div class="form-top">
@@ -267,8 +285,8 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-12 block">
                         <div class="footer-block">
-                            <h4>Southern Institute Galle</h4>
-                                <div class="user-image"><img src="<?php echo base_url();?>assets1\img\logo.jpeg" alt="user" class="img-responsive" /></div>
+                            <h4>Gallery</h4>
+                                <div class="user-image"><img src="<?php echo base_url();?>assets1\img\pic.jpg" alt="user" class="img-responsive" /></div>
                        
                             <!-- <h5>Wimalasurendra Mawatha, Galle 80000, </br>  Sri Lanka</h5>
                             <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">

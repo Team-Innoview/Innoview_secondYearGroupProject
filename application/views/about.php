@@ -451,8 +451,8 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-12 block">
                         <div class="footer-block">
-                            <h4>Southern Institute Galle</h4>
-                                <div class="user-image"><img src="<?php echo base_url();?>assets1\img\logo.jpeg" alt="user" class="img-responsive" /></div>
+                            <h4>Gallery</h4>
+                                <div class="user-image"><img src="<?php echo base_url();?>assets1\img\pic.jpg" alt="user" class="img-responsive" /></div>
                        
                             <!-- <h5>Wimalasurendra Mawatha, Galle 80000, </br>  Sri Lanka</h5>
                             <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">

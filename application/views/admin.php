@@ -30,16 +30,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <!-- <script src="C:\wamp64\www\project\assets1\script\index.js"></script> -->
-
-    <!-- <script type="text/javascript" src="assets1\script\index.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> --> 
-    <!-- <script src="C:\wamp64\www\project\assets1\script\index.js"></script> -->
-
-    <!-- <script type="text/javascript" src="assets1\script\index.js"></script> -->
-    <script type="text/javascript" src="assets1\script\index.js"></script> 
+    
+    <script type="text/javascript" src="..\..\assets1\script\index.js"></script> 
 </head>
 
 <body id="wrapper">
@@ -48,10 +40,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-12 top-header-links">
-                    <!-- <ul class="contact_links">
-                        <li><i class="fa fa-phone"></i><a href="#">+0912 242 189</a></li> -->
-                        <!-- <li><i class="fa fa-envelope"></i><a href="#">sales@aspiresoftware.in</a></li> -->
-                
+                    
                 </div> 
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <ul class="social_links">
@@ -59,13 +48,9 @@
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <!-- <li><a href="#"><i class="fa fa-pinterest"></i></a></li> -->
+                        
                         <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                        <!-- <li><a href="#"><i class="fa fa-facebook">facebook</i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter">Twitter</i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i>Linkedin</a></li>
-                        <li><a href="#"><i class="fa fa-skype">Skype</i></a></li> --> 
-                
+                      
                     </ul>
                 </div>
                
@@ -75,501 +60,300 @@
     </section>
 
     <header>
-        <!-- <nav class="navbar navbar-inverse"> -->
+      
         <nav class="navbar navbar-expand-lg navbar-light text-white bg-dark ">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
-				<!-- <span class="icon-bar"></span> -->
+				
 				<span class="icon-bar"></span>
               </button>
               <a class="navbar-brand " href="#" al>
-                <!-- <div class="col-xs-2 icon"><img src="..\..\..\assets1\img\logo.jpeg"></src></i></div> -->
+               
                 <img height="120px" width="120px" src="<?php echo base_url();?>assets1/img/logo.jpeg" class="attachment-full img-responsive" alt="">
            
-                <!-- <h1>Southern Educational Institute</h1><span>Galle</span></a>  -->
-            <!-- < src="..\..\..\assets1\img\logo.jpeg">        -->
+              
              </div>
-                    <!-- <a class="navbar-brand" href="#">
-                        <h3>Southern Educational Institute</h3><span>Galle</span></a>
-                </div> -->
+                  
                 <div id="navbar" class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li><a href="<?php echo base_url();?>index.php/Welcome/home">Home</a></li>
                         <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
                         <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
                         <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
-                        <li><a href="<?php echo base_url();?>index.php/Welcome/signout">Sign Out</a></li>
-                            <!-- <li><a href="login.html">Sign In</a></li> -->
-                        <!-- <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="#about">Features</a></li> -->
-                        <!-- <li><a href="about.html">About Us</a></li> -->
-                        <!-- <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="faq.html">FAQ</a></li> -->
-                        <!-- <li><a href="class_schedule">Class Schedule</a></li>
-                        <li><a href="contact.html">Contact Us</a></li> -->
-                        <!-- <li><a href="login.html">Sign In</a></li>
-                        <li><a href="registration.html">Sign Up</a></li> -->
-                        <!-- <li><a href="signout.html">Sign Out</a></li> -->
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/logout">Sign Out</a></li>
+                       
                     </ul>
                 </div>
-                <!--/.nav-collapse -->
+               
             </div>
         </nav>
-        <!--/.nav-ends -->
+       
     </header>
 
 
 
-
-
-
-
-    <!-- <section id="features-page">
-        <div class="subsection1">
-            <div class="container">
-                <div class="section-heading text-center"> -->
-                    <!-- <h1>Our <span>Features</span></h1>
-                    <p class="subheading">Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut.</p> -->
-                <!-- </div>
-                <div class="col sm_12">
-                    <div class="col-sm-4 wpb_column block">
-                        <div class="wpb_wrapper">
-                            <div class="flip">
-                                <div class="iconbox iconbox-style icon-color card clearfix">
-                                    <div class="face front">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <i class="fa fa-bullhorn boxicon"></i>
-                                                        <h3>Notifications</h3>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="iconbox-box2 face back">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <h3><a href="Notifications.html">Notifications</a></h3>
-                                                        <p>Don't miss important information and activity.</p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <section id="login-reg">
+        <div class="container">
+            <!-- Top content -->
+            <div class="row">
+                <div class="col-md-3 col-sm-12 forms-right-icons">
+    <div class="sidebar">
+        <div class="sidebar-inner">
+          <!-- ### $Sidebar Header ### -->
+          <div class="sidebar-logo">
+            <div class="peers ai-c fxw-nw">
+              <div class="peer peer-greed">
+                <a class="sidebar-link td-n" href="index.html">
+                  <div class="peers ai-c fxw-nw">
+                    <!-- <div class="peer"> -->
+                      <!-- <div class="logo">
+                        <img src="assets1\img\admin.jpg" alt="">
+                      </div> -->
+                    <!-- </div> -->
+                    <div class="peer peer-greed">
+                      <h5 class="lh-1 mB-0 logo-text">Admin</h5>
                     </div>
-                    <div class="col-sm-4 wpb_column block">
-                        <div class="wpb_wrapper">
-                            <div class="flip">
-                                <div class="iconbox  iconbox-style icon-color card clearfix">
-                                    <div class="iconbox-box1 face front">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <i class="fa fa-laptop boxicon"></i>
-                                                        <h3>Registrations</h3>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="iconbox-box2 face back">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <h3><a href="registrations.html">Registrations</a></h3>
-                                                        <p>Register users into the system.</p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table> -->
-                                        <!-- </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 wpb_colum block">
-                            <div class="wpb_wrapper">
-                                <div class="flip">
-                                    <div class="iconbox  iconbox-style icon-color card clearfix">
-                                        <div class="iconbox-box1 face front">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <i class="fa fa-support boxicon"></i>
-                                                            <h3>Courses</h3>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="iconbox-box2 face back">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <h3><a href="course.html">Courses</a></h3>
-                                                            <p>Change the settings in the course field.</p>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="peer">
+                <div class="mobile-toggle sidebar-toggle">
+                  <a href="" class="td-n">
+                    <i class="ti-arrow-circle-left"></i>
+                  </a>
                 </div>
+              </div>
             </div>
-        </section> -->
-        <section id="features-page">
-        <div class="subsection1">
-            <div class="container">
-                <div class="section-heading text-center">
-                    <!-- <h1>Our <span>Features</span></h1>
-                    <p class="subheading">Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut.</p> -->
-                </div>
-                <div class="col sm_12">
-                    <div class="col-sm-4 wpb_column block">
-                        <div class="wpb_wrapper">
-                            <div class="flip">
-                                <div class="iconbox iconbox-style icon-color card clearfix">
-                                    <div class="face front">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <i class="fa fa-bullhorn boxicon"></i>
-                                                        <h3>Notifications</h3>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="iconbox-box2 face back">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <h3><a href="Notifications.html">Notifications</a></h3>
-                                                        <p>Don't miss important information and activity.</p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 wpb_column block">
-                        <div class="wpb_wrapper">
-                            <div class="flip">
-                                <div class="iconbox  iconbox-style icon-color card clearfix">
-                                    <div class="iconbox-box1 face front">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <i class="fa fa-laptop boxicon"></i>
-                                                        <h3>Registrations</h3>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="iconbox-box2 face back">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <h3><a href="<?php echo base_url();?>index.php/Welcome/sturegistrations">Student Registrations</a></h3>
-                                                        <p>Register Student users into the system.</p>
-                                                        <h3><a href="tearegistrations.html"> Teacher Registrations</a></h3>
-                                                        <p>Register Teacher users into the system.</p>
-                                                        <h3><a href="recepregistrations.html">Receptionist Registrations</a></h3>
-                                                        <p>Register Receptionist users into the system.</p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 wpb_colum block">
-                    <div class="wpb_wrapper">
-                            <div class="flip">
-                                <div class="iconbox  iconbox-style icon-color card clearfix">
-                                    <div class="iconbox-box1 face front">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <i class="fa fa-support boxicon"></i>
-                                                        <h3>Courses</h3>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="iconbox-box2 face back">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <h3><a href="course.html">Courses</a></h3>
-                                                        <p>Change the settings in the course field.</p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
+
+          <!-- ### $Sidebar Menu ### -->
+          <ul class="sidebar-menu scrollable pos-r">
+            <li class="nav-item mT-30 actived">
+              <a class="sidebar-link" href="index.html">
+                <span class="icon-holder">
+                  <i class="c-blue-500 ti-home"></i>
+                </span>
+                <span class="title">Notification</span>
+              </a>
+            </li>
+           
+            
+           
+          
+            <div class="sidenav">
+ 
+ <li class="dropdown-btn">Registration
+   <i class="fa fa-caret-down"></i>
+ </li>
+ <div class="dropdown-container">
+   <li><a href="<?php echo base_url();?>index.php/Welcome/sturegistrations">Student Registrations</a></li>
+   <li><a href="<?php echo base_url();?>index.php/Welcome/tearegistrations">Teacher Registrations</a></li>
+   <li><a href="<?php echo base_url();?>index.php/Welcome/recepregistration">Receptionist Registrations</a></li>
+               
+ </div>
+ 
+</div>
+
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+ dropdown[i].addEventListener("click", function() {
+ this.classList.toggle("active");
+ var dropdownContent = this.nextElementSibling;
+ if (dropdownContent.style.display === "block") {
+ dropdownContent.style.display = "none";
+ } else {
+ dropdownContent.style.display = "block";
+ }
+ });
+}
+</script>
+               
+               <li class="nav-item">
+                    <a class='sidebar-link' href="compose.html">
+                     <span class="icon-holder">
+                  <i class="c-blue-500 ti-share"></i>
+                </span>
+                <span class="title">Courses</span>
+              </a>
+            </li>      
+             
+          </ul>
         </div>
+      
+    </div>
+         
+    </div>
+        <div class="col-md-9 col-sm-12">
+        <div class="card table-card">
+<div class="card-header">
+<h5>New Products</h5>
+<div class="card-header-right">
+<ul class="list-unstyled card-option">
+<li class="first-opt"><i class="feather icon-chevron-left open-card-option"></i></li>
+<li><i class="feather icon-maximize full-card"></i></li>
+<li><i class="feather icon-minus minimize-card"></i></li>
+<li><i class="feather icon-refresh-cw reload-card"></i></li>
+<li><i class="feather icon-trash close-card"></i></li>
+<li><i class="feather icon-chevron-left open-card-option"></i></li>
+</ul>
+</div>
+</div>
+<div class="card-block p-b-0">
+<div class="table-responsive">
+<table class="table table-hover m-b-0">
+<thead>
+<tr>
+<th>Name</th>
+<th>Product Code</th>
+<th>Customer</th>
+<th>Status</th>
+<th>Rating</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sofa</td>
+<td>#PHD001</td>
+<td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8feeedeccfe8e2eee6e3a1ece0e2">[email&#160;protected]</a></td>
+<td><label class="label label-danger">Out Stock</label></td>
+<td>
+<a href="#!"><i class="fa fa-star f-12 text-c-yellow"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-c-yellow"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-c-yellow"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-default"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-default"></i></a>
+</td>
+</tr>
+<tr>
+<td>Computer</td>
+<td>#PHD002</td>
+<td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e6858285a6818b878f8ac885898b">[email&#160;protected]</a></td>
+<td><label class="label label-success">In Stock</label></td>
+ <td>
+<a href="#!"><i class="fa fa-star f-12 text-c-yellow"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-c-yellow"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-default"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-default"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-default"></i></a>
+</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>#PHD003</td>
+<td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0878797a486f65696164266b6765">[email&#160;protected]</a></td>
+<td><label class="label label-danger">Out Stock</label></td>
+<td>
+<a href="#!"><i class="fa fa-star f-12 text-c-yellow"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-c-yellow"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-c-yellow"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-c-yellow"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-default"></i></a>
+</td>
+</tr>
+<tr>
+<td>Coat</td>
+<td>#PHD004</td>
+<td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4220213102252f232b2e6c212d2f">[email&#160;protected]</a></td>
+<td><label class="label label-success">In Stock</label></td>
+<td>
+<a href="#!"><i class="fa fa-star f-12 text-c-yellow"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-c-yellow"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-c-yellow"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-default"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-default"></i></a>
+</td>
+</tr>
+<tr>
+<td>Watch</td>
+<td>#PHD005</td>
+<td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6102050221060c00080d4f020e0c">[email&#160;protected]</a></td>
+ <td><label class="label label-success">In Stock</label></td>
+<td>
+<a href="#!"><i class="fa fa-star f-12 text-c-yellow"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-c-yellow"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-default"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-default"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-default"></i></a>
+</td>
+</tr>
+<tr>
+<td>Shoes</td>
+<td>#PHD006</td>
+<td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a9d9d8dbe9cec4c8c0c587cac6c4">[email&#160;protected]</a></td>
+<td><label class="label label-danger">Out Stock</label></td>
+<td>
+<a href="#!"><i class="fa fa-star f-12 text-c-yellow"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-c-yellow"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-c-yellow"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-c-yellow"></i></a>
+<a href="#!"><i class="fa fa-star f-12 text-default"></i></a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="styleSelector">
+</div>
+
+</div>
+</div>
+</div>
+         </div>
+    </div>
     </section>
 
+
+
+
+
       
-         <!--   <div class="container">
-                <div class="col-xs-12 col-sm_12 col-md-12 col-lg-12 left">
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wpb_column">
-                        <div class="wpb_wrapper">
-                            <h3>We really love what we do & our work on every project truly reflects that.</h3>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 wpb_column block">
-                        <div class="wpb_wrapper">
-                            <div class="iconbox iconbox-style-2 icon-color clearfix">
-                                <div class="iconbox-icon">
-                                    <i class="fa fa-lightbulb-o sl-layers boxicon"></i>
-                                </div>
-                                <div class="iconbox-content">
-                                    <h4>IDEA</h4>
-                                    <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum</p>
-                                </div>
-                            </div>
-                            <div class="spacer"></div>
-                            <div class="iconbox iconbox-style-2 icon-color clearfix">
-                                <div class="iconbox-icon">
-                                    <i class="fa fa-magic sl-book-open boxicon"></i>
-                                </div>
-                                <div class="iconbox-content nomargin">
-                                    <h4>DESIGN</h4>
-                                    <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 wpb_column">
-                        <div class="wpb_wrapper">
-                            <div class="iconbox iconbox-style-2 icon-color clearfix">
-                                icon-color-greyscale
-                                <div class="iconbox-icon">
-                                    <i class="fa fa-cloud-download sl-badge boxicon"></i>
-                                </div>
-                                <div class="iconbox-content">
-                                    <h4>CONCEPT</h4>
-                                    <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum</p>
-                                </div>
-                            </div>
-                            <div class="spacer"></div>
-                            <div class="iconbox iconbox-style-2 icon-color clearfix">
-                                <div class="iconbox-icon">
-                                    <i class="fa fa-cog sl-check boxicon"></i>
-                                </div>
-                                <div class="iconbox-content nomargin">
-                                    <h4>DEVELOP</h4>
-                                    <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+ 
 
-        <div class="subsection3" style=" overflow-x:hidden;">
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12 left-section">
-                        <div class="subfeature">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <h1><span>Services that </span>we provide.</h1>
-                            </div>
-                        </div>
-                    </div> -->
 
-                    <!-- <div class="col-md-6 col-sm-6 col-xs-12 right-section right-background">
-                        <div class="subfeature">
-                            <div class="featureblock">
-                                <div class="col-md-2 col-xs-2 icon"><i class="fa fa-laptop feature_icon"></i></div>
-                                <div class="col-md-10 col-xs-10">
-                                    <h4>100% Responsive</h4>
-                                    <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior fierentis ea saperet inimicu ut qui dolor oratio mnesarchum</p>
-                                </div>
-                            </div>
-                            <div class="featureblock">
-                                <div class="col-md-2 col-xs-2 icon"><i class="fa fa-bullhorn feature_icon"></i></div>
-                                <div class="col-md-10 col-xs-10">
-                                    <h4>Powerful Features</h4>
-                                    <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior fierentis ea saperet inimicu ut qui dolor oratio mnesarchum</p>
-                                </div>
-                            </div>
-                            <div class="featureblock nomargin">
-                                <div class="col-md-2 col-xs-2 icon"><i class="fa fa-support feature_icon"></i></div>
-                                <div class="col-md-10 col-xs-10">
-                                    <h4>Customer Support</h4>
-                                    <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior fierentis ea saperet inimicu ut qui dolor oratio mnesarchum</p>
+   
+        
+              
 
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>-->
-
-        <!--pricing-->
-        <!-- <div class="subsection4">
-            <div class="container">
-                <div class="col span_12">
-                    <div class="col-sm-12 wpb_column column_container">
-                        <div class="wpb_wrapper">
-                            <div class="section-heading text-center">
-                                <h1>Our <span>Plans</span></h1>
-                                <p class="subheading">Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset nam nostrud euismod volumus ne mei.</p>
-                            </div>
-                            <div class="row" style="margin-top:30px;">
-                                <div class="wpb_column vc_column_container col-sm-4 block grow">
-                                    <div class="vc_column-inner">
-                                        <div class="wpb_wrapper">
-                                            <div class="pricing-plan pricing-color-true">
-                                                <div class="pricing-plan-head pricing-plan-1">
-                                                    <h3>Starter Edition</h3>
-                                                    <div class="pricing-price">
-                                                        <span class="pricing-amount">$29.00</span>
-                                                        <span class="pricing-per">per month</span>
-                                                    </div>
-                                                </div>
-                                                <ul>
-                                                    <li><strong>Free</strong> Setup</li>
-                                                    <li><strong>10GB</strong> Storage</li>
-                                                    <li><strong>100GB</strong> Bandwith</li>
-                                                    <li><strong>5</strong> Products</li> -->
-                                                    <!-- <li><strong>Basic</strong> Stats</li> -->
-                                                <!-- </ul>
-                                                <div class="pricing-signup">
-                                                    <a href="#" class="button color-5">Buy Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wpb_column vc_column_container col-sm-4 block grow">
-                                    <div class="vc_column-inner">
-                                        <div class="wpb_wrapper">
-                                            <div class="pricing-plan pricing-color-true ">
-                                                <div class="pricing-plan-head pricing-plan-2">
-                                                    <div class="featured-ribbon">Best Value</div>
-                                                    <h3>Diamond Edition</h3>
-                                                    <div class="pricing-price">
-                                                        <span class="pricing-amount">$49.00</span>
-                                                        <span class="pricing-per">per month</span>
-                                                    </div>
-                                                </div> 
-                                                <ul>
-                                                    <li><strong>Free</strong> Setup</li>
-                                                    <li><strong>100GB</strong> Storage</li>
-                                                    <li><strong>1000GB</strong> Bandwith</li>
-                                                    <li><strong>25</strong> Products</li>
-                                                    <li><b>Complex</b>&nbsp;Stats</li> -->
-                                                <!-- </ul>
-                                                <div class="pricing-signup">
-                                                    <a href="#" class="button color-5">Buy Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <!-- <div class="wpb_column vc_column_container col-sm-4 block grow">
-                                    <div class="vc_column-inner ">
-                                        <div class="wpb_wrapper">
-                                            <div class="pricing-plan pricing-color-true">
-                                                <div class="pricing-plan-head pricing-plan-1">
-                                                    <h3>Platinum Edition</h3>
-                                                    <div class="pricing-price">
-                                                        <span class="pricing-amount">$99.00</span>
-                                                        <span class="pricing-per">per week</span>
-                                                    </div>
-                                                </div>
-                                                <ul>
-                                                    <li><strong>Free</strong> Setup</li>
-                                                    <li><strong>50GB</strong> Storage</li>
-                                                    <li><strong>500GB</strong> Bandwith</li>
-                                                    <li><b>Unlimited</b> Products</li> --> 
-                                                    <!-- <li><b>Complex</b> Stats</li> -->
-                                                <!-- </ul>
-                                                <div class="pricing-signup">
-                                                    <a href="#" class="button color-5">Buy Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+      
+        
     <section id="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-12 block">
                         <div class="footer-block">
-                            <h4>Southern Institute Galle</h4>
-                            <div class="user-image"><img src="<?php echo base_url();?>assets1\img\logo.jpeg" alt="user" class="img-responsive" /></div>
+                            <h4>Gallery</h4>
+                            <div class="user-image"><img src="<?php echo base_url();?>assets1\img\pic.jpg" alt="user" class="img-responsive" /></div>
                            
-                            <!-- <img src="..\..\..\assets1\img\logo.jpeg"> -->
-                            <!-- <h5>Wimalasurendra Mawatha, Galle 80000, </br>  Sri Lanka</h5>
-                            <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
-                                <img src="..\..\..\assets1\img\map.png">
-                            </a>
-                             <hr/> -->
-                            <!-- <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.
-                            </p> -->
-                            <!-- <a href="#" class="learnmore">Learn More <i class="fa fa-caret-right"></i></a> -->
                         </div>
                     </div>
     
                     <div class="col-md-3 col-sm-3 col-xs-12 block">
                         <div class="footer-block">
                             <h4>Useful Links</h4>
-                            <!-- <hr/> -->
+                           
                             <ul class="footer-links">
                                
                                 <li><a href="<?php echo base_url();?>index.php/Welcome/home">Home</a></li>
@@ -579,7 +363,7 @@
                                 <li><a href="<?php echo base_url();?>index.php/Welcome/signout">Sign Out</a></li>
                                
                                
-                                <!-- <li><a href="registration.html">Sign Up</a></li> -->
+                              
                             </ul>
                         </div>
                     </div>
@@ -589,41 +373,26 @@
                     <div class="col-md-3 col-sm-3 col-xs-12 block">
                         <div class="footer-block">
                             <h4>Contact Us</h4>
-                            <!-- <hr/> -->
+                           
                             <h4>Southern Institute Galle</h4>
                             <h5>Wimalasurendra Mawatha, Galle 80000, </br>  Sri Lanka</h5>
                             <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
                                 <img src="<?php echo base_url();?>assets1\img\map.png">
                             </a>
-                             <!-- <hr/> -->
-                            <!-- <ul class="footer-links">
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Forum</a></li>
-                                <li><a href="#">Free Goods</a></li>
-                            </ul> -->
+                             
                         </div>
                     </div>
     
                     <div class="col-md-3 col-sm-3 col-xs-12 <block></block>">
                         <div class="footer-block">
                             <h4>Recent Posts</h4>
-                            <!-- <hr/> -->
+                           
                             <ul class="footer-links">
                                 <li>
                                      <div class="user-image"><img src="<?php echo base_url();?>assets1\img\post.jpeg" alt="user" class="img-responsive" /></div>
                            
-                                    <!-- <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                    <p class="post-date">May 25, 2017</p> -->
                                 </li>
-                                <!-- <li>
-                                    <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                    <p class="post-date">May 25, 2017</p>
-                                </li>
-                                <li>
-                                    <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                    <p class="post-date">May 25, 2017</p>
-                                </li> -->
-    
+                             
                             </ul>
                         </div>
                     </div>
@@ -647,127 +416,7 @@
             </div>
         </section>
     
-        <!-- <div id="panel">
-            <div id="panel-admin">
-                <div class="panel-admin-box">
-                    <div id="tootlbar_colors">
-                        <button class="color" style="background-color:#1abac8;" onclick="mytheme(0)"></button>
-                        <button class="color" style="background-color:#ff8a00;" onclick="mytheme(1)"> </button>
-                        <button class="color" style="background-color:#b4de50;" onclick="mytheme(2)"> </button>
-                        <button class="color" style="background-color:#e54e53;" onclick="mytheme(3)"> </button>
-                        <button class="color" style="background-color:#1abc9c;" onclick="mytheme(4)"> </button>
-                        <button class="color" style="background-color:#159eee;" onclick="mytheme(5)"> </button>
-                    </div>
-                </div>
-    
-            </div>
-            <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
-        </div> -->
+       
     </body>
     </html>
-    <!-- <section id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 col-xs-12 block">
-                        <div class="footer-block">
-                            <h4>Address</h4>
-                            <hr/>
-                            <p>Southern Institute Galle, Sri Lanka
-                            </p> -->
-                            <!-- <a href="#" class="learnmore">Learn More <i class="fa fa-caret-right"></i></a> -->
-                        <!-- </div>
-                    </div>
     
-                    <div class="col-md-3 col-sm-3 col-xs-12 block">
-                        <div class="footer-block">
-                            <h4>Useful Links</h4>
-                            <hr/>
-                            <ul class="footer-links">
-                                <li><a href="#">About Us</a></li> -->
-                                <!-- <li><a href="#">Features</a></li>
-                                <li><a href="#">Portfolio</a></li> -->
-                                <!-- <li><a href="#">Class Schedule</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Sign Out</a></li>
-                                <li><a href="#">Registrations</a></li>
-                                <li><a href="#">Notifications</a></li>
-                                <li><a href="#">Courses</a></li> -->
-                                <!-- <li><a href="#">Sign In</a></li>
-                                <li><a href="#">Sign Up</a></li> -->
-                            <!-- </ul>
-                        </div>
-                    </div>
-    
-                    <div class="col-md-3 col-sm-3 col-xs-12 block">
-                        <div class="footer-block">
-                            <h4>Community</h4>
-                            <hr/>
-                            <ul class="footer-links">
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Forum</a></li>
-                                <li><a href="#">Free Goods</a></li>
-                            </ul>
-                        </div>
-                    </div>
-    
-                    <div class="col-md-3 col-sm-3 col-xs-12 <block></block>">
-                        <div class="footer-block">
-                            <h4>Recent Posts</h4>
-                            <hr/>
-                            <ul class="footer-links">
-                                <li>
-                                    <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                    <p class="post-date">May 25, 2017</p>
-                                </li>
-                                <li>
-                                    <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                    <p class="post-date">May 25, 2017</p>
-                                </li>
-                                <li>
-                                    <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                    <p class="post-date">May 25, 2017</p>
-                                </li>
-    
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-    
-        </section>
-    
-        <section id="bottom-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Use</a>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12 copyright">
-                        Developed by <a href="#">Aspire Software Solutions</a> designed by <a href="#">Designing Team</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <div id="panel">
-            <div id="panel-admin">
-                <div class="panel-admin-box">
-                    <div id="tootlbar_colors">
-                        <button class="color" style="background-color:#1abac8;" onclick="mytheme(0)"></button>
-                        <button class="color" style="background-color:#ff8a00;" onclick="mytheme(1)"> </button>
-                        <button class="color" style="background-color:#b4de50;" onclick="mytheme(2)"> </button>
-                        <button class="color" style="background-color:#e54e53;" onclick="mytheme(3)"> </button>
-                        <button class="color" style="background-color:#1abc9c;" onclick="mytheme(4)"> </button>
-                        <button class="color" style="background-color:#159eee;" onclick="mytheme(5)"> </button>
-                    </div>
-                </div>
-    
-            </div>
-            <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
-        </div>
-    
-    </body>
-    
-</html> -->
