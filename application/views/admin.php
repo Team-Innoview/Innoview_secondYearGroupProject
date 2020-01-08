@@ -66,11 +66,14 @@
         <nav class="templatemo-left-nav">          
           <ul>
             <li><a href="#" class="active"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
-            <li><a href="data-visualization.html"><i class="fa fa-bar-chart fa-fw"></i>Charts</a></li>
-            <li><a href="data-visualization.html"><i class="fa fa-database fa-fw"></i>Data Visualization</a></li>
-            <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Maps</a></li>
-            <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Manage Users</a></li>
-            <li><a href="preferences.html"><i class="fa fa-sliders fa-fw"></i>Preferences</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/sturegistrations"><i class="fa fa-users fa-fw"></i>Student Registration</a></li>
+            <!-- <li><a href="data-visualization.html"><i class="fa fa-bar-chart fa-fw"></i>Charts</a></li> -->
+            <li><a href="<?php echo base_url();?>index.php/Welcome/sturegistrations"><i class="fa fa-users fa-fw"></i>Teacher Registration</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/sturegistrations"><i class="fa fa-users fa-fw"></i>Receptionist Registration</a></li>
+            <li><a href="data-visualization.html"><i class="fa fa-database fa-fw"></i>Notification</a></li>
+            <!-- <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Maps</a></li> -->
+            <!-- <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Manage Users</a></li> -->
+            <li><a href="preferences.html"><i class="fa fa-sliders fa-fw"></i>Manage Courses</a></li>
             <li><a href="login.html"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
           </ul>  
         </nav>
