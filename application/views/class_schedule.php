@@ -1,498 +1,298 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-<head>
+  <head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Home</title>
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php echo base_url();?>assets1/scss/main.css">    
-    <link rel="stylesheet" href="<?php echo base_url();?>assets1/scss/skin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="..\..\assets1\script\index.js"></script>
-    
+    <title>Southern Institute - Class Schedule</title>
 
+    <!-- Bootstrap core CSS -->
+    <link href="<?php echo base_url();?>vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- <link rel="stylesheet" type="text/css" href="../css/main.css">    
-    <link rel="stylesheet" type="text/css" href="../css/skin.css">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/fontawesome.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/templatemo-host-cloud.css">
+    <link rel="stylesheet" href="<?php echo base_url();?> assets/css/owl.css">
+<!--
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="assets/script/index.js"></script>      -->
-</head>
+Host Cloud Template
 
-<body id="wrapper">
+https://templatemo.com/tm-541-host-cloud
 
-    <section id="top-header">
-            <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12 top-header-links">
-                            <!-- <ul class="contact_links">
-                                <li><i class="fa fa-phone"></i><a href="#">+0912 242 189</a></li> -->
-                                <!-- <li><i class="fa fa-envelope"></i><a href="#">sales@aspiresoftware.in</a></li> -->
-                        
-                        </div> 
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <ul class="social_links">
-                                <li><i class="fa fa-phone"></i><a href="#">Call Us +0912 242 189</a></li>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <!-- <li><a href="#"><i class="fa fa-pinterest"></i></a></li> -->
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                <!-- <li><a href="#"><i class="fa fa-facebook">facebook</i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter">Twitter</i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i>Linkedin</a></li>
-                                <li><a href="#"><i class="fa fa-skype">Skype</i></a></li> --> 
-                        
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                </div>
-    </section>
+-->
+  </head>
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light text-white bg-dark ">
-            <div class="container">
-                <div class="row">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<!-- <span class="icon-bar"></span> -->
-				<span class="icon-bar"></span>
-			  </button>
-                        <a class="navbar-brand " href="#" al>
-                                <!-- <div class="col-xs-2 icon"><img src="..\..\..\assets1\img\logo.jpeg"></src></i></div> -->
-                                <img height="120px" width="120px" src="<?php echo base_url();?>assets1\img\logo.jpeg" class="attachment-full img-responsive" alt="">
-                           
-                                <!-- <h1>Southern Educational Institute</h1><span>Galle</span></a>  -->
-                            <!-- < src="..\..\..\assets1\img\logo.jpeg">        -->
-                    </div>
-                    <div id="navbar" class="collapse navbar-collapse navbar-right">
-                        <ul class="nav navbar-nav">
-                                    <li><a href="<?php echo base_url();?>index.php/Welcome/home">Home</a></li>
-                                     <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
-                                    <li class="active"><a href="#class_Schedule">Class Schedule</a></li>
-                                    <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
-                       
-                                    <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
-					
-                        
-                        </ul>
-                    </div>
-                    <!--/.nav-collapse -->
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!--/.nav-ends -->
-    
-    <!--<section id="schedule">-->
-        <!--<div class="container-fluid no-padding">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="myimage"><img  src="<?php echo base_url();?>assets1\img\ddd.jpg" alt="" class="attachment-full img-responsive" style="opacity: 1.0; filter: alpha(opacity=100);" id="myimage"/></div>
-                </div>
-            </div>
-        </div>-->
-         
-        <!--</div>-->
+  <body>
 
-    <section id="imagehead">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="hovereffect">
-                        <img class="attachment-full img-responsive" src="<?php echo base_url();?>assets1\img\ddd.jpeg" alt="" >
-                        <div class="col-md-8 col-sm-8 col-xs-6">
-                           <h4>Class Schedule</h4>
-                          
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6" style="text-align:right;">Home<span class="sep"> / </span><span class="current">Class Schedule</span></div>
-                    </div>
-                 </div>
-                
-
-                                    <!-- Default dropright button -->
-                                     <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-sm-6 col-md-6">
-                                                <div class="btn-group dropright">
-                                                    <button type="button" class="btn btn-secondary dropdown-toggle" id="button1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Ordinery Level</span></button>
-
-                                                    <button type="button" class="btn btn-secondary dropdown-toggle" id="button2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Advanced Level</span></button>
-                                                        <div class="dropdown-menu">
-                                                        <!-- Dropdown menu links -->
-                                                        </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>  
-                                    
-
-                                <!--    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-sm-6 col-md-6">
-                                                <div class="btn-group dropright">
-                                                    <button type="button" class="btn btn-secondary dropdown-toggle" id="button2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Advanced Level</span></button>
-                                                        <div class="dropdown-menu">-->
-                                                        <!-- Dropdown menu links -->
-                                                        </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>      
-
-                            </div>
-                    </div>
-                </div>
-            </div>
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-    </section>
-     
-   <section id="features">
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-xs-12 block">
-                    <div class="col-md-2 col-xs-2"><i class="fa fa-laptop feature_icon"></i></div>
-                    <div class="col-md-10 col-xs-10">
-                        <h4>Providing the Best Education</h4>
-                        <p>We provide a well equipped institute with state of all facilities, starting from classrooms to make the studying experience of our students an easy and a well facilitated one.Parents are assured of the safety of their children at our institute and discipline of utmost important to us.</br>We are diverse, welcoming, accepting and passionate about being best we can be.
-                        </br>  Join us to make your higher education experience unforgettable.
-                      </p> 
-                        <a href="#" class="readmore">Read More <i class="fa fa-caret-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-xs-12 block">
-                    <div class="col-md-2 col-xs-2"><i class="fa fa-bullhorn feature_icon"></i></div>
-                    <div class="col-md-10 col-xs-10">
-                        <h4>BEST PERFORMANCE</h4>
-                        <p>Top performers in Ordinary Level Examination.<p>
-                        <p>Top performers in Advanced Level Examination. </p>
-                        <a href="#" class="readmore">Read More <i class="fa fa-caret-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-xs-12 block">
-                    <div class="col-md-2 col-xs-2"><i class="fa fa-user feature_icon"></i></div>
-                    <div class="col-md-10 col-xs-10">
-                        <h4>OUR LECTURERS</h4>
-                        <p>Our lecturers are qualifed, well experienced and recognized in their respective fields.</p>
-                        <a href="#" class="readmore">Read More <i class="fa fa-caret-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- <section id="about">
-        <div class="image-holder col-lg-6 col-md-6 col-sm-6 col-xs-12 pull-left">
-            <div class="background-imgholder">
-                <img src="<?php echo base_url();?>assets1/img/1.jpg" alt="about" class="img-responsive" style="display:none;" />
-            </div>
-        </div>
-
-        <div class="container-fluid">
-
-            <div class="col-md-7 col-md-offset-5 col-sm-8 col-sm-offset-2 col-xs-12 text-inner ">
-                <div class="text-block">
-                    <div class="section-heading">
-                        <h1>ABOUT <span>US</span></h1>
-                        <p class="subheading">Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut.</p>
-                    </div>
-
-                    <ul class="aboutul">
-                        <li> <i class="fa fa-check"></i>Vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.</li>
-                        <li> <i class="fa fa-check"></i>legimus copiosae instructior ei ut vix denique fierentis atqui mucius consequat ad pro.</li>
-                        <li> <i class="fa fa-check"></i>Ea saperet inimicu ut qui dolor oratio maiestatis ubique mnesarchum.</li>
-                        <li> <i class="fa fa-check"></i>Sanctus voluptatibus et per illum noluisse facilisis quo atqui mucius ad pro.</li>
-                        <li> <i class="fa fa-check"></i>At illum noluisse facilisis quo te dictas epicurei suavitate qui his ad.</li>
-                        <li> <i class="fa fa-check"></i>Tantas propriae mediocritatem id vix qui everti efficiantur an ocurreret consetetur.</li>
-                    </ul>
-
-                    <button type="button" class="btn btn-primary slide">Learn More  <i class="fa fa-caret-right"></i> </button>
-
-
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-
-    <!-- <section id="process">
-        <div class="container">
-            <div class="section-heading text-center">
-                <div class="col-md-12 col-xs-12">
-                    <h1>What <span>We Do</span></h1>
-                    <p class="subheading">Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset nam nostrud euismod volumus ne mei.</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-3 col-sm-6 block process-block">
-                    <div class="process-icon-holder">
-                        <div class="process-border">
-                            <span class="process-icon"><a href="#"><i class="fa fa-lightbulb-o feature_icon"></i></a></span></div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <div class="process-text-block">
-                        <h4><a href="#">Idea</a></h4>
-                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 block process-block">
-                    <div class="process-icon-holder">
-                        <div class="process-border">
-                            <span class="process-icon"><a href="#"><i class="fa fa-cloud-download feature_icon"></i></a></span></div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <div class="process-text-block">
-                        <h4><a href="#">Concept</a></h4>
-                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 block process-block">
-                    <div class="process-icon-holder">
-                        <div class="process-border">
-                            <span class="process-icon"><a href="#"><i class="fa fa-magic feature_icon"></i></a></span></div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <div class="process-text-block">
-                        <h4><a href="#">Design</a></h4>
-                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 block process-block lastchild">
-                    <div class="process-icon-holder">
-                        <div class="process-border">
-                            <span class="process-icon"><a href="#"><i class="fa fa-cog feature_icon"></i></a></span></div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <div class="process-text-block">
-                        <h4><a href="#">Develop</a></h4>
-                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section> -->
-
-
-    <!-- <section id="testimonial">
-        <div class="container">
-            <div class="section-heading text-center">
-                <div class="col-md-12 col-xs-12">
-                    <h1>What Our <span>Client Says</span></h1>
-                    <p class="subheading">Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset nam nostrud euismod volumus ne mei.</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4 col-sm-12 block ">
-                    <div class="testimonial_box">
-                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset. </p>
-                    </div>
-                    <div class="arrow-down"></div>
-                    <div class="testimonial_user">
-                        <div class="user-image"><img src="<?php echo base_url();?>assets1/img/user1.png" alt="user" class="img-responsive" /></div>
-                        <div class="user-info">
-                            <h5>Lorem Ipsum</h5>
-                            <p>Manager</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-4 col-sm-12 block">
-                    <div class="testimonial_box">
-                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset. </p>
-                    </div>
-                    <div class="arrow-down"></div>
-                    <div class="testimonial_user">
-                        <div class="user-image"><img src="<?php echo base_url();?>assets1/img/user1.png" alt="user" class="img-responsive" /></div>
-                        <div class="user-info">
-                            <h5>Lorem Ipsum</h5>
-                            <p>Manager</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-12 block">
-                    <div class="testimonial_box">
-                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset. </p>
-                    </div>
-                    <div class="arrow-down"></div>
-                    <div class="testimonial_user">
-                        <div class="user-image"><img src="<?php echo base_url();?>assets1/img/user1.png" alt="user" class="img-responsive" /></div>
-                        <div class="user-info">
-                            <h5>Lorem Ipsum</h5>
-                            <p>Manager</p>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-
-    </section> -->
-
-
-
-
-
-    <section id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-3 col-xs-12 block">
-                    <div class="footer-block">
-                         <h4>Gallery</h4> 
-                        <div class="user-image"><img src="<?php echo base_url();?>assets1\img\pic.jpg" alt="user" class="img-responsive" /></div>
-                       
-                        <!-- <img src="..\..\..\assets1\img\logo.jpeg"> -->
-                        <!-- <h5>Wimalasurendra Mawatha, Galle 80000, </br>  Sri Lanka</h5>
-                        <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
-                            <img src="..\..\..\assets1\img\map.png">
-                        </a>
-                         <hr/> -->
-                        <!-- <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.
-                        </p> -->
-                        <!-- <a href="#" class="learnmore">Learn More <i class="fa fa-caret-right"></i></a> -->
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-3 col-xs-12 block">
-                    <div class="footer-block">
-                        <h4>Useful Links</h4>
-                        <!-- <hr/> -->
-                        <ul class="footer-links">
-                            <li><a href="<?php echo base_url();?>index.php/Welcome">Home</a></li>
-                            <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">About Us</a></li>
-                            <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
-                            <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
-                            <!-- <li><a href="registration.html">Sign Up</a></li> -->
-                        </ul>
-                    </div>
-                </div>
-
-                
+          <a class="navbar-brand" href="index.html"><h2>Southern <em>Institute</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url();?>index.php">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url();?>index.php/Welcome/about">About Us</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a>
+              </li>
             </ul>
-                <div class="col-md-3 col-sm-3 col-xs-12 block">
-                    <div class="footer-block">
-                        <h4>Visit Us</h4>
-                        <h5>Southern Institute Galle</h5>
-                        <h5>Wimalasurendra Mawatha, <br/>Galle 80000, </br>  Sri Lanka</h5>
-                        <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
-                            <img src="<?php echo base_url();?>assets1\img\map.png">
-                        </a>
-                         <!-- <hr/> -->
-                         <!-- <h4>Connect Us</h4> -->
-                               
-                                <!-- <ul class="social-links">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                                        <a href="#"><i class="fa fa-skype"></i></a> -->
-                                         <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li>Facebook
-                                         <li><a href="#"><i class="fa fa-twitter">Twitter</i></a></li>
-                                         <li><a href="#"><i class="fa fa-linkedin"></i>Linkedin</a></li>
-                                         <li><a href="#"><i class="fa fa-skype">Skype</i></a></li>  -->
-                                 
-                                <!-- </ul> -->
-                                
-
-                                <!-- <a href="#" class="fa fa-facebook"></a>
-                                <a href="#" class="fa fa-twitter"></a>
-                                <li><a href="#"><i class="fa fa-facebook">facebook</i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter">Twitter</i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i>Linkedin</a></li>
-                                <li><a href="#"><i class="fa fa-skype">Skype</i></a></li> -->
-                        
-                                    <!-- <div id="cse” style="width:100%;>Loading</div>
-                                    <script src=”http://www.google.com/jsapi” type=”text/javascript”></script>
-                                    <script type=”text/javascript”>google.load(‘search’, ‘1’);
-                                     google.setOnLoadCallback(function(){var cse = new google.search.
-                                    CustomSearchControl();cse.draw(‘cse’);}, true);</script> -->
-                                    <!-- <input type="text" placeholder="Search.." name="search">
-                                    <button type="submit"><i class="fa fa-search"></i></button> -->
-                                    <!-- <input type="text" placeholder="Search.."> -->
-                             
-                        <!-- <ul class="footer-links">
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Forum</a></li>
-                            <li><a href="#">Free Goods</a></li>
-                        </ul> -->
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-3 col-xs-12 <block></block>">
-                    <div class="footer-block">
-                        <h4>Recent Posts</h4>
-                        <!-- <hr/> -->
-                        <ul class="footer-links">
-                            <li>
-                                 <div class="user-image"><img src="<?php echo base_url();?>assets1\img\post.jpeg" alt="user" class="img-responsive" /></div>
-                       
-                                <!-- <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                <p class="post-date">May 25, 2017</p> -->
-                            </li>
-                            <!-- <li>
-                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                <p class="post-date">May 25, 2017</p>
-                            </li>
-                            <li>
-                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                <p class="post-date">May 25, 2017</p>
-                            </li> -->
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div class="functional-buttons">
+            <ul>
+              <li><a href="<?php echo base_url();?>index.php/Welcome/login">Log in</a></li>
+              <!-- <li><a href="#">Sign Up</a></li> -->
+            </ul>
+          </div>
         </div>
+      </nav>
+    </header>
 
-
-    </section>
-
-    <section id="bottom-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12 copyright">
-                    Developed by <a href="#">Team Innoview</a> designed by <a href="#">UCSC</a>
-                </div>
-            </div>
+    <!-- Page Content -->
+    <!-- Heading Starts Here -->
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Our Services</h1>
+            <p><a href="index.html">Home</a> / <span>Our Services</span></p>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+    <!-- Heading Ends Here -->
 
-    <!-- <div id="panel">
-        <div id="panel-admin">
-            <div class="panel-admin-box">
-                <div id="tootlbar_colors">
-                    <button class="color" style="background-color:#1abac8;" onclick="mytheme(0)"></button>
-                    <button class="color" style="background-color:#ff8a00;" onclick="mytheme(1)"> </button>
-                    <button class="color" style="background-color:#b4de50;" onclick="mytheme(2)"> </button>
-                    <button class="color" style="background-color:#e54e53;" onclick="mytheme(3)"> </button>
-                    <button class="color" style="background-color:#1abc9c;" onclick="mytheme(4)"> </button>
-                    <button class="color" style="background-color:#159eee;" onclick="mytheme(5)"> </button>
-                </div>
+
+    <!-- Services Starts Here -->
+    <div class="services-section services-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <span>Hosting Services</span>
+              <h2>Best Services We Provide</h2>
+              <p>Aenean molestie, odio quis viverra ultricies, leo tellus lacinia neque, sit amet maximus tortor nunc aliquet felis. Duis sit amet nibh non sapien tincidunt bibendum. Curabitur rutrum justo id leo ornare, suscipit lobortis augue volutpat.</p>
             </div>
-
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="service-item">
+              <i class="fa fa-cloud"></i>
+              <h4>VPS Cloud</h4>
+              <p>Fusce blandit commodo metus eu suscipit. Nullam ut blandit neque. Aenean nec tellus ac velit elementum tempor. Pellentesque nec urna ipsum.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="service-item">
+              <i class="fa fa-server"></i>
+              <h4>Fast Network</h4>
+              <p>Sed ligula arcu, interdum eu magna eget, tristique aliquet nibh. Aenean sodales justo vitae ex pharetra, vitae tincidunt dolor condimentum.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="service-item">
+              <i class="fa fa-database"></i>
+              <h4>Reliable Platform</h4>
+              <p>Fusce blandit commodo metus eu suscipit. Nullam ut blandit neque. Aenean nec tellus ac velit elementum tempor. Pellentesque nec urna ipsum.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="service-item">
+              <i class="fa fa-save"></i>
+              <h4>Managed CDN</h4>
+              <p>Sed ligula arcu, interdum eu magna eget, tristique aliquet nibh. Aenean sodales justo vitae ex pharetra, vitae tincidunt dolor condimentum.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="service-item">
+              <i class="fa fa-check"></i>
+              <h4>Optimal Hosting</h4>
+              <p>Fusce blandit commodo metus eu suscipit. Nullam ut blandit neque. Aenean nec tellus ac velit elementum tempor. Pellentesque nec urna ipsum.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="service-item">
+              <i class="fa fa-support"></i>
+              <h4>Customer Support</h4>
+              <p>Cras placerat mauris scelerisque, placerat enim sed, imperdiet diam. Fusce blandit commodo metus eu suscipit. Nullam ut blandit neque.</p>
+            </div>
+          </div>
         </div>
-        <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
-    </div> -->
-</body>
+      </div>
+    </div>
+    <!-- Services Ends Here -->
+
+<!-- Testimonials Starts Here -->
+<div class="testimonials-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <span>Testimonials</span>
+              <h2>What they say about us</h2>
+            </div>
+          </div>
+          <div class="col-md-10 offset-md-1">
+            <div class="owl-testimonials owl-carousel">
+              <div class="testimonial-item">
+                <div class="icon">
+                  <i class="fa fa-quote-right"></i>
+                </div>
+                <p>"Ut elementum a elit sed tristique. Pellentesque sed semper erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean quam erat, rutrum ut malesuada."</p>
+                <h4>William Smith</h4>
+                <span>New Co-Founder</span>
+              </div>
+              <div class="testimonial-item">
+                <div class="icon">
+                  <i class="fa fa-quote-right"></i>
+                </div>
+                <p>"Quisque lacinia sed velit et maximus. Quisque dictum, lacus a malesuada finibus, arcu magna luctus risus, eu accumsan risus elit vitae lacus."</p>
+                <h4>Vinny Smart</h4>
+                <span>Digital Marketer</span>
+              </div>
+              <div class="testimonial-item">
+                <div class="icon">
+                  <i class="fa fa-quote-right"></i>
+                </div>
+                <p>"Vestibulum mauris ipsum, tempor tincidunt justo sit amet, bibendum tincidunt dui. Aenean molestie, odio quis viverra ultricies, leo tellus lacinia neque, sit amet maximus tortor nunc aliquet felis."</p>
+                <h4>Trevor Liam</h4>
+                <span>Technology Chef</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonials Ends Here -->
+
+
+    <!-- Footer Starts Here -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="footer-item">
+              <div class="footer-heading">
+                <h2>Gallery</h2>
+                    <!-- <img src="<?php echo base_url();?>assets\images\pic.jpg" width="500" height="100"> -->
+              </div>
+              <!-- <p>Host Cloud is provided by TemplateMo for free of charge. Anyone can download and use this CSS Bootstrap template for commercial purposes.</p>
+             -->
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="footer-item">
+              <div class="footer-heading">
+                <h2>Visit Us</h2>
+              </div>
+              <ul class="footer-list">
+                  <li>Southern Institute Galle</li>
+                  <li>Wimalasurendra Mawatha, <br/>Galle 80000, </br>  Sri Lanka</li>
+                  <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
+                      <img src="<?php echo base_url();?>assets\images\map.png">
+                     
+                  </a>
+                <!-- <li><a href="#">Basic Cloud 5X</a></li>
+                <li><a href="#">Cloud VPS 10X</a></li>
+                <li><a href="#">Advanced Cloud</a></li>
+                <li><a href="#">Custom Designs</a></li>
+                <li><a href="#">Special Solutions</a></li> -->
+              </ul>
+            </div>
+          </div>
+          
+          
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="footer-item">
+              <div class="footer-heading">
+                <h2>Useful Links</h2>
+              </div>
+              <ul class="footer-list">
+                  <li><a href="<?php echo base_url();?>index.php">Home</a></li>
+                  <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
+                  <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
+                  <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
+                <!-- <li><a href="#">Cloud Hosting Platform</a></li>
+                <li><a href="#">Light Speed Zone</a></li>
+                <li><a href="#">Content Delivery Network</a></li>
+                <li><a href="#">Customer Support</a></li>
+                <li><a href="#">Latest News</a></li> -->
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="footer-item">
+              <div class="footer-heading">
+                <h2>More Information</h2>
+              </div>
+              <ul class="footer-list">
+                <li>Phone: <a href="#">0912 242 189</a></li>
+                <!-- <li>Email: <a href="#">mail@company.com</a></li>
+                <li>Support: <a href="#">support@company.com</a></li>
+                <li>Website: <a href="#">www.company.com</a></li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="sub-footer">
+              <p>Copyright &copy; Team Innoview
+				- Designed by <a rel="nofollow" href="<?php echo base_url();?>https://templatemo.com">Chamo</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Ends Here -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="<?php echo base_url();?>vendor/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url();?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="<?php echo base_url();?>assets/js/custom.js"></script>
+    <script src="<?php echo base_url();?>assets/js/owl.js"></script>
+    <script src="<?php echo base_url();?>assets/js/accordions.js"></script>
+
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+  </body>
 </html>
+   
