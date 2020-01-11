@@ -134,64 +134,63 @@
                         <div class="form-bottom">
                         <form role="form" action="<?php echo site_url('Signup/registration');?>" method="post" class="login-form">
                                 
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                    <input type="text" class="form-control" id="user_type" name="user_type" placeholder="Student" value="Student" aria-describedby="basic-addon1" required="required">
-                                </div>
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                        <input type="text" class="form-control" id="student_Id" name="student_id" placeholder=" Enter Student ID Number" aria-describedby="basic-addon1" required="required">
-                                </div>
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                        <input type="text" class="form-control" id="first_name" name="first_name" placeholder=" First Name" aria-describedby="basic-addon1" required="required">
-                                </div>
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                        <input type="text" class="form-control" id="last_name" name="last_name" placeholder=" Last Name" aria-describedby="basic-addon1" required="required">
-                                </div>
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i>&nbsp&nbsp&nbspDate of Birth</span>
-                                        <input type="date" class="form-control" name="dob" placeholder="Date of Birth" label="Date of Birth" aria-describedby="basic-addon1" required="required">
-                                </div>
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" class="form-control" id="basic-addon1"><i class="fa fa-user"></i>Gender<input type="radio" name="gender" value="male" checked> Male <input type="radio" name="gender" value="female"> Female</span>
-                    
-                                            
-                                </div>
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope"></i></span>
-                                        <input type="email" class="form-control" name="email" placeholder="Email" aria-describedby="basic-addon1" required="required">
-                                </div>
-                            
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                        <input type="text" class="form-control" id="user_name" name="user_name" placeholder="User Name" aria-describedby="basic-addon1" required="required">
-                                </div>
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-unlock"></i></span>
-                                        <input type="password" class="form-control" name="password" placeholder="Password" aria-describedby="basic-addon1" required="required">
-                                </div>
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
-                                        <input type="tel" class="form-control" name="contact_number" placeholder="Contact Number" maxlength="10" minlength="10" aria-describedby="basic-addon1" required="required">
-                                </div>
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                        <input type="text" class="form-control" name="pname" placeholder="Parent/Guardian Name" aria-describedby="basic-addon1" required="required">
-                                </div>
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                        <input type="text" class="form-control" name="pnic" placeholder="Parent NIC Number" aria-describedby="basic-addon1" required="required">
-                                </div>
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
-                                        <input type="tel" class="form-control" name="pnum" placeholder="Parent's Contact Number" maxlength="10" minlength="10" aria-describedby="basic-addon1" required="required">
-                                </div>
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope"></i></span>
-                                        <input type="text" class="form-control" name="address" placeholder="Home Address" aria-describedby="basic-addon1" required="required">
-                                </div>
+                        <div class="input-group form-group">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                                    <input type="text" class="form-control" id="user_type" name="user_type" placeholder="Teacher" value="Teacher" aria-describedby="basic-addon1" required="required">
+                                                </div>
+                                                <div class="input-group form-group">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                                    <input type="text" class="form-control" placeholder="Name" aria-describedby="basic-addon1" required="required">
+                                                </div>
+                                                <div class="input-group form-group">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                                    <input type="text" class="form-control" placeholder="Subject" aria-describedby="basic-addon1" required="required">
+                                                </div>
+                                                <div class="input-group form-group">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                                    <input type="text" class="form-control" placeholder="Teaching Grade" aria-describedby="basic-addon1" required="required">
+                                                </div>
+                                                <div class="input-group form-group">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                                    <input type="radio" name="gender" value="male" checked> Male<br>
+                                                    <input type="radio" name="gender" value="female"> Female<br>
+                                                </div>
+                                                <div class="input-group form-group">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+                                                    <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1" required="required">
+                                                </div>
+                                                <!-- <div class="input-group form-group">
+                                                        <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                                        <input type="text" class="form-control" placeholder="User ID" aria-describedby="basic-addon1" required="required">
+                                                    </div>
+                                                <div class="input-group form-group">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                                    <input type="text" class="form-control" placeholder="User Name" aria-describedby="basic-addon1" required="required">
+                                                </div> -->
+                                                <div class="input-group form-group">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-unlock"></i></span>
+                                                    <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1" required="required">
+                                                </div>
+                                                <div class="input-group form-group">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
+                                                    <input type="tel" class="form-control" placeholder="Phone No." aria-describedby="basic-addon1" required="required">
+                                                </div>
+                                                <!-- <div class="input-group form-group">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+                                                    <input type="text" class="form-control" placeholder="Street Address" aria-describedby="basic-addon1" required="required">
+                                                </div>
+                                                <div class="input-group form-group">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+                                                    <input type="text" class="form-control" placeholder="City" aria-describedby="basic-addon1" required="required">
+                                                </div>
+                                                <div class="input-group form-group">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+                                                    <input type="text" class="form-control" placeholder="State" aria-describedby="basic-addon1" required="required">
+                                                </div>
+                                                <div class="input-group form-group">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
+                                                    <input type="tel" class="form-control" placeholder="Emergency Phone No." aria-describedby="basic-addon1" required="required">
+                                                </div> -->
                                
                 
                 <tr>

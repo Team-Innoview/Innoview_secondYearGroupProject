@@ -20,7 +20,7 @@ if(isset($_POST['submit'])){
             $userRow = mysqli_fetch_array($userResult);
             //print_r($userRow);
             
-            //Creating Session
+            // Creating Session
             //  checkSession();   
             //     if(!empty($_SESSION['user_id'])){
             //              session_start();
@@ -79,11 +79,13 @@ if(isset($_POST['submit'])){
         // $message = base64_encode(urlencode("Invalid Email or Password"));
         // header('Location:login.php?msg=' . $message);
         // exit();
+
+        
     }
     
 }
 
-mysqli_close($connection);
+// mysqli_close($connection);
     
     
 ?>
