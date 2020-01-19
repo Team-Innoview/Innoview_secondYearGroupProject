@@ -5,7 +5,7 @@
 <?php
 	//Unauthorized Access Check
     // checkSession();
-    if(!isset($_SESSION['user_type']) || $_SESSION['user_type'] != 'Receptionst'){
+    if(!isset($_SESSION['user_type']) || $_SESSION['user_type'] != 'Receptionist'){
        $message = base64_encode(urlencode("Please Login"));
        header('Location:login.php?msg=' . $message);
        exit();
@@ -47,7 +47,7 @@
       <div class="templatemo-sidebar">
         <header class="templatemo-site-header">
           <div class="square"></div>
-          <h1> Student</h1>
+          <h1> Receptionist</h1>
         </header>
         <div class="profile-photo-container">
           <img src="<?php echo base_url();?>assets/images/team-02.jpg" alt="Profile Photo" class="img-responsive">  

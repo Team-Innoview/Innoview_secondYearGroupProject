@@ -1,202 +1,113 @@
-<!DOCTYPE html>
-<html>
+<?php include('includes/connection.php') ?>
+<?php  //include('includes/session.php') ?>
+<?php include('includes/messege.php') ?>
 
-<head>
+<?php
+	//Unauthorized Access Check
+    // checkSession();
+    if(!isset($_SESSION['user_type']) || $_SESSION['user_type'] != '1'){
+       $message = base64_encode(urlencode("Please Login"));
+       header('Location:login.php?msg=' . $message);
+       exit();
+       }
+
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Student Registration</title>
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php echo base_url();?>assets1/scss/main.css">    
-    <link rel="stylesheet" href="<?php echo base_url();?>assets1/scss/skin.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <!-- <script src="C:\wamp64\www\project\assets1\script\index.js"></script> -->
-
-    <script type="text/javascript" src="..\..\assets1\script\index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <title> Admin Dashboard - Home</title>
+    <meta name="description" content="">
+    <meta name="author" content="templatemo">
+    <!-- 
+    Visual Admin Template
+    https://templatemo.com/tm-455-visual-admin
+    -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
+    <link href="<?php echo base_url();?>assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/css/templatemo-style.css" rel="stylesheet">
     
-    
-    <!-- Jquery JS-->
-    <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
-    <!-- Vendor JS-->
-    <!-- <script src="vendor/select2/select2.min.js"></script>
-    <script src="vendor/datepicker/moment.min.js"></script>
-    <script src="vendor/datepicker/daterangepicker.js"></script> -->
-    
-</head>
-
-<body id="wrapper">
-
-    <section id="top-header">
-        <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12 top-header-links">
-                        <!-- <ul class="contact_links">
-                            <li><i class="fa fa-phone"></i><a href="#">+0912 242 189</a></li> -->
-                            <!-- <li><i class="fa fa-envelope"></i><a href="#">sales@aspiresoftware.in</a></li> -->
-                    
-                    </div> 
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <ul class="social_links">
-                            <li><i class="fa fa-phone"></i><a href="#">Call Us +0912 242 189</a></li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <!-- <li><a href="#"><i class="fa fa-pinterest"></i></a></li> -->
-                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                            <!-- <li><a href="#"><i class="fa fa-facebook">facebook</i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter">Twitter</i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i>Linkedin</a></li>
-                            <li><a href="#"><i class="fa fa-skype">Skype</i></a></li> --> 
-                    
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            </div>
-</section>
-<header>
-        <nav class="navbar navbar-expand-lg navbar-light text-white bg-dark ">
-            <div class="container">
-                <div class="row">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <!-- <span class="icon-bar"></span> -->
-                <span class="icon-bar"></span>
-              </button>
-                        <a class="navbar-brand " href="#" al>
-                                <!-- <div class="col-xs-2 icon"><img src="..\..\..\assets1\img\logo.jpeg"></src></i></div> -->
-                                <img height="120px" width="120px" src="<?php echo base_url();?>assets1\img\logo.jpeg" class="attachment-full img-responsive" alt="">
-                           
-                                <!-- <h1>Southern Educational Institute</h1><span>Galle</span></a>  -->
-                            <!-- < src="..\..\..\assets1\img\logo.jpeg">        -->
-                    </div>
-                    <div id="navbar" class="collapse navbar-collapse navbar-right">
-                        <ul class="nav navbar-nav">
-                             <li><a href="<?php echo base_url();?>index.php/Welcome/home">Home</a></li>
-                            <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
-                            <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
-                            <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
-                            <li><a href="<?php echo base_url();?>index.php/Welcome/admin">Admin Page</a></li>
-                            <li><a href="<?php echo base_url();?>index.php/Welcome/logout">Sign Out</a></li>
-                           
-                            
-                            
-                        
-                            <!-- <li ><a href="home.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="class_schedule.html">Class Schedule</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="login.html">Sign In</a></li>
-                            <li class="active"><a href="#">Sign Up</a></li> -->
-                       
-                    </ul>
-                </div>
-                <!--/.nav-collapse -->
-            </div>
+  </head>
+  <body>  
+    <!-- Left column -->
+    <div class="templatemo-flex-row">
+      <div class="templatemo-sidebar">
+        <header class="templatemo-site-header">
+          <div class="square"></div>
+          <h1> Admin</h1>
+        </header>
+        <div class="profile-photo-container">
+          <img src="<?php echo base_url();?>assets/images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">  
+          <div class="profile-photo-overlay"></div>
+        </div>      
+        <!-- Search box -->
+        <form class="templatemo-search-form" role="search">
+          <div class="input-group">
+              <button type="submit" class="fa fa-search"></button>
+              <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">           
+          </div>
+        </form>
+        <div class="mobile-menu-icon">
+            <i class="fa fa-bars"></i>
+        </div>
+        <nav class="templatemo-left-nav">          
+        <ul>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/admin"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/sturegistrations"><i class="fa fa-users fa-fw"></i>Student Registration</a></li>
+            <!-- <li><a href="data-visualization.html"><i class="fa fa-bar-chart fa-fw"></i>Charts</a></li> -->
+            <li><a href="#" class="active"><i class="fa fa-users fa-fw"></i>Teacher Registration</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/recepregistrations"><i class="fa fa-users fa-fw"></i>Receptionist Registration</a></li>
+            <!-- <li><a href="data-visualization.html"><i class="fa fa-database fa-fw"></i>Notification</a></li>
+             -->
+            <!-- <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Maps</a></li> -->
+            <!-- <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Manage Users</a></li> -->
+            <li><a href="<?php echo base_url();?>index.php/Welcome/editcourses"><i class="fa fa-sliders fa-fw"></i>Manage Courses</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+          </ul>  
         </nav>
-        <!--/.nav-ends -->
-    </header>
-
-    <section id="top_banner">
+      </div>
+      <!-- Main content --> 
+      <div class="templatemo-content col-1 light-gray-bg">
+        <div class="templatemo-top-nav-container">
+          <div class="row">
+            <nav class="templatemo-top-nav col-lg-12 col-md-12">
+              <ul class="text-uppercase">
+                <li><a href="" class="active">Admin panel</a></li>
+                <!-- <li><a href="">Dashboard</a></li>
+                <li><a href="">Overview</a></li>
+                <li><a href="login.html">Sign in form</a></li> -->
+              </ul>  
+            </nav> 
+          </div>
+        </div>
        
-            <!-- <div class="inner text-center"> -->
-                    <!-- <div class="inner text-center">
-                            <div class="fill"><img alt="" src="../../../assets1/img/pic.jpg" width="1350" height="100" alt="Galle fort"></div>        
-                <div class="banner">       </div> -->
-                <!-- <h2>Lorem ipsum dolor sit amet</h2>
-            </div> -->
-        <!-- </div> -->
-    </section>
-
-
-
-    <section id="login-reg">
-        <div class="container">
-            <!-- Top content -->
-            <div class="row">
-                <div class="col-md-3 col-sm-12 forms-right-icons">
-                   
-                    <!-- <div class="col-md-4 col-xs-12 block">
-                        <div class="col-md-2 col-xs-2"><i class="fa fa-laptop feature_icon"></i></div>
-                        <div class="col-md-10 col-xs-10"> -->
-                            <!-- <h4>Providing the Best Education</h4>
-                            <p>We provide a well equipped institute with state of all facilities, starting from classrooms to make the studying experience of our students an easy and a well facilitated one.Parents are assured of the safety of their children at our institute and discipline of utmost important to us.</br>We are diverse, welcoming, accepting and passionate about being best we can be.
-                            </br>  Join us to make your higher education experience unforgettable.
-                          </p> 
-                            <a href="#" class="readmore">Read More <i class="fa fa-caret-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12 block">
-                        <div class="col-md-2 col-xs-2"><i class="fa fa-bullhorn feature_icon"></i></div>
-                        <div class="col-md-10 col-xs-10">
-                            <h4>BEST PERFORMANCE</h4>
-                            <p>Top performers in Ordinary Level Examination.<p>
-                            <p>Top performers in Advanced Level Examination. </p>
-                            <a href="#" class="readmore">Read More <i class="fa fa-caret-right"></i></a>
-                        </div>
-                    </div> -->
-                    <!-- <div class="col-md-4 col-xs-12 block">
-                        <div class="col-md-2 col-xs-2"><i class="fa fa-user feature_icon"></i></div>
-                        <div class="col-md-10 col-xs-10">
-                            <h4>OUR LECTURERS</h4>
-                            <p>Our lecturers are qualifed, well experienced and recognized in their respective fields.</p>
-                            <a href="#" class="readmore">Read More <i class="fa fa-caret-right"></i></a>
-                        </div>
-                    </div>
-                </div> -->
-                    <!-- <div class="row">
-                        <div class="col-xs-2 icon"><i class="fa fa-laptop"></i></div>
-                        <div class="col-xs-10 datablock">
-                            <h4>Providing the Best Education</h4>
-                            <p>We provide a well equipped institute with state of all facilities, starting from classrooms to make the studying experience of our students an easy and a well facilitated one.Parents are assured of the safety of their children at our institute and discipline of utmost important to us.</br>We are diverse, welcoming, accepting and passionate about being best we can be.
-                            </br>  Join us to make your higher education experience unforgettable.
-                          </p> 
-                            <a href="#" class="readmore"><span>Read More</span> <i class="fa fa-caret-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-2 icon"><i class="fa fa-bullhorn"></i></div>
-                        <div class="col-xs-10 datablock">
-                            <h4>BEST PERFORMANCE</h4>
-                            <p>Top performers in Ordinary Level Examination.<p>
-                            <p>Top performers in Advanced Level Examination. </p>
-                            <a href="#" class="readmore"><span>Read More </span><i class="fa fa-caret-right"></i></a>
-                       </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-2 icon"><i class="fa fa-user feature_icon"></i></div>
-                        <div class="col-xs-10 datablock">
-                            <h4>OUR LECTURERS</h4>
-                            <p>Our lecturers are qualifed, well experienced and recognized in their respective fields.</p>
-                            <a href="#" class="readmore"><span>Read More </span><i class="fa fa-caret-right"></i></a>
-                       </div>
-                    </div> -->
-
-                </div>
-                <!--forms-right-icons-->
-                <div class="col-md-6 col-sm-12">
-                <div class="section-heading">
-                        <h2><span>Sign Up Teachers  With Us</span></h2>
-                        <!-- <br/>
-                        <p class="subheading">Register all the teachers to our system.
-                        </p> -->
-                    </div>
+          
+           
+                    
+            
+            <!-- Second row ends -->
+            <div class="col-1">
+              <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
+                <i class="fa fa-times"></i>
+               
+                <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">Teacher Registration Form</h2></div>
+                <!-- <div class="form-top-right">
+                                <i class="fa fa-pencil"></i>
+                            </div> -->
+          <div class="templatemo-flex-row flex-content-row templatemo-overflow-hidden"> 
+                <div class="templatemo-content-widget templatemo-login-widget white-bg">
+                
                     <div class="form-box">
                         <div class="form-top">
-                            <div class="form-top-left">
-                                <h3>Sign up now</h3>
-                                <p>Fill in the form below to get instant access</p>
-                            </div>
-                            <div class="form-top-right">
-                                <i class="fa fa-pencil"></i>
-                            </div>
                         </div>
                         <div class="form-bottom">
-                        <form role="form" action="<?php echo site_url('Signup/registration');?>" method="post" class="login-form">
+                        <form role="form" action="<?php echo site_url('Signup/tregistration');?>" method="post" class="login-form">
                                 
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
@@ -204,29 +115,78 @@
                                 </div>
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                        <input type="text" class="form-control" id="taecher_Id" name="teacher_id" placeholder=" Enter Teacher ID Number" aria-describedby="basic-addon1" required="required">
+                                        <input type="text" class="form-control" id="Teacher_ID" name="teacher_id" placeholder=" Enter Teacher ID Number" aria-describedby="basic-addon1" required="required">
                                 </div>
+
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                        <input type="text" class="form-control" id="first_name" name="first_name" placeholder=" First Name" aria-describedby="basic-addon1" required="required">
+                                        <input type="text" class="form-control" id="emp_no" name="emp_no" placeholder=" Enter Employee Number" aria-describedby="basic-addon1" required="required">
                                 </div>
+
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                        <input type="text" class="form-control" id="last_name" name="last_name" placeholder=" Last Name" aria-describedby="basic-addon1" required="required">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder=" Name" aria-describedby="basic-addon1" required="required">
                                 </div>
+
                                 <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i>&nbsp&nbsp&nbspDate of Birth</span>
-                                        <input type="date" class="form-control" name="dob" placeholder="Date of Birth" label="Date of Birth" aria-describedby="basic-addon1" required="required">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
+                                        <input type="tel" class="form-control" name="contact_number" placeholder="Contact Number" maxlength="10" minlength="10" aria-describedby="basic-addon1" required="required">
                                 </div>
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" class="form-control" id="basic-addon1"><i class="fa fa-user"></i>Gender<input type="radio" name="gender" value="male" checked> Male <input type="radio" name="gender" value="female"> Female</span>
-                    
-                                            
-                                </div>
+
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope"></i></span>
                                         <input type="email" class="form-control" name="email" placeholder="Email" aria-describedby="basic-addon1" required="required">
                                 </div>
+
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" class="form-control" id="basic-addon1"><i class="fa fa-user"></i>Gender<input type="radio" name="gender" value="male" checked> Male <input type="radio" name="gender" value="female"> Female</span>
+                                </div>
+
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                        <input type="text" class="form-control" name="course_id" placeholder="Subject ID" aria-describedby="basic-addon1" required="required">
+                                </div>
+
+                                <!-- New Addition -->
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                        <input type="text" class="form-control" name="hall_no" placeholder="Hall Number" aria-describedby="basic-addon1" required="required">
+                                </div>
+
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                        <input type="text" class="form-control" name="numofstu" placeholder="Number of Students" aria-describedby="basic-addon1" required="required">
+                                </div>
+
+                                <!-- End -->
+
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                    <input type="text" class="form-control" name="subject" placeholder="subject" aria-describedby="basic-addon1" required="required">
+                              
+                                    <!-- <input type="button" name="subject" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Subject</button>
+                                       -->
+                                    <!-- <form>  -->
+                                            <!-- <div>
+                                            
+                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                            <option selected>Choose...</option>
+                                            <option value="1">Mathematics</option>
+                                            <option value="2">Chemistry</option>
+                                            <option value="3">Physics</option>
+                                            </select>
+                                            </div> -->
+                                </div>
+                            
+                              
+                                
+
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                        <input type="text" class="form-control" name="grade" placeholder="Grade" aria-describedby="basic-addon1" required="required">
+                                </div>
+
+                                
                             
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
@@ -236,32 +196,15 @@
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-unlock"></i></span>
                                         <input type="password" class="form-control" name="password" placeholder="Password" aria-describedby="basic-addon1" required="required">
                                 </div>
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
-                                        <input type="tel" class="form-control" name="contact_number" placeholder="Contact Number" maxlength="10" minlength="10" aria-describedby="basic-addon1" required="required">
-                                </div>
-                                <!-- <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                        <input type="text" class="form-control" name="pname" placeholder="Parent/Guardian Name" aria-describedby="basic-addon1" required="required">
-                                </div>
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                        <input type="text" class="form-control" name="pnic" placeholder="Parent NIC Number" aria-describedby="basic-addon1" required="required">
-                                </div> -->
-                                <!-- <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
-                                        <input type="tel" class="form-control" name="pnum" placeholder="Parent's Contact Number" maxlength="10" minlength="10" aria-describedby="basic-addon1" required="required">
-                                </div> -->
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope"></i></span>
-                                        <input type="text" class="form-control" name="address" placeholder="Home Address" aria-describedby="basic-addon1" required="required">
-                                </div>
+                                
+                                
                                
                 
                 <tr>
                     <td></td>
-                    <td><input type="submit" name="submit" value="submit" onclick="registrationform();">
-                    <input type="reset" name="RESET"></td>
+                    <td><input class="templatemo-blue-button width-100" type="submit" name="submit" value="submit" >
+                    <br/>
+                    <input class="templatemo-blue-button width-100" type="reset" name="RESET"></td>
                 </tr>
                 
             </table>  
@@ -270,10 +213,10 @@
                               
                                 
                             </form>       
-                    <center>
+                    <!-- <center>
                     <h3>OR</h3>
                     <a href="<?php echo base_url();?>index.php/Welcome/login">Already You have an Account ?</a>
-                    </center>
+                    </center> -->
 	             </div>
                     
 
@@ -282,137 +225,81 @@
 
     </section>
 
-    <section id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 col-xs-12 block">
-                        <div class="footer-block">
-                            <h4>Gallery</h4>
-                                <div class="user-image"><img src="<?php echo base_url();?>assets1\img\pic.jpg" alt="user" class="img-responsive" /></div>
-                       
-                            <!-- <h5>Wimalasurendra Mawatha, Galle 80000, </br>  Sri Lanka</h5>
-                            <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
-                                <img src="..\..\..\assets1\img\map.png">
-                            </a>
-                             <hr/> -->
-                            <!-- <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.
-                            </p> -->
-                            <!-- <a href="#" class="learnmore">Learn More <i class="fa fa-caret-right"></i></a> -->
-                        </div>
-                    </div>
-    
-                    <div class="col-md-3 col-sm-3 col-xs-12 block">
-                        <div class="footer-block">
-                            <h4>Useful Links</h4>
-                            <!-- <hr/> -->
-                            <ul class="footer-links">
-                            <li><a href="<?php echo base_url();?>index.php/Welcome/home">Home</a></li>
-                            <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
-                            <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
-                            <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
-                            <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
-                                <!-- <li><a href="login.html">Sign In</a></li> -->
-                                <!-- <li><a href="registration.html">Sign Up</a></li> -->
-                            </ul>
-                        </div>
-                    </div>
-    
-                    
-                </ul>
-                    <div class="col-md-3 col-sm-3 col-xs-12 block">
-                        <div class="footer-block">
-                                <h4>Visit Us</h4>
-                                <h5>Southern Institute Galle</h5>
-                                <h5>Wimalasurendra Mawatha, <br/>Galle 80000, </br>  Sri Lanka</h5>
-                                <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
-                                    <img src="<?php echo base_url();?>assets1\img\map.png">
-                                </a>
-                                 <!-- <hr/> -->
-                            <!-- <ul class="footer-links">
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Forum</a></li>
-                                <li><a href="#">Free Goods</a></li>
-                            </ul> -->
-                        </div>
-                    </div>
-    
-                    <div class="col-md-3 col-sm-3 col-xs-12 <block></block>">
-                        <div class="footer-block">
-                            <h4>Recent Posts</h4>
-                            <!-- <hr/> -->
-                            <ul class="footer-links">
-                                <li>
-                                    <div class="user-image"><img src="<?php echo base_url();?>assets1\img\post.jpeg" alt="user" class="img-responsive" /></div>
-                       
-                                    <!-- <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                    <p class="post-date">May 25, 2017</p> -->
-                                </li>
-                                <!-- <li>
-                                    <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                    <p class="post-date">May 25, 2017</p>
-                                </li>
-                                <li>
-                                    <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                    <p class="post-date">May 25, 2017</p>
-                                </li> -->
-    
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+   
+     
+              </div>
             </div>
-    
-    
-        </section>
-    
-        <section id="bottom-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Use</a>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12 copyright">
-                        Developed by <a href="#">Team Innoview</a> designed by <a href="#">UCSC</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <!-- <div id="panel">
-            <div id="panel-admin">
-                <div class="panel-admin-box">
-                    <div id="tootlbar_colors">
-                        <button class="color" style="background-color:#1abac8;" onclick="mytheme(0)"></button>
-                        <button class="color" style="background-color:#ff8a00;" onclick="mytheme(1)"> </button>
-                        <button class="color" style="background-color:#b4de50;" onclick="mytheme(2)"> </button>
-                        <button class="color" style="background-color:#e54e53;" onclick="mytheme(3)"> </button>
-                        <button class="color" style="background-color:#1abc9c;" onclick="mytheme(4)"> </button>
-                        <button class="color" style="background-color:#159eee;" onclick="mytheme(5)"> </button>
-                    </div>
-                </div>
-    
-            </div>
-            <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
-        </div> -->
-    </body>
-    </html>
-    
-    
-    
-    <!-- <div id="panel">
-        <div id="panel-admin">
-            <div class="panel-admin-box">
-                <div id="tootlbar_colors">
-                    <button class="color" style="background-color:#1abac8;" onclick="mytheme(0)"></button>
-                    <button class="color" style="background-color:#ff8a00;" onclick="mytheme(1)"> </button>
-                    <button class="color" style="background-color:#b4de50;" onclick="mytheme(2)"> </button>
-                    <button class="color" style="background-color:#e54e53;" onclick="mytheme(3)"> </button>
-                    <button class="color" style="background-color:#1abc9c;" onclick="mytheme(4)"> </button>
-                    <button class="color" style="background-color:#159eee;" onclick="mytheme(5)"> </button>
-                </div>
-            </div>
-
+          </div>
+          <footer class="text-right">
+            <p>Copyright &copy; 2084 Company Name 
+            | Design: Template Mo</p>
+          </footer>         
         </div>
-        <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
-    </div> -->
+      </div>
+    </div>
+    
+    <!-- JS -->
+    <script src="js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
+    <script src="js/jquery-migrate-1.2.1.min.js"></script> <!--  jQuery Migrate Plugin -->
+    <script src="https://www.google.com/jsapi"></script> <!-- Google Chart -->
+    <script>
+      /* Google Chart 
+      -------------------------------------------------------------------*/
+      // Load the Visualization API and the piechart package.
+      google.load('visualization', '1.0', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.setOnLoadCallback(drawChart); 
+      
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+          // Create the data table.
+          var data = new google.visualization.DataTable();
+          data.addColumn('string', 'Topping');
+          data.addColumn('number', 'Slices');
+          data.addRows([
+            ['Mushrooms', 3],
+            ['Onions', 1],
+            ['Olives', 1],
+            ['Zucchini', 1],
+            ['Pepperoni', 2]
+          ]);
+
+          // Set chart options
+          var options = {'title':'How Much Pizza I Ate Last Night'};
+
+          // Instantiate and draw our chart, passing in some options.
+          var pieChart = new google.visualization.PieChart(document.getElementById('pie_chart_div'));
+          pieChart.draw(data, options);
+
+          var barChart = new google.visualization.BarChart(document.getElementById('bar_chart_div'));
+          barChart.draw(data, options);
+      }
+
+      $(document).ready(function(){
+        if($.browser.mozilla) {
+          //refresh page on browser resize
+          // http://www.sitepoint.com/jquery-refresh-page-browser-resize/
+          $(window).bind('resize', function(e)
+          {
+            if (window.RT) clearTimeout(window.RT);
+            window.RT = setTimeout(function()
+            {
+              this.location.reload(false); /* false to get page from cache */
+            }, 200);
+          });      
+        } else {
+          $(window).resize(function(){
+            drawChart();
+          });  
+        }   
+      });
+      
+    </script>
+    <script type="text/javascript" src="js/templatemo-script.js"></script>      <!-- Templatemo Script -->
+
+  </body>
+</html>
