@@ -97,10 +97,12 @@ https://templatemo.com/tm-541-host-cloud
           <div class="col-md-12">
             <div class="section-heading">
 
+            
+
             	<!-- <button class="login100-form-btn" onclick='loginform()'>
 							Login
 						</button>  -->
-              <span>Hosting Services</span>
+              <!--span>Hosting Services</span>
               <h2>Best Services We Provide</h2>
               <p>Aenean molestie, odio quis viverra ultricies, leo tellus lacinia neque, sit amet maximus tortor nunc aliquet felis. Duis sit amet nibh non sapien tincidunt bibendum. Curabitur rutrum justo id leo ornare, suscipit lobortis augue volutpat.</p>
             </div>
@@ -151,49 +153,157 @@ https://templatemo.com/tm-541-host-cloud
       </div>
     </div>
     <!-- Services Ends Here -->
+    
+    <table class="table table-striped table-bordered">
+                    <thead>
+                      <th colspan="6"><center>ORDINARY LEVEL</center></th>
+                      <tr>
+                        <td>No.</td>
+                        <td>Subject</td>
+                        <td>Scheduled Day</td>
+                        <td>Teacher</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1.</td>
+                        <td>Maths</td>
+                        <td>Saturday</td>
+                        <td>Mr.A.S. Ariyarathne<br>
+                        Mr.L.L. Samarakoon
+                      </td>
+                      </tr>
+                      <tr>
+                        <td>2.</td>
+                        <td>Science</td>
+                        <td>Saturday</td>
+                        <td>Mr.S.D. Pathirana<br>
+                            Mr. J. Dasanayake
+                      </tr>
+                      <tr>
+                        <td>3.</td>
+                        <td>Sinhala</td>
+                        <td>Saturday</td>
+                        <td>Mr. H.M.A. Bandara</td>
+                      </tr>
+                      <tr>
+                        <td>4.</td>
+                        <td>English</td>
+                        <td>Sunday</td>
+                        <td>Mrs.Reeni perera</td>
+                      </tr>
+                      <tr>
+                        <td>5.</td>
+                        <td>History</td>
+                        <td>Sunaday</td>
+                        <td>Mr. S.K. Kulathunga</td>
+                      </tr>                 
+                      <td>6.</td>
+                        <td>I.C.T.</td>
+                        <td>Sunaday</td>
+                        <td>Mr. T.K. Jayalath </td>
+                      </tr>     
+                      <td>7.</td>
+                        <td>Dancing</td>
+                        <td>Sunaday</td>
+                        <td>Mrs. N. Geetha Adikari</td>
+                      </tr>        
+                      <td>8.</td>
+                        <td>Western Music<br>
+                      Eastern Music</td>
+                        <td>Sunaday</td>
+                        <td>Mrs. N. Geetha Adikari<br>
+                      Miss. G. S. Liyanage</td>
+                      </tr>                     
+                    <!--/tbody-->
+                  </table>  <br><br><br><br>  
 
-<!-- Testimonials Starts Here -->
-<div class="testimonials-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <span>Testimonials</span>
-              <h2>What they say about us</h2>
-            </div>
-          </div>
-          <div class="col-md-10 offset-md-1">
-            <div class="owl-testimonials owl-carousel">
-              <div class="testimonial-item">
-                <div class="icon">
-                  <i class="fa fa-quote-right"></i>
-                </div>
-                <p>"Ut elementum a elit sed tristique. Pellentesque sed semper erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean quam erat, rutrum ut malesuada."</p>
-                <h4>William Smith</h4>
-                <span>New Co-Founder</span>
-              </div>
-              <div class="testimonial-item">
-                <div class="icon">
-                  <i class="fa fa-quote-right"></i>
-                </div>
-                <p>"Quisque lacinia sed velit et maximus. Quisque dictum, lacus a malesuada finibus, arcu magna luctus risus, eu accumsan risus elit vitae lacus."</p>
-                <h4>Vinny Smart</h4>
-                <span>Digital Marketer</span>
-              </div>
-              <div class="testimonial-item">
-                <div class="icon">
-                  <i class="fa fa-quote-right"></i>
-                </div>
-                <p>"Vestibulum mauris ipsum, tempor tincidunt justo sit amet, bibendum tincidunt dui. Aenean molestie, odio quis viverra ultricies, leo tellus lacinia neque, sit amet maximus tortor nunc aliquet felis."</p>
-                <h4>Trevor Liam</h4>
-                <span>Technology Chef</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Testimonials Ends Here -->
+
+
+                  <table class="table table-striped table-bordered">
+                    <thead>
+                      <th colspan="6"><center>ADVACED LEVEL</center></th>
+                      <tr>
+                        <td>No.</td>
+                        <td>Subject</td>
+                        <td>Scheduled Day</td>
+                        <td>Teacher</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1.<br>
+                      Biology</td>
+                        <td>Bio<br>
+                      Chemistry <br>
+                      Physics </td>
+                        <td>Sunday/ Revison- Monday <br>
+                     Saturday/ Revison- Friday <br>
+                     Saturday/ Revison- Wednesday </td>
+                        <td>Mr. J.L. Arachchi <br>
+                        Mr. M.I. Senevirathne <br>
+                        Mr. R. Lekamge</td>
+                      </tr>
+                      <tr>
+                        <td>2.<br>
+                      Physical Science</td>
+                        <td>Combined Maths<br>
+                      Chemistry <br>
+                      Physics </td>
+                        <td>Saturday/ Revison- Tuesday<br>
+                     Saturday/ Revison- Friday <br>
+                     Saturday/ Revison- Wednesday </td>
+                        <td>Mr. P.N. Ranaweera <br>
+                        Mr. M.I. Senevirathne <br>
+                        Mr. R. Lekamge</td>
+                      </tr>
+                      
+                      <tr>
+                      <td>3.<br>
+                      Commerce</td>
+                        <td>Accounting<br>
+                      Business Studies<br>
+                      Economics </td>
+                        <td>Sunday/ Revison- Thursday<br>
+                     Sunday/ Revison- Friday <br>
+                     Sunday/ Revison- Monday </td>
+                        <td>Mr. H.N. Raja <br>
+                        Mr. L.L. Lokuge <br>
+                        Mr. W. Yapa Bandara</td>
+                      </tr>
+                      <tr>
+                      <td>4.<br>
+                      Arts</td>
+                        <td>Sinhala Language<br>
+                      English Lit.<br>
+                      Economics <br>
+                      Logic <br>
+                      Geography <br>
+                      French <br>
+                      Media</td>
+                        <td>Sunday/ Revison- Friday<br>
+                     Sunday/ Revison- Tuesday <br>
+                     Sunday/ Revison- Monday<br>
+                     Saturday/ Revison- Wednesday <br>
+                     Friday/ Revison- Monday <br>
+                     Friday/ Revison- Thursday<br>
+                     Saturday/ Revison- Friday </td>
+                        <td>Mr. H. Jaynath <br>
+                        Mrs. K. Gayaani Perera <br>
+                        Mr. W. Yapa Badara <br>
+                        Mr. B. Pathirana <br>
+                        Mr. D.N. Lal <br>
+                        Mr. J. Jayarathne <br>
+                        Mr. E.J. Allegoda</td>
+                      </tr>
+                                          
+                    <!--/tbody-->
+                  </table> 
+
+
+
+
+
 
 
     <!-- Footer Starts Here -->
