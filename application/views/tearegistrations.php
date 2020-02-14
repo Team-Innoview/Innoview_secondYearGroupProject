@@ -42,17 +42,17 @@
           <div class="square"></div>
           <h1> Admin</h1>
         </header>
-        <div class="profile-photo-container">
+        <!-- <div class="profile-photo-container">
           <img src="<?php echo base_url();?>assets/images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">  
           <div class="profile-photo-overlay"></div>
-        </div>      
+        </div> -->      
         <!-- Search box -->
-        <form class="templatemo-search-form" role="search">
+        <!-- <form class="templatemo-search-form" role="search">
           <div class="input-group">
               <button type="submit" class="fa fa-search"></button>
               <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">           
           </div>
-        </form>
+        </form> -->
         <div class="mobile-menu-icon">
             <i class="fa fa-bars"></i>
         </div>
@@ -111,7 +111,7 @@
                                 
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                    <input type="text" class="form-control" id="user_type" name="user_type" placeholder="Teacher" value="Teacher" aria-describedby="basic-addon1" required="required">
+                                    <input type="text" class="form-control" id="user_type" name="user_type" placeholder="Teacher" s aria-describedby="basic-addon1" required="required">
                                 </div>
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>

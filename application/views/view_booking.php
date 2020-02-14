@@ -1,4 +1,4 @@
- 
+<?php include('application\config\config.php')?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <title> Receptionist-Dashboard Home</title>
+    <title> Receptionist Hall Booking</title>
     <meta name="description" content="">
     <meta name="author" content="templatemo">
     <!-- 
@@ -55,12 +55,12 @@
         <ul>
             <li><a href="<?php echo base_url();?>index.php/Welcome/receptionist"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/edit_recep"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
-            <li><a href="#" class="active"><i class="fa fa-database fa-fw"></i>Notification</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_noti"><i class="fa fa-database fa-fw"></i>Notification</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/recep_pay"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_hall"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
+            <li><a href="#" class="active"><i class="fa fa-home fa-fw "></i>Hall Management</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          
-          </ul>      
+          </ul>        
        
         </nav>
       </div>
@@ -70,86 +70,65 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-                <!-- <li><a href="" class="active">Inbox</a></li> -->
-                <li><a href="" class="active">Compose</a></li>
-                
+              
+                <li><a href="<?php echo base_url();?>index.php/Welcome/recep_hall">Add booking</a></li>
+                <li><a href="" class="active">View booking</a></li>
+                <li><a href="<?php echo base_url();?>index.php/Welcome/cancel_booking">Cancel booking</a></li>
+               
                 <!-- <li><a href="login.html">Sign in form</a></li> -->
               </ul>  
             </nav> 
           </div>
         </div>
-        <div class="col-1">
-              <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
+        <div class="templatemo-content-container">
+          <div class="templatemo-content-widget padding">
+        
+          <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
                 <i class="fa fa-times"></i>
-               
-                <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">Compose Notification</h2></div>
-                <!-- <div class="form-top-right">
-                                <i class="fa fa-pencil"></i>
-                            </div> -->
-          <div class="templatemo-flex-row flex-content-row templatemo-overflow-hidden"> 
-                <div class="templatemo-content-widget templatemo-login-widget white-bg">
+                <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">Booking Details</h2></div>
+                <div class="table-responsive">
                 
-                    <div class="form-box">
-                        <div class="form-top">
-                        </div>
-                        <div class="form-bottom">
-                        <form role="form" action="<?php echo site_url('Signup/send');?>" method="post" class="login-form">
-                                
-                               
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                        <input type="text" class="form-control" id="notification_id" name="notification_id" placeholder=" Enter notification_Id" aria-describedby="basic-addon1" required="required">
-                                </div>
-                                
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                        <input type="date" class="form-control" id="date" name="date" placeholder=" Date" aria-describedby="basic-addon1" required="required">
-                                </div>
 
-                                 <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                        <input type="text" class="form-control" id="message" name="message" placeholder="Message" aria-describedby="basic-addon1" required="required">
-                                </div>
-
-
-                                
-                               
-                
-                <tr>
-                    <td></td>
-                    <td><input class="templatemo-blue-button width-100" type="submit" name="sent" value="sent">
-                    <br/>
-                
-                </tr>
-                
-            </table>  
-
-            
-                              
-                                
-                            </form>       
-                    <!-- <center>
-                    <h3>OR</h3>
-                    <a href="<?php echo base_url();?>index.php/Welcome/login">Already You have an Account ?</a>
-                    </center> -->
-	             </div>
-                    
-
-            </div>
-
-
-    </section>
-
-     
+                  <table class="table table-striped table-bordered">
+                    <thead>
+                      <tr>
+                        <td>Hall</td>
+                        <td>Day</td>
+                        <td>Teacher_no</td>
+                      </tr>
+                      
+                     
+                    </thead>
+                    <tbody>
+                        <?php
+                      // $result=$this->db->query("SELECT hall_no, day ,emp_no FROM booking_details");
+                      // while($result->result() as $row){
+                        $result=$this->db->query("SELECT hall_no, day ,emp_no FROM booking_details");
+                        foreach($result->result() as $row){
+                          ?>
+                      <tr>
+                        <td><?php echo $row->hall_no;?></td>
+                        <td><?php echo $row->day; ?></td>
+                        <td><?php echo $row->emp_no; ?></td>
+                            
+                      </tr>
+                      <?php
+                        }
+                      ?>
+                                      
+                    </tbody>
+                  </table>    
+                </div>                          
               </div>
-            </div>
-          </div>
+            </div>   
+              </div>
+              </div>
+           </div>
           <footer class="text-right">
             <p>Copyright &copy; Team Innoview
-            | UCSC</p>
+            | Design:UCSC</p>
           </footer>         
-        </div>
-      </div>
+      
     </div>
     
     <!-- JS -->

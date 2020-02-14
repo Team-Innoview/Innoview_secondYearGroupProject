@@ -6,16 +6,28 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <title> Receptionist Hall Booking</title>
+    <title> Receptionist Hall Booking Cancel</title>
     <meta name="description" content="">
     <meta name="author" content="templatemo">
-   
+    <!-- 
+    Visual Admin Template
+    https://templatemo.com/tm-455-visual-admin
+    -->
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
     <link href="<?php echo base_url();?>assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url();?>assets/css/templatemo-style.css" rel="stylesheet">
     
+  
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
   </head>
   <body>  
     <!-- Left column -->
@@ -25,10 +37,20 @@
           <div class="square"></div>
           <h1>Receptionist</h1>
         </header>
-        
+        <!-- <div class="profile-photo-container">
+          <img src="<?php echo base_url();?>assets/images/Receptionist.jpg" alt="Profile Photo" class="img-responsive">  
+          <div class="profile-photo-overlay"></div>
+        </div>       -->
+        <!-- Search box -->
+        <!-- <form class="templatemo-search-form" role="search">
+          <div class="input-group">
+              <button type="submit" class="fa fa-search"></button>
+              <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">           
+          </div>
+        </form> -->
         <div class="mobile-menu-icon">
             <i class="fa fa-bars"></i>
-        </div>
+          </div>
         <nav class="templatemo-left-nav">          
         <ul>
             <li><a href="<?php echo base_url();?>index.php/Welcome/receptionist"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
@@ -36,8 +58,10 @@
             <li><a href="<?php echo base_url();?>index.php/Welcome/recep_noti"><i class="fa fa-database fa-fw"></i>Notification</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/recep_pay"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
             <li><a href="#" class="active"><i class="fa fa-home fa-fw "></i>Hall Management</a></li>
-             <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
-        </ul>        
+            <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+         
+          </ul>        
+       
         </nav>
       </div>
       <!-- Main content --> 
@@ -47,9 +71,9 @@
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
               
-                <li><a href="" class="active">Add booking</a></li>
-                <li><a href="<?php echo base_url();?>index.php/Welcome/view_booking">View booking</a></li>
-                <li><a href="<?php echo base_url();?>index.php/Welcome/cancel_booking">Cancel booking</a></li>
+                <li><a href="<?php echo base_url();?>index.php/Welcome/recep_hall">Add booking</a></li>
+                <li><a href="<?php echo base_url();?>index.php/Welcome/view_booking" >View booking</a></li>
+                <li><a href="" class="active">Cancel booking</a></li>
                
                 <!-- <li><a href="login.html">Sign in form</a></li> -->
               </ul>  
@@ -58,11 +82,10 @@
         </div>
         <div class="templatemo-content-container">
           <div class="templatemo-content-widget padding">
-
-       
-          <form role="form" action="<?php echo site_url('Signup/book');?>" method="post" class="login-form">
-                            
-								<div class="row">
+              
+          <form role="form" action="<?php echo site_url('Signup/delete');?>" method="post" >
+                  
+          <div class="row">
 									<div class="col-sm-5">
 										<div class="form-group">
 											<span class="form-label">Hall</span>
@@ -137,7 +160,7 @@
                 
 					  <div class="container-login100-form-btn">
 					
-           <input class="templatemo-blue-button width-50" type="submit" name="book" value="book">
+           <input class="templatemo-blue-button width-50" type="submit" name="cancel_book" value="cancel_book">
            <!-- <input class="templatemo-blue-button width-100" type="submit" name="submit" value="submit">
                     -->
                 
@@ -148,9 +171,11 @@
 
                 
 							</form>
+                    </div>
+            
               </div>
               </div>
-           
+           </div>
           <footer class="text-right">
             <p>Copyright &copy; Team Innoview
             | Design:UCSC</p>

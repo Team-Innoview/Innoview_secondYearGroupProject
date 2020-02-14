@@ -9,24 +9,13 @@
     <title> Teacher-Dashboard Home</title>
     <meta name="description" content="">
     <meta name="author" content="templatemo">
-    <!-- 
-    Visual Admin Template
-    https://templatemo.com/tm-455-visual-admin
-    -->
-
+  
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
     <link href="<?php echo base_url();?>assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url();?>assets/css/templatemo-style.css" rel="stylesheet">
     
   
-    
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
   </head>
   <body>  
@@ -37,17 +26,7 @@
           <div class="square"></div>
           <h1>Teacher</h1>
         </header>
-        <div class="profile-photo-container">
-          <img src="<?php echo base_url();?>assets/images/Teacher.jpg" alt="Profile Photo" class="img-responsive">  
-          <div class="profile-photo-overlay"></div>
-        </div>      
-        <!-- Search box -->
-        <form class="templatemo-search-form" role="search">
-          <div class="input-group">
-              <button type="submit" class="fa fa-search"></button>
-              <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">           
-          </div>
-        </form>
+       
         <div class="mobile-menu-icon">
             <i class="fa fa-bars"></i>
           </div>
@@ -55,9 +34,7 @@
         <ul>
             <li><a href="<?php echo base_url();?>index.php/Welcome/teacher"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/edit_teacher"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
-            <li><a href="#" class="active"><i class="fa fa-database fa-fw"></i>Notification</a></li>
-            <!-- <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li> -->
-            <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>VLE</a></li>
+          <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>VLE</a></li>
             <!-- <li><a href="preferences.html"><i class="fa fa-sliders fa-fw"></i>Attendence</a></li> -->
             <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          

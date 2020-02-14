@@ -4,7 +4,7 @@ class Receptionistregistration extends CI_Model{
 
 public function registeruser(){
 $data1 = array(
-'user_id'=> $this->input->post('receptionist_id'),
+'user_id'=> $this->input->post('emp_no'),
 'user_type'=> $this->input->post('user_type'),
 'user_name'=> $this->input->post('user_name'),
 'password'=> $this->input->post('password'),
@@ -12,6 +12,7 @@ $data1 = array(
 $this->db->insert('users',$data1);
 
 $data2 = array(
+
 'emp_no'=> $this->input->post('emp_no'),
 'name'=> $this->input->post('name'),
 'contact_no'=> $this->input->post('contact_number'),

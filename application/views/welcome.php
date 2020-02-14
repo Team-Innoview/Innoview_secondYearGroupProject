@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="TemplateMo">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
-
+    
     <title>Home</title>
 
     <!-- Bootstrap core CSS -->
@@ -18,6 +18,11 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/fontawesome.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/templatemo-host-cloud.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/owl.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <!--
 
 Host Cloud Template
@@ -40,17 +45,18 @@ https://templatemo.com/tm-541-host-cloud
     <!-- ***** Preloader End ***** -->
 
     <!-- Header -->
+    <!--header class=""-->
     <header class="">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg bg-custome">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>SOUTHERN  <em>INSTITUTE</em></h2></a>
+          <a class="navbar-brand" href="index.html"><h2>Southern <em>Institute</em></h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home
+                <a class="nav-link" href="<?php echo base_url();?>index.php">Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
@@ -60,92 +66,63 @@ https://templatemo.com/tm-541-host-cloud
               <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link" href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a>
               </li>
             </ul>
-          </div>
-          <div class="functional-buttons">
+            <div class="functional-buttons">
             <ul>
               <li><a href="<?php echo base_url();?>index.php/Welcome/login">Log in</a></li>
-              <!-- <li><a href="#">Sign Up</a></li> -->
             </ul>
+          </div>
           </div>
         </div>
       </nav>
     </header>
 
-    <!-- Page Content -->
-    <!-- Banner Starts Here -->
-    <div class="banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 offset-md-2">
-            <!-- <div class="header-text caption">
-              <h2>Search your domain</h2>
-              <div id="search-section">
-              	<form id="suggestion_form" name="gs" method="get" action="#">
-                <div class="searchText">
-                  
-                  <input type="text" name="q" class="searchText" placeholder="Enter your domain here..." autocomplete="on">
-                  <ul>
-                    <li><label><input type="checkbox" name="ext_com" value="1"><span>.com <em>($10/yr)</em></span></label></li>
-                    <li><label><input type="checkbox" name="ext_net" value="1"><span>.net <em>($12/yr)</em></span></label></li>
-                    <li><label><input type="checkbox" name="ext_org" value="1"><span>.org <em>($8/yr)</em></span></label></li>
-                    <li><label><input type="checkbox" name="ext_in" value="1"><span>.in <em>($6/yr)</em></span></label></li>
-                  </ul>
-                </div>
-                    <input type="submit" name="results" class="main-button" value="Search Now">
-                 </form>
-               <div class="advSearch_chkbox">
-               </div>
-              </div>
-            </div> -->
-          </div>
+
+    <!--Carousel starts here-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class="carousel-item active">
+        <img src="<?php echo base_url();?>/assets/images/hero3.jpg" class="image-fluid">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-1">EDUCATION</h2>
+          <p class="lead1">PROVIDING BEST QUALITY EDUCATION</p>
+        </div>
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class="carousel-item">
+        <img src="<?php echo base_url();?>/assets/images/getty_0.jpg" class="image-fluid">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-2">STUDENTS</h2>
+          <p class="lead2">STUDENT BASE OF MORE THAN A 1000</p>
+        </div>
+      </div>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class="carousel-item">
+        <img src="<?php echo base_url();?>/assets/images/ap.jpg" class="image-fluid">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-3">LEGACY</h2>
+          <p class="lead3">HIGHEST RESULTS IN THE SOUTH</p>
         </div>
       </div>
     </div>
-    <!-- Banner Ends Here -->
-
-    <!-- Trusted Starts Here -->
-    <!-- <div class="trusted-section">
-      <div class="container">
-        <div class="row"> -->
-          <!-- <div class="col-md-12">
-            <div class="trusted-section-heading">
-              <h4>TRUSTED BY 1,250+ HAPPY CUSTOMERS WORLDWIDE</h4>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="owl-trusted owl-carousel">
-              <div class="trusted-item">
-                <img src="assets/images/trusted-01.png" alt="trusted 1">
-              </div>
-              <div class="trusted-item">
-                <img src="assets/images/trusted-01.png" alt="trusted 2">
-              </div>
-              <div class="trusted-item">
-                <img src="assets/images/trusted-01.png" alt="trusted 3">
-              </div>
-              <div class="trusted-item">
-                <img src="assets/images/trusted-01.png" alt="trusted 4">
-              </div>
-              <div class="trusted-item">
-                <img src="assets/images/trusted-01.png" alt="trusted 5">
-              </div>
-              <div class="trusted-item">
-                <img src="assets/images/trusted-01.png" alt="trusted 6">
-              </div>
-              <div class="trusted-item">
-                <img src="assets/images/trusted-01.png" alt="trusted 7">
-              </div>
-            </div>
-          </div> -->
-        <!-- </div>
-      </div>
-    </div> -->
-    <!-- Trusted Ends Here -->
-
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+  </div>
 
     <!-- Services Starts Here -->
     <div class="services-section">
@@ -186,287 +163,66 @@ https://templatemo.com/tm-541-host-cloud
     </div>
     <!-- Services Ends Here -->
 
-
-    <!-- Pricing Starts Here -->
-    <!-- <div class="pricing-section">
-      <div class="background-image-pricing">
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 offset-md-2">
-            <div class="section-heading">
-              <h2>Cloud Hosting Plans</h2>
-              <p>Lorem ipsum dolor amet taxidermy sriracha cardigan salvia actually vice migas enamel pin sustainable carry scenester lomo hot chicken farm table actually kinfolk.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="pricing-item">
-              <h4>Basic Cloud 5x</h4>
-              <div class="price">
-                <h6>$15.50</h6>
-                <span>monthly</span>
-              </div>
-              <p>Etiam sit amet placerat lacus, sed placerat mauris. Vestibulum malesuada vehicula sapien non tempus.</p>
-              <div class="dev"></div>
-              <ul>
-                <li><i class="fa fa-check"></i>500 GB Storage Space</li>
-                <li><i class="fa fa-check"></i>3 TB Data Transfer</li>
-                <li><i class="fa fa-check"></i>Basic Managed Panel</li>
-                <li><i class="fa fa-check"></i>24/7 Fast Support</li>
-                <li><i class="fa fa-check"></i>100 Premium Themes</li>
-                <li><i class="fa fa-check"></i>Cancel or Upgrade Anytime</li>
-              </ul>
-              <a href="#" class="main-button">Start Plan</a>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="pricing-item">
-              <h4>Cloud VPS 10x</h4>
-              <div class="price price-gradient">
-                <h6>$30.00</h6>
-                <span>monthly</span>
-              </div>
-              <p>Etiam sit amet placerat lacus, sed placerat mauris. Vestibulum malesuada vehicula sapien non tempus.</p>
-              <div class="dev"></div>
-              <ul>
-                <li><i class="fa fa-check"></i>1 TB Cloud Space</li>
-                <li><i class="fa fa-check"></i>8 TB Data Transfer</li>
-                <li><i class="fa fa-check"></i>Fully Managed Panel</li>
-                <li><i class="fa fa-check"></i>15-minute Quick Support</li>
-                <li><i class="fa fa-check"></i>Unlimted Web Addons</li>
-                <li><i class="fa fa-check"></i>Cancel or Upgrade Anytime</li>
-              </ul>
-              <a href="#" class="gradient-button">Select Plan</a>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="pricing-item">
-              <h4>Advanced Cloud</h4>
-              <div class="price">
-                <h6>$72.25</h6>
-                <span>monthly</span>
-              </div>
-              <p>Etiam sit amet placerat lacus, sed placerat mauris. Vestibulum malesuada vehicula sapien non tempus.</p>
-              <div class="dev"></div>
-              <ul>
-                <li><i class="fa fa-check"></i>4 TB Cloud Space</li>
-                <li><i class="fa fa-check"></i>20 TB Data Transfer</li>
-                <li><i class="fa fa-check"></i>Fully Managed Panel</li>
-                <li><i class="fa fa-check"></i>15-minute Quick Support</li>
-                <li><i class="fa fa-check"></i>Top Notch Web Apps</li>
-                <li><i class="fa fa-check"></i>Advanced Scalable</li>
-              </ul>
-              <a href="#" class="main-button">Take it now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- Pricing Ends Here -->
-
-
-    <!-- Features Starts Here -->
-    <!-- <div class="features-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <span>Best Quality for you</span>
-              <h2>Cloud Features</h2>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="feature-item">
-              <div class="icon">
-                <img src="assets/images/feature-01.png" alt="">
-              </div>
-              <h4>Load Balanced</h4>
-              <p>Nulla nisl ex, vehicula in urna nec, commodo consectetur augue. Vivamus nec metus mauris. Praesent lacinia tempus urna.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="feature-item">
-              <div class="icon">
-                <img src="assets/images/feature-01.png" alt="">
-              </div>
-              <h4>99.9% Uptime Guaranteed</h4>
-              <p>Lorem ipsum dolor ame taxidermy sriracha cardigan salvia actually vice migas en pin sustainable carry scenester.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="feature-item">
-              <div class="icon">
-                <img src="assets/images/feature-01.png" alt="">
-              </div>
-              <h4>Top Reliability</h4>
-              <p>Lorem ipsum dolor ame taxidermy sriracha cardigan salvia actually vice migas en pin sustainable carry scenester.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="feature-item">
-              <div class="icon">
-                <img src="assets/images/feature-01.png" alt="">
-              </div>
-              <h4>High Security</h4>
-              <p>Lorem ipsum dolor ame taxidermy sriracha cardigan salvia actually vice migas en pin sustainable carry scenester.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="feature-item">
-              <div class="icon">
-                <img src="assets/images/feature-01.png" alt="">
-              </div>
-              <h4>Quality Hardwares</h4>
-              <p>Lorem ipsum dolor ame taxidermy sriracha cardigan salvia actually vice migas en pin sustainable carry scenester.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="feature-item">
-              <div class="icon">
-                <img src="assets/images/feature-01.png" alt="">
-              </div>
-              <h4>Network Solutions</h4>
-              <p>Lorem ipsum dolor ame taxidermy sriracha cardigan salvia actually vice migas en pin sustainable carry scenester.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- Features Ends Here -->
-
-
-    <!-- Testimonials Starts Here -->
-    <div class="testimonials-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <span>Testimonials</span>
-              <h2>What they say about us</h2>
-            </div>
-          </div>
-          <div class="col-md-10 offset-md-1">
-            <div class="owl-testimonials owl-carousel">
-              <div class="testimonial-item">
-                <div class="icon">
-                  <i class="fa fa-quote-right"></i>
-                </div>
-                <p>"Ut elementum a elit sed tristique. Pellentesque sed semper erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean quam erat, rutrum ut malesuada."</p>
-                <h4>William Smith</h4>
-                <span>New Co-Founder</span>
-              </div>
-              <div class="testimonial-item">
-                <div class="icon">
-                  <i class="fa fa-quote-right"></i>
-                </div>
-                <p>"Quisque lacinia sed velit et maximus. Quisque dictum, lacus a malesuada finibus, arcu magna luctus risus, eu accumsan risus elit vitae lacus."</p>
-                <h4>Vinny Smart</h4>
-                <span>Digital Marketer</span>
-              </div>
-              <div class="testimonial-item">
-                <div class="icon">
-                  <i class="fa fa-quote-right"></i>
-                </div>
-                <p>"Vestibulum mauris ipsum, tempor tincidunt justo sit amet, bibendum tincidunt dui. Aenean molestie, odio quis viverra ultricies, leo tellus lacinia neque, sit amet maximus tortor nunc aliquet felis."</p>
-                <h4>Trevor Liam</h4>
-                <span>Technology Chef</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Testimonials Ends Here -->
-
-
-    <!-- Footer Starts Here -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="footer-item">
-              <div class="footer-heading">
-                <h2>Gallery</h2>  <div class="user-image"><img src="<?php echo base_url();?>assets\images\pic.jpg" alt="user" class="img-responsive" height="100" width="200" /></div>
-
-              </div>
-              <!-- <p>Host Cloud is provided by TemplateMo for free of charge. Anyone can download and use this CSS Bootstrap template for commercial purposes.</p>
-             -->
+    <!-- Footer -->
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="<?php echo base_url();?>index.php"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="<?php echo base_url();?>index.php/Welcome/about"><i class="fa fa-angle-double-right"></i>About Us</a></li>
+						<li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule"><i class="fa fa-angle-double-right"></i>Class Schedule</a></li>
+						<li><a href="<?php echo base_url();?>index.php/Welcome/contact"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Reach Us</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Wimalasurendra Mawatha<br>Galle<br>80000<br>Sri Lanka</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>CONTACT</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Phone: (+94)91 2242 189</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>E-mail: southern@gmail.com</a></li>
+					</ul>
+				</div>
 			</div>
-          </div>
-          
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="footer-item">
-              <div class="footer-heading">
-                <h2>Visit Us</h2>
-              </div>
-               <ul class="footer-list">
-			   <li>Southern Institute Galle</li>
-                  <li>Wimalasurendra Mawatha, <br/>Galle 80000, </br>  Sri Lanka</li>
-                  <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
-                      <img src="<?php echo base_url();?>assets\images\map.png">
-                     
-                  </a>
-                <!-- <li><a href="#">Basic Cloud 5X</a></li>
-                <li><a href="#">Cloud VPS 10X</a></li>
-                <li><a href="#">Advanced Cloud</a></li>
-                <li><a href="#">Custom Designs</a></li>
-                <li><a href="#">Special Solutions</a></li>
-              -->
-			  </ul> 
-            </div>
-          </div>
-          
-          
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="footer-item">
-              <div class="footer-heading">
-                <h2>Useful Links</h2>
-              </div>
-              <ul class="footer-list">
-			  <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
-                  <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
-                  <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
-                  <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
-                <!-- <li><a href="#">Cloud Hosting Platform</a></li>
-                <li><a href="#">Light Speed Zone</a></li>
-                <li><a href="#">Content Delivery Network</a></li>
-                <li><a href="#">Customer Support</a></li>
-                <li><a href="#">Latest News</a></li>
-              -->
-			  </ul>
-            </div>
-          </div>
-          
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="footer-item">
-              <div class="footer-heading">
-                <h2>More Information</h2>
-              </div>
-              <ul class="footer-list">
-			  <li>Phone: <a href="#">0912 242 189</a></li>
-			    </ul>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="sub-footer">
-              <p>Copyright &copy; Team Innoview
-				- Designed by <a rel="nofollow" href="https://templatemo.com"></a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Footer Ends Here -->
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				</hr>
+			</div>	
+		</div>
+	</section>
+	<!-- ./Footer -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
 
     <!-- Additional Scripts -->
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/owl.js"></script>
     <script src="assets/js/accordions.js"></script>
 
+    <script type="text/javascript">
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 1800
+    })
+  });
+</script>
 
     <script language = "text/Javascript"> 
       cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
@@ -477,6 +233,10 @@ https://templatemo.com/tm-541-host-cloud
           t.style.color='#fff';
           }
       }
+    </script>
+
+    <script>
+    
     </script>
 
   </body>

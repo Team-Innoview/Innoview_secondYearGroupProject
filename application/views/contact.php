@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/fontawesome.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/templatemo-host-cloud.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/owl.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!--
 
 Host Cloud Template
@@ -41,7 +44,7 @@ https://templatemo.com/tm-541-host-cloud
 
     <!-- Header -->
     <header class="">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg bg-custome">
         <div class="container">
           <a class="navbar-brand" href="index.html"><h2>Southern <em>Institute</em></h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,15 +64,14 @@ https://templatemo.com/tm-541-host-cloud
                 <a class="nav-link" href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a>
               </li>
               <li class="nav-item active">
-              <a class="nav-link" href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a>
+                <a class="nav-link" href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a>
               </li>
             </ul>
-          </div>
-          <div class="functional-buttons">
+            <div class="functional-buttons">
             <ul>
-              <li> <a class="nav-link" href="<?php echo base_url();?>index.php/Welcome/login">Log in</a></li>
-              <!-- <li><a href="#">Sign Up</a></li> -->
+              <li><a href="<?php echo base_url();?>index.php/Welcome/login">Log in</a></li>
             </ul>
+          </div>
           </div>
         </div>
       </nav>
@@ -77,12 +79,14 @@ https://templatemo.com/tm-541-host-cloud
 
     <!-- Page Content -->
     <!-- Heading Starts Here -->
-    <div class="page-heading header-text">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Contact Us</h1>
-            <p><a href="index.html">Home</a> / <span>Contact Us</span></p>
+    <div class="page-heading-responsive">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="overlay">
+              <h1>Contact Us</h1>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -96,35 +100,41 @@ https://templatemo.com/tm-541-host-cloud
         <div class="row">
           <div class="col-md-6">
             <div class="contact-form">
-              <form id="contact" action="" method="post">
+              <form>
                 <div class="row">
+                  <form role="form" action="<?php echo site_url('Welcome/contact_submit');?>" method="post" class="login-form">
                   <div class="col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="name" type="text" id="name" placeholder="Your name" required="">
-                    </fieldset>
+                    <!-- <fieldset> -->
+                      <input name="name" type="text" id="name" method="post" placeholder="Your name" required="required">
+                    <!-- </fieldset> -->
                   </div>
                   <div class="col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="email" type="text" id="email" placeholder="Your email" required="">
-                    </fieldset>
+                    <!-- <fieldset> -->
+                      <input name="email" type="text" id="email" method="post" placeholder="Your email" required="required">
+                    <!-- </fieldset> -->
                   </div>
                   <div class="col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="subject" type="text" id="subject" placeholder="Subject">
-                    </fieldset>
+                    <!-- <fieldset> -->
+                      <input name="subject" type="text" id="subject" method="post" placeholder="Subject" required="required">
+                    <!-- </fieldset> -->
                   </div>
                   <div class="col-lg-12">
-                    <fieldset>
-                      <textarea name="message" rows="6" id="message" placeholder="Your message" required=""></textarea>
-                    </fieldset>
+                    <!-- <fieldset> -->
+                      <textarea name="message" rows="6" id="message" method="post" placeholder="Your message" required="required"></textarea>
+                    <!-- </fieldset> -->
                   </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="main-button">Send Message</button>
-                    </fieldset>
-                  </div>
+                  <!-- <div class="col-lg-12"> -->
+                    <!-- <fieldset> -->
+                      <input class="templatemo-blue-button width-100" id="form-submit" type="submit" name="submit" value="Send Message" >
+                      <!-- onclick="send_message();" -->
+                      <!-- <a href="<?php echo base_url();?>index.php/Welcome/contact_submit"><i class="fa fa-eject fa-fw" name="submit" id="form-submit" class="main-button" ></i>Send Message</a> -->
+                      <!-- <a href button name="submit" type="submit" value="submit"  >Send Message</button> -->
+                    <!-- </fieldset> -->
+                  <!-- </div> -->
                 </div>
               </form>
+
+              
           </div>
           </div>
           <div class="col-md-6">
@@ -171,7 +181,7 @@ https://templatemo.com/tm-541-host-cloud
 	3. Click "Share" and choose "Embed map" tab
 	4. Copy only URL and paste it within the src="" field below
 -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.6467010327124!2d80.21083161392538!3d6.043118330239778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bf7e3d8bb9%3A0xb116c9761f2d7d15!2sSouthern%20Educational%20Institute!5e0!3m2!1sen!2slk!4v1575992547531!5m2!1sen!2slk"  width="100%" height="520px" frameborder="0" style="border:0" allowfullscreen></iframe>
+<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.6467010327124!2d80.21083161392538!3d6.043118330239778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bf7e3d8bb9%3A0xb116c9761f2d7d15!2sSouthern%20Educational%20Institute!5e0!3m2!1sen!2slk!4v1575992547531!5m2!1sen!2slk"  width="100%" height="520px" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 
       <!-- <iframe src="https://goo.gl/maps/HHz5bThVfYtHh2eW8" width="100%" height="520px" frameborder="0" style="border:0" allowfullscreen></iframe>
      -->
@@ -180,7 +190,7 @@ https://templatemo.com/tm-541-host-cloud
 
 
     <!-- Testimonials Starts Here -->
-    <div class="testimonials-section">
+    <!-- <div class="testimonials-section">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -219,82 +229,52 @@ https://templatemo.com/tm-541-host-cloud
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Testimonials Ends Here -->
 
 
-    <!-- Footer Starts Here -->
-    <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="footer-item">
-                <div class="footer-heading">
-                  <h2>Gallery</h2>
-                </div>
-                <!-- <p>Host Cloud is provided by TemplateMo for free of charge. Anyone can download and use this CSS Bootstrap template for commercial purposes.</p>
-               -->
-              </div>
-            </div>
-            
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="footer-item">
-                <div class="footer-heading">
-                  <h2>Visit Us</h2>
-                </div>
-                <ul class="footer-list">
-                    <li>Southern Institute Galle</li>
-                    <li>Wimalasurendra Mawatha, <br/>Galle 80000, </br>  Sri Lanka</li>
-                    <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
-                        <img src="<?php echo base_url();?>assets\images\map.png">
-                       
-                    </a>
-                  <!-- <li><a href="#">Basic Cloud 5X</a></li>
-                  <li><a href="#">Cloud VPS 10X</a></li>
-                  <li><a href="#">Advanced Cloud</a></li>
-                  <li><a href="#">Custom Designs</a></li>
-                  <li><a href="#">Special Solutions</a></li> -->
-                </ul>
-              </div>
-            </div>
-            
-            
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="footer-item">
-                <div class="footer-heading">
-                  <h2>Useful Links</h2>
-                </div>
-                <ul class="footer-list">
-                    <li><a href="<?php echo base_url();?>index.php">Home</a></li>
-                    <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
-                    <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
-                    <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
-                  
-                </ul>
-              </div>
-            </div>
-            
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="footer-item">
-                <div class="footer-heading">
-                  <h2>More Information</h2>
-                </div>
-                <ul class="footer-list">
-                  <li>Phone: <a href="#">0912 242 189</a></li>
-                 
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="sub-footer">
-                <p>Copyright &copy; Team Innoview
-          - Designed by <a rel="nofollow" href="https://templatemo.com">Chamo</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- Footer Ends Here -->
+   <!-- Footer -->
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="<?php echo base_url();?>index.php"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="<?php echo base_url();?>index.php/Welcome/about"><i class="fa fa-angle-double-right"></i>About Us</a></li>
+						<li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule"><i class="fa fa-angle-double-right"></i>Class Schedule</a></li>
+						<li><a href="<?php echo base_url();?>index.php/Welcome/contact"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Reach Us</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Wimalasurendra Mawatha<br>Galle<br>80000<br>Sri Lanka</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>CONTACT</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Phone: (+94)91 2242 189</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>E-mail: southern@gmail.com</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				</hr>
+			</div>	
+		</div>
+	</section>
+	<!-- ./Footer -->
   
       <!-- Bootstrap core JavaScript -->
       <script src="<?php echo base_url();?>vendor/jquery/jquery.min.js"></script>

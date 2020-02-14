@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <title>Receptioniest edit  profile </title>
+    <title>My profile Home</title>
     <meta name="description" content="">
     <meta name="author" content="templatemo">
   
@@ -49,10 +49,9 @@
 
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-              <ul class="text-uppercase">
-                <li><a href="<?php echo base_url();?>index.php/Welcome/myprofile">My profile</a></li>
-                <li><a href="" class="active">Edit profile</a></li>
-              </ul>
+                <li><a href="" class="active">My Profile</a></li>
+                <li><a href="<?php echo base_url();?>index.php/Welcome/edit_recep">Edit Profile</a></li>
+                
               </ul>  
             </nav>
 
@@ -63,7 +62,7 @@
               <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
                 <i class="fa fa-times"></i>
                
-                <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">Edit Profile</h2></div>
+                <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">My Profile</h2></div>
                 <!-- <div class="form-top-right">
                                 <i class="fa fa-pencil"></i>
                             </div> -->
@@ -74,44 +73,66 @@
                         <div class="form-top">
                         </div>
                         <div class="form-bottom">
-                        <form role="form" action="<?php echo site_url('update/update_user_id1');?>" method="post" class="login-form">
+                        <form>
                                 
-                            <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
-                                    <input type="text" class="form-control" name="address" placeholder="Address"  aria-describedby="basic-addon1" required="required">
-                                </div>
-
-                                
-                            
+                           
                                 <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
-                                        <input type="tel" class="form-control" name="contact_number" placeholder="Contact Number" maxlength="10" minlength="10" aria-describedby="basic-addon1" required="required">
-                                </div>
-
-                          
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                        <input type="text" class="form-control" id="user_name" name="user_name" placeholder="User Name" aria-describedby="basic-addon1" required="required">
-                                </div>
-
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-unlock"></i></span>
-                                        <input type="password" class="form-control" name="password" placeholder="Password" aria-describedby="basic-addon1" required="required">
-                                </div>
-
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-unlock"></i></span>
-                                        <input type="password" class="form-control" name="confirm password" placeholder="Confirm Password" aria-describedby="basic-addon1" required="required">
+                                     Employee no
+                                      <span class="form-control" name="emp_no" > 
+                                    <?php
+                                          echo $_SESSION['user_id'] ;
+                                     ?>
+                                     </span>        
                                 </div>
                                 
+                                <div class="input-group form-group">
+                                     Name
+                                      <span class="form-control" name="name" > 
+                                      <?php
+                                         $result=$this->db->query("SELECT name FROM receptionist Where emp_n='{$_SESSION['user_id']}' ");
+                                         foreach($result->result() as $row){
+                                            echo "<option>".$row->name."</option>";
+                                          }  
+                                     ?>
+                                     </span> 
+                                 </div>
                                 
-                               
-                
-                <tr>
-                    <td></td>
-                    <td><input class="templatemo-blue-button width-100" type="submit" name="update" value="Update">
-                  
-                </tr>
+                                <div class="input-group form-group">
+                                     Address
+                                      <span class="form-control" name="address" > 
+                                    <?php
+                                         $result=$this->db->query("SELECT address FROM receptionist Where emp_no='{$_SESSION['user_id']}' ");
+                                         foreach($result->result() as $row){
+                                            echo "<option>".$row->address."</option>";
+                                          }
+                                      ?>
+                                     </span> 
+                                       
+                                </div>
+
+                                <div class="input-group form-group">
+                                     Contact Number
+                                      <span class="form-control" name="contact_no" > 
+                                    <?php
+                                         $result=$this->db->query("SELECT contact_no FROM receptionist Where emp_no='{$_SESSION['user_id']}' ");
+                                         foreach($result->result() as $row){
+                                            echo "<option>".$row->contact_no."</option>";
+                                          }  
+                                     ?>
+                                     </span> 
+                                       
+                                </div>
+
+                                <div class="input-group form-group">
+                                     User Name
+                                      <span class="form-control" name="user_name" > 
+                                      <?php
+                                        echo $_SESSION['user_name'] ;
+                                     ?>
+                                     </span> 
+                                       
+                                </div>
+   
                 
             </table>  
 
@@ -119,10 +140,7 @@
                               
                                 
                             </form>       
-                    <!-- <center>
-                    <h3>OR</h3>
-                    <a href="<?php echo base_url();?>index.php/Welcome/login">Already You have an Account ?</a>
-                    </center> -->
+                  
 	             </div>
                     
 
@@ -142,6 +160,7 @@
         </div>
       </div>
     </div>
+   
     
     <!-- JS -->
     <script src="js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->

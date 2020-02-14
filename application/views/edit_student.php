@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <title>Receptioniest edit  profile </title>
+    <title> Student-Dashboard Home</title>
     <meta name="description" content="">
     <meta name="author" content="templatemo">
   
@@ -22,7 +22,7 @@
 
         <header class="templatemo-site-header">
           <div class="square"></div>
-          <h1> Receptionist</h1>
+          <h1> Student</h1>
         </header>
             
        
@@ -32,13 +32,12 @@
 
         <nav class="templatemo-left-nav">          
           <ul>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/receptionist"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
+          <li><a a href="<?php echo base_url();?>index.php/Welcome/students"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="#" class="active"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_noti"><i class="fa fa-database fa-fw"></i>Notification</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_pay"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_hall"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
-        </ul>  
+            <li><a href="<?php echo base_url();?>index.php/Welcome/payment"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
+            <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>VLE</a></li>
+           <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+          </ul>  
         </nav>
 
       </div>
@@ -50,7 +49,7 @@
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
               <ul class="text-uppercase">
-                <li><a href="<?php echo base_url();?>index.php/Welcome/myprofile">My profile</a></li>
+                <li><a href="<?php echo base_url();?>index.php/Welcome/editusers">My profile</a></li>
                 <li><a href="" class="active">Edit profile</a></li>
               </ul>
               </ul>  
@@ -76,19 +75,6 @@
                         <div class="form-bottom">
                         <form role="form" action="<?php echo site_url('update/update_user_id1');?>" method="post" class="login-form">
                                 
-                            <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
-                                    <input type="text" class="form-control" name="address" placeholder="Address"  aria-describedby="basic-addon1" required="required">
-                                </div>
-
-                                
-                            
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
-                                        <input type="tel" class="form-control" name="contact_number" placeholder="Contact Number" maxlength="10" minlength="10" aria-describedby="basic-addon1" required="required">
-                                </div>
-
-                          
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
                                         <input type="text" class="form-control" id="user_name" name="user_name" placeholder="User Name" aria-describedby="basic-addon1" required="required">
@@ -102,6 +88,20 @@
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-unlock"></i></span>
                                         <input type="password" class="form-control" name="confirm password" placeholder="Confirm Password" aria-describedby="basic-addon1" required="required">
+                                </div>
+
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
+                                        <input type="tel" class="form-control" name="contact_number" placeholder="Contact Number" maxlength="10" minlength="10" aria-describedby="basic-addon1" required="required">
+                                </div>
+
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
+                                        <input type="tel" class="form-control" name="pnum" placeholder="Parent's Contact Number" maxlength="10" minlength="10" aria-describedby="basic-addon1" required="required">
+                                </div>
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+                                        <input type="text" class="form-control" name="address" placeholder="Home Address" aria-describedby="basic-addon1" required="required">
                                 </div>
                                 
                                 

@@ -49,17 +49,17 @@
           <div class="square"></div>
           <h1> Receptionist</h1>
         </header>
-        <div class="profile-photo-container">
+        <!-- <div class="profile-photo-container">
           <img src="<?php echo base_url();?>assets/images/receptionist.jpg" alt="Profile Photo" class="img-responsive">  
           <div class="profile-photo-overlay"></div>
-        </div>      
+        </div>       -->
         <!-- Search box -->
-        <form class="templatemo-search-form" role="search">
+        <!-- <form class="templatemo-search-form" role="search">
           <div class="input-group">
               <button type="submit" class="fa fa-search"></button>
               <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">           
           </div>
-        </form>
+        </form> -->
         <div class="mobile-menu-icon">
             <i class="fa fa-bars"></i>
         </div>
