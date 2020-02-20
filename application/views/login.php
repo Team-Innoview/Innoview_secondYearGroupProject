@@ -45,9 +45,9 @@
                   			<span class="login100-form-title p-b-70"></span>
                			</a>
 
-						<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter username">
-							<input class="input100" type="text" name="user_name">
-							<span class="focus-input100" data-placeholder="Username"></span>
+						<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter User ID">
+							<input class="input100" type="text" name="user_id">
+							<span class="focus-input100" data-placeholder="User ID"></span>
 						</div>
 
 						<div class="wrap-input100 validate-input m-b-50" data-validate="Enter password">

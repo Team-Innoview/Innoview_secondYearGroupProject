@@ -67,7 +67,7 @@
              -->
             <!-- <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Maps</a></li> -->
             <!-- <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Manage Users</a></li> -->
-            <li><a href="<?php echo base_url();?>index.php/Welcome/editcourses"><i class="fa fa-sliders fa-fw"></i>Manage Courses</a></li>
+            
             <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
           </ul>  
         </nav>
@@ -107,16 +107,17 @@
                         <div class="form-top">
                         </div>
                         <div class="form-bottom">
+                        <?php if(isset($_SESSION['status1']) && $_SESSION['status1'] != "") echo "<h3 style='color:red'>".$_SESSION['status1']."</h3>"; ?>
                         <form role="form" action="<?php echo site_url('Signup/tregistration');?>" method="post" class="login-form">
                                 
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                    <input type="text" class="form-control" id="user_type" name="user_type" placeholder="Teacher" s aria-describedby="basic-addon1" required="required">
+                                    <input type="text" class="form-control" id="user_type" name="user_type" placeholder="Teacher" value="Teacher" readonly aria-describedby="basic-addon1" required="required">
                                 </div>
-                                <div class="input-group form-group">
+                                <!-- <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
                                         <input type="text" class="form-control" id="Teacher_ID" name="teacher_id" placeholder=" Enter Teacher ID Number" aria-describedby="basic-addon1" required="required">
-                                </div>
+                                </div> -->
 
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
@@ -138,9 +139,9 @@
                                         <input type="email" class="form-control" name="email" placeholder="Email" aria-describedby="basic-addon1" required="required">
                                 </div>
 
-                                <div class="input-group form-group">
+                                <!-- <div class="input-group form-group">
                                     <span class="input-group-addon" class="form-control" id="basic-addon1"><i class="fa fa-user"></i>Gender<input type="radio" name="gender" value="male" checked> Male <input type="radio" name="gender" value="female"> Female</span>
-                                </div>
+                                </div> -->
 
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
@@ -148,21 +149,21 @@
                                 </div>
 
                                 <!-- New Addition -->
-                                <div class="input-group form-group">
+                                <!-- <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
                                         <input type="text" class="form-control" name="hall_no" placeholder="Hall Number" aria-describedby="basic-addon1" required="required">
-                                </div>
+                                </div> -->
 
-                                <div class="input-group form-group">
+                                <!-- <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
                                         <input type="text" class="form-control" name="numofstu" placeholder="Number of Students" aria-describedby="basic-addon1" required="required">
-                                </div>
+                                </div> -->
 
                                 <!-- End -->
 
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                    <input type="text" class="form-control" name="subject" placeholder="subject" aria-describedby="basic-addon1" required="required">
+                                    <input type="text" class="form-control" name="subject" placeholder="Subject" aria-describedby="basic-addon1" required="required">
                               
                                     <!-- <input type="button" name="subject" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Subject</button>
                                        -->
@@ -203,6 +204,7 @@
                 <tr>
                     <td></td>
                     <td><input class="templatemo-blue-button width-100" type="submit" name="submit" value="submit" >
+                    <br/>
                     <br/>
                     <input class="templatemo-blue-button width-100" type="reset" name="RESET"></td>
                 </tr>

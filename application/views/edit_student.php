@@ -34,8 +34,8 @@
           <ul>
           <li><a a href="<?php echo base_url();?>index.php/Welcome/students"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="#" class="active"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/payment"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
-            <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>VLE</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/stu_pay"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/stu_coursecontent"><i class="fa fa-users fa-fw"></i>Course Content</a></li>
            <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
           </ul>  
         </nav>
@@ -73,7 +73,7 @@
                         <div class="form-top">
                         </div>
                         <div class="form-bottom">
-                        <form role="form" action="<?php echo site_url('update/update_user_id1');?>" method="post" class="login-form">
+                        <form role="form" action="<?php echo site_url('update/updatestudata');?>" method="post" class="login-form">
                                 
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
@@ -92,7 +92,7 @@
 
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
-                                        <input type="tel" class="form-control" name="contact_number" placeholder="Contact Number" maxlength="10" minlength="10" aria-describedby="basic-addon1" required="required">
+                                        <input type="tel" class="form-control" name="contact_no" placeholder="Contact Number" maxlength="10" minlength="10" aria-describedby="basic-addon1" required="required">
                                 </div>
 
                                 <div class="input-group form-group">

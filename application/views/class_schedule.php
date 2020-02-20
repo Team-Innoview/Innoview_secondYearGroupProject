@@ -99,75 +99,9 @@ https://templatemo.com/tm-541-host-cloud
       <div class="container">
         <div class="row">
          
-          <table class="table table-striped table-bordered">
+        <table class="table table-striped table-bordered">
                     <thead>
-                      <th colspan="6"><center>ORDINARY LEVEL</center></th>
-                      <tr>
-                        <td>No.</td>
-                        <td>Subject</td>
-                        <td>Scheduled Day</td>
-                        <td>Teacher</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1.</td>
-                        <td>Maths</td>
-                        <td>Saturday</td>
-                        <td>Mr.A.S. Ariyarathne<br>
-                        Mr.L.L. Samarakoon
-                      </td>
-                      </tr>
-                      <tr>
-                        <td>2.</td>
-                        <td>Science</td>
-                        <td>Saturday</td>
-                        <td>Mr.S.D. Pathirana<br>
-                            Mr. J. Dasanayake
-                      </tr>
-                      <tr>
-                        <td>3.</td>
-                        <td>Sinhala</td>
-                        <td>Saturday</td>
-                        <td>Mr. H.M.A. Bandara</td>
-                      </tr>
-                      <tr>
-                        <td>4.</td>
-                        <td>English</td>
-                        <td>Sunday</td>
-                        <td>Mrs.Reeni perera</td>
-                      </tr>
-                      <tr>
-                        <td>5.</td>
-                        <td>History</td>
-                        <td>Sunaday</td>
-                        <td>Mr. S.K. Kulathunga</td>
-                      </tr>                 
-                      <td>6.</td>
-                        <td>I.C.T.</td>
-                        <td>Sunaday</td>
-                        <td>Mr. T.K. Jayalath </td>
-                      </tr>     
-                      <td>7.</td>
-                        <td>Dancing</td>
-                        <td>Sunaday</td>
-                        <td>Mrs. N. Geetha Adikari</td>
-                      </tr>        
-                      <td>8.</td>
-                        <td>Western Music<br>
-                      Eastern Music</td>
-                        <td>Sunaday</td>
-                        <td>Mrs. N. Geetha Adikari<br>
-                      Miss. G. S. Liyanage</td>
-                      </tr>                     
-                    <!--/tbody-->
-                  </table>  <br><br><br><br>  
-
-
-
-                  <table class="table table-striped table-bordered">
-                    <thead>
-                      <th colspan="6"><center>ADVACED LEVEL</center></th>
+                      <th colspan="6"><center>ADVACED LEVEL-THEORY</center></th>
                       <tr>
                         <td>No.</td>
                         <td>Subject</td>
@@ -182,9 +116,9 @@ https://templatemo.com/tm-541-host-cloud
                         <td>Bio<br>
                       Chemistry <br>
                       Physics </td>
-                        <td>Theory-Sunday/ Revison- Monday <br>
-                        Theory-Saturday/ Revison- Friday <br>
-                     Theory-Saturday/ Revison- Wednesday </td>
+                        <td>Theory-Sunday <br>
+                        Theory-Saturday  <br>
+                     Theory-Saturday </td>
                         <td>Mr. J.L. Arachchi <br>
                         Mr. M.I. Senevirathne <br>
                         Mr. R. Lekamge</td>
@@ -195,9 +129,9 @@ https://templatemo.com/tm-541-host-cloud
                         <td>Combined Maths<br>
                       Chemistry <br>
                       Physics </td>
-                        <td>Theory-Saturday/ Revison- Tuesday<br>
-                        Theory-Saturday/ Revison- Friday <br>
-                        Theory-Saturday/ Revison- Wednesday </td>
+                        <td>Theory-Saturday<br>
+                        Theory-Saturday <br>
+                        Theory-Saturday</td>
                         <td>Mr. P.N. Ranaweera <br>
                         Mr. M.I. Senevirathne <br>
                         Mr. R. Lekamge</td>
@@ -209,9 +143,9 @@ https://templatemo.com/tm-541-host-cloud
                         <td>Accounting<br>
                       Business Studies<br>
                       Economics </td>
-                        <td>Theory-Sunday/ Revison- Thursday<br>
-                        Theory-Sunday/ Revison- Friday <br>
-                     Theory-Sunday/ Revison- Monday </td>
+                        <td>Theory-Sunday<br>
+                        Theory-Sunday<br>
+                     Theory-Sunday </td>
                         <td>Mr. H.N. Raja <br>
                         Mr. L.L. Lokuge <br>
                         Mr. W. Yapa Bandara</td>
@@ -226,13 +160,94 @@ https://templatemo.com/tm-541-host-cloud
                       Geography <br>
                       French <br>
                       Media</td>
-                        <td>Theory-Sunday/ Revison- Friday<br>
-                        Theory-Sunday/ Revison- Tuesday <br>
-                        Theory-Sunday/ Revison- Monday<br>
-                        Theory-Saturday/ Revison- Wednesday <br>
-                        Theory-Friday/ Revison- Monday <br>
-                        Theory-Friday/ Revison- Thursday<br>
-                        Theory-Saturday/ Revison- Friday </td>
+                        <td>Theory-Sunday<br>
+                        Theory-Sunday<br>
+                        Theory-Sunday<br>
+                        Theory-Saturday <br>
+                        Theory-Friday <br>
+                        Theory-Friday<br>
+                        Theory-Saturday </td>
+                        <td>Mr. H. Jayanath <br>
+                        Mrs. K. Gayaani Perera <br>
+                        Mr. W. Yapa Badara <br>
+                        Mr. B. Pathirana <br>
+                        Mr. D.N. Lal <br>
+                        Mr. J. Jayarathne <br>
+                        Mr. E.J. Allegoda</td><br>
+                      </tr> <br><br><br>
+                                          
+                    <!--/tbody-->
+                  </table> 
+
+
+                  <table class="table table-striped table-bordered">
+                    <thead>
+                      <th colspan="6"><center>ADVACED LEVEL-REVISION</center></th>
+                      <tr>
+                        <td>No.</td>
+                        <td>Subject</td>
+                        <td>Scheduled Day</td>
+                        <td>Teacher</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1.<br>
+                      Biology</td>
+                        <td>Bio<br>
+                      Chemistry <br>
+                      Physics </td>
+                        <td> Revison- Monday <br>
+                         Revison- Friday <br>
+                     Revison- Wednesday </td>
+                        <td>Mr. J.L. Arachchi <br>
+                        Mr. M.I. Senevirathne <br>
+                        Mr. R. Lekamge</td>
+                      </tr>
+                      <tr>
+                        <td>2.<br>
+                      Physical Science</td>
+                        <td>Combined Maths<br>
+                      Chemistry <br>
+                      Physics </td>
+                        <td> Revison- Tuesday<br>
+                         Revison- Friday <br>
+                        Revison- Wednesday </td>
+                        <td>Mr. P.N. Ranaweera <br>
+                        Mr. M.I. Senevirathne <br>
+                        Mr. R. Lekamge</td>
+                      </tr>
+                      
+                      <tr>
+                      <td>3.<br>
+                      Commerce</td>
+                        <td>Accounting<br>
+                      Business Studies<br>
+                      Economics </td>
+                        <td> Revison- Thursday<br>
+                         Revison- Friday <br>
+                      Revison- Monday </td>
+                        <td>Mr. H.N. Raja <br>
+                        Mr. L.L. Lokuge <br>
+                        Mr. W. Yapa Bandara</td>
+                      </tr>
+                      <tr>
+                      <td>4.<br>
+                      Arts</td>
+                        <td>Sinhala Language<br>
+                      English Lit.<br>
+                      Economics <br>
+                      Logic <br>
+                      Geography <br>
+                      French <br>
+                      Media</td>
+                        <td> Revison- Friday<br>
+                         Revison- Tuesday <br>
+                         Revison- Monday<br>
+                         Revison- Wednesday <br>
+                        Revison- Monday <br>
+                         Revison- Thursday<br>
+                         Revison- Friday </td>
                         <td>Mr. H. Jayanath <br>
                         Mrs. K. Gayaani Perera <br>
                         Mr. W. Yapa Badara <br>
@@ -244,8 +259,6 @@ https://templatemo.com/tm-541-host-cloud
                                           
                     <!--/tbody-->
                   </table> 
-
-          
           
           
         

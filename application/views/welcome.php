@@ -131,7 +131,7 @@ https://templatemo.com/tm-541-host-cloud
           <div class="col-md-12">
             <div class="section-heading">
               <!-- <span>Hosting Services</span> -->
-              <h2>BECOME KNOWLEDGABLE FUTURE LEADERS MOULDED BY SOUTHERN</h2>
+              <h2>BECOME KNOWLEDGEABLE FUTURE LEADERS MOULDED BY SOUTHERN</h2>
               <!-- <p>Host Cloud is a professional Bootstrap 4 template by TemplateMo for your hosting company websites. There are 4 HTML pages included in this template. You can feel free to customize anything. Please share this template to your friends. Thank you.</p>
              -->
 			</div>
@@ -140,22 +140,22 @@ https://templatemo.com/tm-541-host-cloud
             <div class="service-item">
               <i class="fa fa-database"></i>
               <h4>PROVIDING THE BEST EDUCATION</h4>
-              <p>We provide a well equipped institute with state of all facilities, starting from classrooms to make the studying experience of our students an easy and a well facilitated one. Parents are assured of the safety of their children of our institute and discipline of utmost important to us. We are diverse, welocoming, accepting and passioate about being best we can be. Join us to make your higher education experience unforgettable.  </p>
+              <p align="justify">We provide a well equipped institute with state of all facilities, starting from classrooms to make the studying experience of our students an easy and a well facilitated one. Parents are assured of the safety of their children of our institute and discipline of utmost important to us. We are diverse, welocoming, accepting and passioate about being best we can be. Join us to make your higher education experience unforgettable.  </p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="service-item">
               <i class="fa fa-database"></i>
               <h4>BEST PERFORMANCE</h4>
-              <p>Top performers in Ordinary Level Examination.</p>
-			  <p>Top performers in Advanced Level Examination</p>
+              <!-- <p>Top performers in Ordinary Level Examination.</p> -->
+			  <p align="justify">Top performers in Advanced Level Examination</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="service-item">
               <i class="fa fa-database"></i>
               <h4>OUR LECTURERS</h4>
-              <p>Our lecturers are qualified, well experienced and recognized in threir respective fields.</p>
+              <p align="justify">Our lecturers are qualified, well experienced and recognized in threir respective fields.</p>
             </div>
           </div>
         </div>

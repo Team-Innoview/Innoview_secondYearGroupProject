@@ -56,7 +56,7 @@
             <li><a href="<?php echo base_url();?>index.php/Welcome/receptionist"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/edit_recep"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/recep_noti"><i class="fa fa-database fa-fw"></i>Notification</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_pay"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/payment"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
             <li><a href="#" class="active"><i class="fa fa-home fa-fw "></i>Hall Management</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          
@@ -88,42 +88,226 @@
                 <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">Booking Details</h2></div>
                 <div class="table-responsive">
                 
-
-                  <table class="table table-striped table-bordered">
-                    <thead>
-                      <tr>
-                        <td>Hall</td>
+                <div class="templatemo-content-container">
+         
+         <div class="templatemo-flex-row flex-content-row">
+           
+           <div class="col-1">
+             <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
+               <i class="fa fa-times"></i>
+               <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">AL001 BOOK</h2></div>
+              
+               <div class="table-responsive">
+                 
+                 <table class="table table-striped table-bordered">
+                   <thead>
+                     <tr>
+                        
                         <td>Day</td>
                         <td>Teacher_no</td>
-                      </tr>
-                      
-                     
-                    </thead>
-                    <tbody>
-                        <?php
+                     </tr>
+                     <?php
                       // $result=$this->db->query("SELECT hall_no, day ,emp_no FROM booking_details");
                       // while($result->result() as $row){
-                        $result=$this->db->query("SELECT hall_no, day ,emp_no FROM booking_details");
+                        $result=$this->db->query("SELECT time ,emp_no FROM booking_details where hall_no='AL001' ");
                         foreach($result->result() as $row){
                           ?>
                       <tr>
-                        <td><?php echo $row->hall_no;?></td>
-                        <td><?php echo $row->day; ?></td>
+                        
+                        <td><?php echo $row->time; ?></td>
                         <td><?php echo $row->emp_no; ?></td>
                             
                       </tr>
                       <?php
                         }
                       ?>
-                                      
-                    </tbody>
-                  </table>    
-                </div>                          
-              </div>
-            </div>   
-              </div>
-              </div>
+                    
+                   </thead>
+                   <tbody>
+
+                  
+                    
+                                     
+                   </tbody>
+                 </table>    
+               </div>                          
+             </div>
+           </div>           
+         </div> 
+         <div class="col-1">
+             <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
+               <i class="fa fa-times"></i>
+               <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">AL002 BOOK</h2></div>
+              
+               <div class="table-responsive">
+                 
+                 <table class="table table-striped table-bordered">
+                   <thead>
+                     <tr>
+                        
+                        <td>Day</td>
+                        <td>Teacher_no</td>
+                     </tr>
+                     
+                    
+                   </thead>
+                   <tbody>
+
+                   <?php
+                      // $result=$this->db->query("SELECT hall_no, day ,emp_no FROM booking_details");
+                      // while($result->result() as $row){
+                        $result=$this->db->query("SELECT time ,emp_no FROM booking_details where hall_no='AL002' ");
+                        foreach($result->result() as $row){
+                          ?>
+                      <tr>
+                        
+                        <td><?php echo $row->time; ?></td>
+                        <td><?php echo $row->emp_no; ?></td>
+                       
+                            
+                      </tr>
+                      <?php
+                        }
+                      ?>
+                     
+                    
+                                     
+                   </tbody>
+                 </table>    
+               </div>                          
+             </div>
+           </div>           
+           <div class="col-1">
+             <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
+               <i class="fa fa-times"></i>
+               <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">N001 BOOK</h2></div>
+              
+               <div class="table-responsive">
+                 
+                 <table class="table table-striped table-bordered">
+                   <thead>
+                     <tr>
+                        
+                        <td>Day</td>
+                        <td>Teacher_no</td>
+                     </tr>
+                     <?php
+                      // $result=$this->db->query("SELECT hall_no, day ,emp_no FROM booking_details");
+                      // while($result->result() as $row){
+                        $result=$this->db->query("SELECT time ,emp_no FROM booking_details where hall_no='N001' ");
+                        foreach($result->result() as $row){
+                          ?>
+                      <tr>
+                        
+                        <td><?php echo $row->time; ?></td>
+                        <td><?php echo $row->emp_no; ?></td>
+                            
+                      </tr>
+                      <?php
+                        }
+                      ?>
+                    
+                   </thead>
+                   <tbody>
+
+                  
+                    
+                                     
+                   </tbody>
+                 </table>    
+               </div>                          
+             </div>
+           </div>           
+         <div class="col-1">
+             <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
+               <i class="fa fa-times"></i>
+               <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">N002 BOOK</h2></div>
+              
+               <div class="table-responsive">
+                 
+                 <table class="table table-striped table-bordered">
+                   <thead>
+                     <tr>
+                        
+                        <td>Day</td>
+                        <td>Teacher_no</td>
+                     </tr>
+                     <?php
+                      // $result=$this->db->query("SELECT hall_no, day ,emp_no FROM booking_details");
+                      // while($result->result() as $row){
+                        $result=$this->db->query("SELECT time ,emp_no FROM booking_details where hall_no='N002' ");
+                        foreach($result->result() as $row){
+                          ?>
+                      <tr>
+                        
+                        <td><?php echo $row->time; ?></td>
+                        <td><?php echo $row->emp_no; ?></td>
+                            
+                      </tr>
+                      <?php
+                        }
+                      ?>
+                    
+                   </thead>
+                   <tbody>
+
+                  
+                    
+                                     
+                   </tbody>
+                 </table>    
+               </div>                          
+             </div>
+           </div>           
+           
+           <div class="col-1">
+             <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
+               <i class="fa fa-times"></i>
+               <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">N003 BOOK</h2></div>
+              
+               <div class="table-responsive">
+                 
+                 <table class="table table-striped table-bordered">
+                   <thead>
+                     <tr>
+                        
+                        <td>Day</td>
+                        <td>Teacher_no</td>
+                     </tr>
+                     <?php
+                      // $result=$this->db->query("SELECT hall_no, day ,emp_no FROM booking_details");
+                      // while($result->result() as $row){
+                        $result=$this->db->query("SELECT time ,emp_no FROM booking_details where hall_no='N003' ");
+                        foreach($result->result() as $row){
+                          ?>
+                      <tr>
+                        
+                        <td><?php echo $row->time; ?></td>
+                        <td><?php echo $row->emp_no; ?></td>
+                            
+                      </tr>
+                      <?php
+                        }
+                      ?>
+                    
+                   </thead>
+                   <tbody>
+
+                  
+                    
+                                     
+                   </tbody>
+                 </table>    
+               </div>                          
+             </div>
+           </div>           
            </div>
+         
+                 
+                     
+                 
+                 
+
           <footer class="text-right">
             <p>Copyright &copy; Team Innoview
             | Design:UCSC</p>

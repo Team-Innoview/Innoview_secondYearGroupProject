@@ -35,8 +35,8 @@
         <ul>
             <li><a a href="<?php echo base_url();?>index.php/Welcome/students"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="#" class="active"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
-             <li><a href="<?php echo base_url();?>index.php/Welcome/payment"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
-            <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>VLE</a></li>
+             <li><a href="<?php echo base_url();?>index.php/Welcome/stu_pay"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/stu_coursecontent"><i class="fa fa-users fa-fw"></i>Course Content</a></li>
            <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          
           
@@ -75,21 +75,38 @@
                         </div>
                         <div class="form-bottom">
                         <form>
-                                
+                        <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1" ><i>   Student Id</i> </span>
+                                    
+                                 
+                                   
+                                  
+
+                                      <span class="form-control" name="student_id" > 
+                                    <?php
+                                          echo $_SESSION['user_id'] ;
+                                     ?>
+                                     </span>        
+                                </div>
                            
                                 <div class="input-group form-group">
-                                     Student no
-                                      <span class="form-control" name="student_id" > 
-                                      <?php
-                                         $result=$this->db->query("SELECT student_id FROM student Where student_id='{$_SESSION['user_id']}' ");
-                                         foreach($result->result() as $row){
-                                            echo "<option>".$row->student_id."</option>";
-                                          }  
-                                     ?>       
+                                <span class="input-group-addon" id="basic-addon1" ><i>   User Name</i> </span>
+                                    
+                                
+<!-- 
+                                     User Name -->
+                                      <span class="form-control" name="user_name" > 
+                                    <?php
+                                          echo $_SESSION['user_name'] ;
+                                     ?>
+                                     </span>        
                                 </div>
+                           
                                 
                                 <div class="input-group form-group">
-                                     Name
+                                <span class="input-group-addon" id="basic-addon1" ><i> Name</i> </span>
+                                    
+                                     <!-- Name -->
                                       <span class="form-control" name="name" > 
                                       <?php
                                          $result=$this->db->query("SELECT first_name FROM student Where student_id='{$_SESSION['user_id']}' ");
@@ -101,7 +118,9 @@
                                  </div>
                                 
                                 <div class="input-group form-group">
-                                     Address
+                                <span class="input-group-addon" id="basic-addon1" ><i>  Address</i> </span>
+                                    
+                                     <!-- Address -->
                                       <span class="form-control" name="address" > 
                                     <?php
                                          $result=$this->db->query("SELECT address FROM student Where student_id='{$_SESSION['user_id']}' ");
@@ -114,7 +133,9 @@
                                 </div>
 
                                 <div class="input-group form-group">
-                                     Contact Number
+                                <span class="input-group-addon" id="basic-addon1" ><i> Contact Number</i> </span>
+                                    
+                                     <!-- Contact Number -->
                                       <span class="form-control" name="contact_no" > 
                                     <?php
                                          $result=$this->db->query("SELECT contact_no FROM student Where student_id='{$_SESSION['user_id']}' ");
@@ -127,7 +148,9 @@
                                 </div>
 
                                 <div class="input-group form-group">
-                                     date of Birthday
+                                <span class="input-group-addon" id="basic-addon1" ><i>  Date of Birthday</i> </span>
+                                    
+                                     <!-- date of Birthday -->
                                      <span class="form-control" name="date_of_birth" > 
                                      <?php
                                          $result=$this->db->query("SELECT date_of_birth FROM student Where student_id='{$_SESSION['user_id']}' ");
@@ -140,7 +163,9 @@
                                 </div>
 
                                 <div class="input-group form-group">
-                                     Email Address
+                                <span class="input-group-addon" id="basic-addon1" ><i> Email Address</i> </span>
+                                    
+                                     <!-- Email Address -->
                                      <span class="form-control" name="email_address" > 
                                      <?php
                                          $result=$this->db->query("SELECT email_address FROM student Where student_id='{$_SESSION['user_id']}' ");
@@ -152,6 +177,35 @@
                                        
                                 </div>
 
+                                <div class="input-group form-group">
+                                <span class="input-group-addon" id="basic-addon1" ><i>  Students Parents Name</i> </span>
+                                    
+                                     <!-- Student Parents Name -->
+                                     <span class="form-control" name="name" > 
+                                     <?php
+                                         $result=$this->db->query("SELECT name FROM student_parent Where studentid_fk='{$_SESSION['user_id']}' ");
+                                         foreach($result->result() as $row){
+                                            echo "<option>".$row->name."</option>";
+                                          }  
+                                     ?>
+                                     </span> 
+                                       
+                                </div>
+
+                                <div class="input-group form-group">
+                                <span class="input-group-addon" id="basic-addon1" ><i> Student Parents Cntact Number</i> </span>
+                                    
+                                     <!-- Student Parents Contact Number -->
+                                     <span class="form-control" name="name" > 
+                                     <?php
+                                         $result=$this->db->query("SELECT contact_no FROM student_parent Where studentid_fk='{$_SESSION['user_id']}' ");
+                                         foreach($result->result() as $row){
+                                            echo "<option>".$row->contact_no."</option>";
+                                          }  
+                                     ?>
+                                     </span> 
+                                       
+                                </div>
 
 
    

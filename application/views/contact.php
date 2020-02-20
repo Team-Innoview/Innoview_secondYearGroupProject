@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +18,7 @@
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/fontawesome.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/templatemo-host-cloud.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/templatemo-style.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/owl.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -99,33 +101,45 @@ https://templatemo.com/tm-541-host-cloud
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="contact-form">
+            <!-- <div class="contact-form">
               <form>
                 <div class="row">
-                  <form role="form" action="<?php echo site_url('Welcome/contact_submit');?>" method="post" class="login-form">
-                  <div class="col-md-12 col-sm-12">
-                    <!-- <fieldset> -->
-                      <input name="name" type="text" id="name" method="post" placeholder="Your name" required="required">
-                    <!-- </fieldset> -->
-                  </div>
-                  <div class="col-md-12 col-sm-12">
-                    <!-- <fieldset> -->
-                      <input name="email" type="text" id="email" method="post" placeholder="Your email" required="required">
-                    <!-- </fieldset> -->
-                  </div>
-                  <div class="col-md-12 col-sm-12">
-                    <!-- <fieldset> -->
-                      <input name="subject" type="text" id="subject" method="post" placeholder="Subject" required="required">
-                    <!-- </fieldset> -->
-                  </div>
-                  <div class="col-lg-12">
-                    <!-- <fieldset> -->
-                      <textarea name="message" rows="6" id="message" method="post" placeholder="Your message" required="required"></textarea>
-                    <!-- </fieldset> -->
-                  </div>
+                  <form role="form" action="<?php echo site_url('Contactsubmit/contactus');?>" method="post" class="login-form">
+                  -->
+
+                  
+                  <div class="form-box">
+                        <div class="form-top">
+                        </div>
+                        <div class="form-bottom">
+                        <form role="form" action="<?php echo site_url('Contactsubmit/contactus');?>" method="post" class="login-form">
+                                
+                           
+                  <div class="input-group form-group">
+                     <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"  aria-describedby="basic-addon1" required="required">
+                </div>
+
+                <div class="input-group form-group">
+                     <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"  aria-describedby="basic-addon1" required="required">
+                </div>
+                 
+                <div class="input-group form-group">
+                     <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject"  aria-describedby="basic-addon1" required="required">
+                </div>
+                 
+                <div class="input-group form-group">
+                     <input type="text" class="form-control" id="message" name="message" placeholder="Your Message"  aria-describedby="basic-addon1" required="required">
+                </div>
+
+
+                <td></td>
+                    <td><input class="templatemo-blue-button width-0" type="submit" name="submit" value="Send Message">
+              <br/>
+                
                   <!-- <div class="col-lg-12"> -->
                     <!-- <fieldset> -->
-                      <input class="templatemo-blue-button width-100" id="form-submit" type="submit" name="submit" value="Send Message" >
+                      <!-- <input class="templatemo-blue-button width-100" id="form-submit" type="submit" name="submit" value="Send Message" >
+                      -->
                       <!-- onclick="send_message();" -->
                       <!-- <a href="<?php echo base_url();?>index.php/Welcome/contact_submit"><i class="fa fa-eject fa-fw" name="submit" id="form-submit" class="main-button" ></i>Send Message</a> -->
                       <!-- <a href button name="submit" type="submit" value="submit"  >Send Message</button> -->
@@ -175,64 +189,6 @@ https://templatemo.com/tm-541-host-cloud
     <!-- Map Starts Here -->
     <div id="map">
     
-<!-- How to change your own map point
-	1. Go to Google Maps
-	2. Click on your location point
-	3. Click "Share" and choose "Embed map" tab
-	4. Copy only URL and paste it within the src="" field below
--->
-<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.6467010327124!2d80.21083161392538!3d6.043118330239778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bf7e3d8bb9%3A0xb116c9761f2d7d15!2sSouthern%20Educational%20Institute!5e0!3m2!1sen!2slk!4v1575992547531!5m2!1sen!2slk"  width="100%" height="520px" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-
-      <!-- <iframe src="https://goo.gl/maps/HHz5bThVfYtHh2eW8" width="100%" height="520px" frameborder="0" style="border:0" allowfullscreen></iframe>
-     -->
-    </div>
-    <!-- Map Ends Here -->
-
-
-    <!-- Testimonials Starts Here -->
-    <!-- <div class="testimonials-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <span>Testimonials</span>
-              <h2>What they say about us</h2>
-            </div>
-          </div>
-          <div class="col-md-10 offset-md-1">
-            <div class="owl-testimonials owl-carousel">
-              <div class="testimonial-item">
-                <div class="icon">
-                  <i class="fa fa-quote-right"></i>
-                </div>
-                <p>"Ut elementum a elit sed tristique. Pellentesque sed semper erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean quam erat, rutrum ut malesuada."</p>
-                <h4>William Smith</h4>
-                <span>New Co-Founder</span>
-              </div>
-              <div class="testimonial-item">
-                <div class="icon">
-                  <i class="fa fa-quote-right"></i>
-                </div>
-                <p>"Quisque lacinia sed velit et maximus. Quisque dictum, lacus a malesuada finibus, arcu magna luctus risus, eu accumsan risus elit vitae lacus."</p>
-                <h4>Vinny Smart</h4>
-                <span>Digital Marketer</span>
-              </div>
-              <div class="testimonial-item">
-                <div class="icon">
-                  <i class="fa fa-quote-right"></i>
-                </div>
-                <p>"Vestibulum mauris ipsum, tempor tincidunt justo sit amet, bibendum tincidunt dui. Aenean molestie, odio quis viverra ultricies, leo tellus lacinia neque, sit amet maximus tortor nunc aliquet felis."</p>
-                <h4>Trevor Liam</h4>
-                <span>Technology Chef</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- Testimonials Ends Here -->
-
-
    <!-- Footer -->
 	<section id="footer">
 		<div class="container">
@@ -242,7 +198,7 @@ https://templatemo.com/tm-541-host-cloud
 					<ul class="list-unstyled quick-links">
 						<li><a href="<?php echo base_url();?>index.php"><i class="fa fa-angle-double-right"></i>Home</a></li>
 						<li><a href="<?php echo base_url();?>index.php/Welcome/about"><i class="fa fa-angle-double-right"></i>About Us</a></li>
-						<li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule"><i class="fa fa-angle-double-right"></i>Class Schedule</a></li>
+						<li><a href="j<?php echo base_url();?>index.php/Welcome/class_schedule"><i class="fa fa-angle-double-right"></i>Class Schedule</a></li>
 						<li><a href="<?php echo base_url();?>index.php/Welcome/contact"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
 					</ul>
 				</div>

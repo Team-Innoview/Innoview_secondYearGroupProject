@@ -32,9 +32,9 @@
         <nav class="templatemo-left-nav">          
         <ul>
             <li><a href="<?php echo base_url();?>index.php/Welcome/receptionist"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/edit_recep"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/myprofile"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/recep_noti"><i class="fa fa-database fa-fw"></i>Notification</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_pay"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/payment"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
             <li><a href="#" class="active"><i class="fa fa-home fa-fw "></i>Hall Management</a></li>
              <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
         </ul>        
@@ -58,9 +58,8 @@
         </div>
         <div class="templatemo-content-container">
           <div class="templatemo-content-widget padding">
-
-       
-          <form role="form" action="<?php echo site_url('Signup/book');?>" method="post" class="login-form">
+                   
+              <form role="form" action="<?php echo site_url('Signup/book');?>" method="post" class="login-form">
                             
 								<div class="row">
 									<div class="col-sm-5">
@@ -70,6 +69,7 @@
 
                       
                        <select class="form-control" name="hall_no" id="hall_no">
+                       <option >None</option>
                         
                       <?php
                       
@@ -95,13 +95,14 @@
 										<div class="form-group">
 											<!-- <span class="form-label">Slot</span>
                       </br> -->
-                      <span class="form-label">Day</span>
-                      <select class="form-control" name="day" id="day">
+                      <span class="form-label">Day and Time</span>
+                      <select class="form-control" name="time" id="time">
+                      <option >None</option>
                       <?php
                       
-                      $result=$this->db->query("SELECT day FROM time_slot");
+                      $result=$this->db->query("SELECT time FROM day");
                       foreach($result->result() as $row){
-                        echo "<option>".$row->day."</option>";
+                        echo "<option>".$row->time."</option>";
                       }
                       ?>
                      
@@ -119,6 +120,7 @@
 											
                       <span class="form-label">Teacher Employee no</span>
                       <select class="form-control" name="emp_no" id="emp_no">
+                      <option >None</option>
                       <?php
                       
                       $result=$this->db->query("SELECT emp_no FROM teacher");

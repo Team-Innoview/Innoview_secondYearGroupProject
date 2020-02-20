@@ -51,13 +51,14 @@
         <div class="mobile-menu-icon">
             <i class="fa fa-bars"></i>
           </div>
-        <nav class="templatemo-left-nav">          
+        <nav class="templatemo-left-nav">   
+         <!--Left Dashboard  -->
         <ul>
             <li><a href="<?php echo base_url();?>index.php/Welcome/receptionist"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/edit_recep"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/myprofile"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
             <li><a href="#" class="active"><i class="fa fa-database fa-fw"></i>Notification</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_pay"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_hall"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/payment"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome//view_booking"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          
           </ul>      
@@ -71,6 +72,7 @@
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
                 <!-- <li><a href="" class="active">Inbox</a></li> -->
+                <!-- Top Naviagtion Bar Links -->
                 <li><a href="" class="active">Compose</a></li>
                 
                 <!-- <li><a href="login.html">Sign in form</a></li> -->
@@ -93,13 +95,13 @@
                         <div class="form-top">
                         </div>
                         <div class="form-bottom">
-                        <form role="form" action="<?php echo site_url('Signup/send');?>" method="post" class="login-form">
+                        <form role="form" action="<?php echo site_url('Signup/rrsend');?>" method="post" class="login-form">
                                 
                                
-                                <div class="input-group form-group">
+                                <!-- <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
                                         <input type="text" class="form-control" id="notification_id" name="notification_id" placeholder=" Enter notification_Id" aria-describedby="basic-addon1" required="required">
-                                </div>
+                                </div> -->
                                 
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
@@ -117,7 +119,8 @@
                 
                 <tr>
                     <td></td>
-                    <td><input class="templatemo-blue-button width-100" type="submit" name="sent" value="sent">
+                    <td><input class="templatemo-blue-button width-100" type="submit" name="sent" value="sent" >
+                    <!-- echo '<script>alert("Message Sent Successfully")</script>'; -->
                     <br/>
                 
                 </tr>
@@ -153,6 +156,8 @@
     </div>
     
     <!-- JS -->
+
+  
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
     <script type="text/javascript" src="js/templatemo-script.js"></script>      <!-- Templatemo Script -->
     <script>

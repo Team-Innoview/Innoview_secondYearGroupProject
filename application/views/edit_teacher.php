@@ -32,7 +32,7 @@
         <ul>
             <li><a href="<?php echo base_url();?>index.php/Welcome/teacher"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="#" class="active"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
-           <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>VLE</a></li>
+           <li><a href="<?php echo base_url();?>index.php/Welcome/teachercourse_content"><i class="fa fa-users fa-fw"></i>Course Content</a></li>
               <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          
           </ul>  
@@ -46,7 +46,7 @@
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
                 <li><a href="" class="active">My Profile</a></li>
-                <li><a href="<?php echo base_url();?>index.php/Welcome/edit_student">Edit Profile</a></li>
+                <li><a href="<?php echo base_url();?>index.php/Welcome/editt_teacher">Edit Profile</a></li>
                 
               </ul>  
             </nav>
@@ -73,7 +73,9 @@
                                 
                            
                                 <div class="input-group form-group">
-                                     Employee no
+                                <span class="input-group-addon" id="basic-addon1" ><i> Employee No </i> </span>
+                                   
+                                     <!-- Employee no -->
                                       <span class="form-control" name="emp_no" > 
                                       <?php
                                          $result=$this->db->query("SELECT emp_no FROM teacher Where emp_no='{$_SESSION['user_id']}' ");
@@ -82,71 +84,60 @@
                                           }  
                                      ?>       
                                 </div>
+
+                                <div class="input-group form-group">
+                                <span class="input-group-addon" id="basic-addon1" ><i> User   Name </i> </span>
+                                   
+                                     <!-- User Name -->
+                                      <span class="form-control" name="user_name" > 
+                                    <?php
+                                          echo $_SESSION['user_name'] ;
+                                     ?>
+                                     </span>        
+                                </div>
                                 
                                 <div class="input-group form-group">
-                                     Name
+                                <span class="input-group-addon" id="basic-addon1" ><i>   Name </i> </span>
+                                   
+                                    
                                       <span class="form-control" name="name" > 
                                       <?php
-                                         $result=$this->db->query("SELECT first_name FROM student Where student_id='{$_SESSION['user_id']}' ");
+                                         $result=$this->db->query("SELECT name FROM teacher Where emp_no='{$_SESSION['user_id']}' ");
                                          foreach($result->result() as $row){
-                                            echo "<option>".$row->first_name."</option>";
+                                            echo "<option>".$row->name."</option>";
                                           }  
                                      ?>
                                      </span> 
                                  </div>
                                 
-                                <div class="input-group form-group">
-                                     Address
-                                      <span class="form-control" name="address" > 
-                                    <?php
-                                         $result=$this->db->query("SELECT address FROM student Where student_id='{$_SESSION['user_id']}' ");
-                                         foreach($result->result() as $row){
-                                            echo "<option>".$row->address."</option>";
-                                          }
-                                      ?>
-                                     </span> 
-                                       
-                                </div>
-
-                                <div class="input-group form-group">
-                                     Contact Number
+                                 <div class="input-group form-group">
+                                 <span class="input-group-addon" id="basic-addon1" ><i> Contact Number</i> </span>
+<!--                                    
+                                     Contact Number -->
                                       <span class="form-control" name="contact_no" > 
-                                    <?php
-                                         $result=$this->db->query("SELECT contact_no FROM student Where student_id='{$_SESSION['user_id']}' ");
+                                      <?php
+                                         $result=$this->db->query("SELECT contact_no FROM teacher Where emp_no='{$_SESSION['user_id']}' ");
                                          foreach($result->result() as $row){
                                             echo "<option>".$row->contact_no."</option>";
                                           }  
                                      ?>
                                      </span> 
-                                       
-                                </div>
-
-                                <div class="input-group form-group">
-                                     date of Birthday
-                                     <span class="form-control" name="date_of_birth" > 
-                                     <?php
-                                         $result=$this->db->query("SELECT date_of_birth FROM student Where student_id='{$_SESSION['user_id']}' ");
+                                 </div>
+                                
+                                 <div class="input-group form-group">
+                                 <span class="input-group-addon" id="basic-addon1" ><i>  Name </i> </span>
+                                   
+                                     <!-- Name -->
+                                      <span class="form-control" name="email" > 
+                                      <?php
+                                         $result=$this->db->query("SELECT email FROM teacher Where emp_no='{$_SESSION['user_id']}' ");
                                          foreach($result->result() as $row){
-                                            echo "<option>".$row->date_of_birth."</option>";
+                                            echo "<option>".$row->email."</option>";
                                           }  
                                      ?>
                                      </span> 
-                                       
-                                </div>
-
-                                <div class="input-group form-group">
-                                     Email Address
-                                     <span class="form-control" name="email_address" > 
-                                     <?php
-                                         $result=$this->db->query("SELECT email_address FROM student Where student_id='{$_SESSION['user_id']}' ");
-                                         foreach($result->result() as $row){
-                                            echo "<option>".$row->email_address."</option>";
-                                          }  
-                                     ?>
-                                     </span> 
-                                       
-                                </div>
-
+                                 </div>
+                                
 
 
    

@@ -34,7 +34,7 @@
         <ul>
             <li><a href="<?php echo base_url();?>index.php/Welcome/teacher"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/edit_teacher"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
-          <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>VLE</a></li>
+          <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Course Content</a></li>
             <!-- <li><a href="preferences.html"><i class="fa fa-sliders fa-fw"></i>Attendence</a></li> -->
             <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          

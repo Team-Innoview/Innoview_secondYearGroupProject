@@ -35,17 +35,19 @@
         </header>
             
        
-        <div class="mobile-menu-icon">
+        <!-- <div class="mobile-menu-icon">
             <i class="fa fa-bars"></i>
-        </div>
+        </div> -->
+
+        <!-- Dashboard left navigation bar -->
 
         <nav class="templatemo-left-nav">          
           <ul>
             <li><a href="#" class="active"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/edit_recep"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/myprofile"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/recep_noti"><i class="fa fa-database fa-fw"></i>Notification</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_pay"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_hall"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/payment"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/view_booking"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
         </ul>  
         </nav>
@@ -66,27 +68,66 @@
         </div>
 
         <div class="templatemo-content-container">
-          <div class="templatemo-flex-row flex-content-row">
-            <div class="templatemo-content-widget white-bg col-2">
-              <i class="fa fa-times"></i>
-              <div class="square"></div>
-              <h2 class="templatemo-inline-block">Notification</h2><hr>
-              echo $_SESSION['user_id'];
-              <p>Works on all major browsers. IE 10+. Visual Admin is <a href="http://www.templatemo.com/tag/admin" target="_parent">free responsive admin template</a> for everyone. Feel free to use this template for your backend user interfaces. Please tell your friends about <a href="http://www.templatemo.com" target="_parent">templatemo.com</a> website. You may <a href="http://www.templatemo.com/contact" target="_parent">contact us</a> if you have anything to say.</p>
-              <p>Nunc placerat purus eu tincidunt consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus nulla quis risus auctor, non placerat augue consectetur. Fusce mi lacus, semper sit amet mattis eu.</p>              
-            </div>
+         
+         <div class="templatemo-flex-row flex-content-row">
            
-          </div>
-          <div class="templatemo-flex-row flex-content-row">
-            <div class="col-1">              
-            </div>
-          </div> <!-- Second row ends -->
+           <div class="col-1">
+             <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
+               <i class="fa fa-times"></i>
+               <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">Inbox</h2></div>
+               <div class="table-responsive">
+                 
+                 <!-- Table in the notification page -->
+                 <table class="table table-striped table-bordered">
+                   <thead>
+                     <tr>
+                     <!-- Table headings -->
+                       <td>Sender Name</td>
+                       <td>Sender Email</td>
+                       <td>Sender Subject</td>
+                       <td>Sender Message</td>
+                     </tr>
+                     
+                    
+                   </thead>
+                   <tbody>
+                       <?php
+                     // $result=$this->db->query("SELECT hall_no, day ,emp_no FROM booking_details");
+                     // while($result->result() as $row){
+                      //  Select a rows in the the database and input to the table as query 
+                       $result=$this->db->query("SELECT name,email,subject,message  FROM contact_us ORDER BY contactno DESC");
+                    //    if ($result) {
+                    //     die('Invalid query: ' . mysql_error());
+                    // }
+                      
+                       foreach($result->result() as $row){
+                         ?>
+                     <tr>
+                       <td><?php echo $row->name;?></td>
+                       <td><?php echo $row->email; ?></td>
+                       <td><?php echo $row->subject;?></td>
+                       <td><?php echo $row->message; ?></td>
+                  
+                           
+                     </tr>
+                     <?php
+                       }
+                     ?>
+                                     
+                   </tbody>
+                 </table>    
+               </div>                          
+             </div>
+           </div>           
+         </div> <!-- Second row ends -->
           
-          <footer class="text-right">
+
+          <!-- footer class -->
+        <footer class="text-right">
             <p>Copyright &copy; Team Innoview
             | Design: UCSC</p>
           </footer>         
-        </div>
+        </div> 
     
    
     
